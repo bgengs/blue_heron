@@ -1,6 +1,6 @@
 <?php
-/** Admin: order fulfillment. Payments arrive via the Stripe webhook; you place
- *  the actual print order in the Prodigi dashboard, then mark it here. */
+/** Admin: order fulfillment. Stripe webhook records payment and (when configured)
+ *  creates the Prodigi print order automatically. Use this screen to track status. */
 
 require dirname(__DIR__) . '/lib/data.php';
 require dirname(__DIR__) . '/lib/db.php';
@@ -43,12 +43,14 @@ include dirname(__DIR__) . '/partials/head.php';
 <div style="max-width:1100px; margin:0 auto; padding:2rem 1.4rem">
   <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.4rem">
     <h1 style="color:var(--navy); font-size:1.5rem; flex:1">Orders</h1>
+    <a href="prices.php">Prices</a>
     <a href="../index.php" target="_blank">View site ↗</a>
     <a href="?logout=1">Log out</a>
   </div>
   <p class="muted" style="color:var(--slate); font-size:.9rem">Payments arrive via Stripe.
-  Place the print order in the <a href="https://dashboard.prodigi.com" target="_blank">Prodigi
-  dashboard</a> using the details below (print file in <code>output/print/</code>), then mark it fulfilled.</p>
+  With a Prodigi API key set, orders are submitted automatically.
+  Check status in the <a href="https://dashboard.prodigi.com" target="_blank">Prodigi dashboard</a>
+  (print files served from <code>images/print/</code> or <code>output/print/</code>).</p>
 
   <table style="width:100%; border-collapse:collapse; background:#fff; margin-top:1rem; font-size:.88rem">
     <tr style="background:var(--navy); color:var(--cream)">
@@ -72,10 +74,17 @@ include dirname(__DIR__) . '/partials/head.php';
           <input type="hidden" name="action" value="fulfill">
           <input type="hidden" name="id" value="<?= (int)$o['id'] ?>">
           <select name="fulfillment">
-            <?php foreach (['new','placed-with-prodigi','shipped','complete','refunded'] as $s): ?>
+            <?php foreach (['new','placed-with-prodigi','prodigi-error','shipped','complete','refunded'] as $s): ?>
               <option value="<?= $s ?>" <?= $o['fulfillment'] === $s ? 'selected' : '' ?>><?= $s ?></option>
             <?php endforeach; ?>
           </select><br>
+          <?php if (!empty($o['prodigi_order_id'])): ?>
+            <div style="margin-top:.3rem; font-size:.75rem; color:var(--slate)">
+              Prodigi: <code><?= e($o['prodigi_order_id']) ?></code>
+            </div>
+          <?php elseif (!empty($o['prodigi_error'])): ?>
+            <div style="margin-top:.3rem; font-size:.75rem; color:#a33"><?= e($o['prodigi_error']) ?></div>
+          <?php endif; ?>
           <input type="text" name="notes" value="<?= e($o['notes']) ?>" placeholder="Prodigi order id / notes"
                  style="margin-top:.3rem; width:150px; padding:.3rem">
           <button class="btn btn-solid" style="margin-top:.3rem; border:none; cursor:pointer; padding:.3rem .8rem">Save</button>

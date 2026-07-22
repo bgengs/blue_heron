@@ -50,12 +50,52 @@ def upsert_photo(slug: str, **fields) -> dict:
         "caption": fields.get("caption", ""),
         "location": fields.get("location", "MONTANA"),
         "file": fields.get("file", f"{slug}.jpg"),
-        "active": fields.get("active", True),
+        "active": fields.get("active", False),  # opt-in via Photos → Live
         "sort": fields.get("sort", len(photos)),
     }
     photos.append(entry)
     save_photos(photos)
     return entry
+
+
+def bulk_update_photos(updates: list[dict]) -> int:
+    """Apply many photo field updates in one write. Each update needs slug."""
+    if not updates:
+        return 0
+    by_slug = {u["slug"]: u for u in updates if u.get("slug")}
+    photos = load_photos()
+    n = 0
+    for p in photos:
+        u = by_slug.get(p["slug"])
+        if not u:
+            continue
+        if "title" in u:
+            p["title"] = u["title"]
+        if "caption" in u:
+            p["caption"] = u["caption"]
+        if "sort" in u:
+            p["sort"] = int(u["sort"])
+        if "active" in u:
+            p["active"] = bool(u["active"])
+        n += 1
+    save_photos(photos)
+    return n
+
+
+def renumber_sort(*, prefer_gbh_fly: bool = True) -> int:
+    """Reset sort to 1..N. gbh_fly crops first (by filename), then the rest."""
+    photos = load_photos()
+
+    def key(p: dict):
+        f = str(p.get("file") or "").lower()
+        pri = 0 if (prefer_gbh_fly and f.startswith("gbh_fly")) else 1
+        return (pri, f, p.get("slug") or "")
+
+    ordered = sorted(photos, key=key)
+    for i, p in enumerate(ordered, start=1):
+        p["sort"] = i
+    save_photos(ordered)
+    return len(ordered)
 
 
 # ---------------- print catalog ----------------

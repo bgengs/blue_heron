@@ -36,6 +36,7 @@ from core.config import (
 )
 from core.metadata import build_copyright_exif, load_exif_bytes, save_with_exif
 from core.protection import apply_web_protection, derive_photo_id, embed_dct_watermark
+from core.frame import render_framed_to_path
 from core.watermark import (
     apply_full_frame_overlay,
     apply_visible_watermark,
@@ -56,6 +57,7 @@ class ProcessingResult:
     web_path: Optional[str] = None
     print_path: Optional[str] = None
     watermarked_path: Optional[str] = None
+    framed_path: Optional[str] = None
     proof_path: Optional[str] = None
     raw_path: Optional[str] = None       # verbatim copy of source alongside variants
     success: bool = True
@@ -221,6 +223,7 @@ def process_single_image(
     base_bg_path: str = "",
     color_mode: str = "auto",
     app_root: str = "",
+    title: str = "",
 ) -> ProcessingResult:
     """Full processing pipeline for one image.
 
@@ -341,6 +344,12 @@ def process_single_image(
         result.print_path = str(print_path)
         del print_img
         gc.collect()
+
+        # --- 3b. Framed banner (site display): photo + brand bar + cursive title ---
+        if "framed" in output_dirs:
+            framed_path = output_dirs["framed"] / get_output_filename(source_path)
+            render_framed_to_path(image, framed_path, title=title)
+            result.framed_path = str(framed_path)
 
         # --- 4. Watermarked JPEG ---
         # Pipeline: base overlay -> corner mark -> DCT hidden ID -> save.

@@ -2,23 +2,82 @@
 {% block title %}Photos{% endblock %}
 {% block content %}
 <h1>Photos</h1>
-<p class="muted">Titles and captions appear in the public gallery. Untick “live” to hide
-a photo without deleting anything. Lower sort numbers appear first.</p>
-<table>
-  <tr><th></th><th>Slug</th><th>Title</th><th>Caption</th><th>Sort</th><th>Live</th><th></th></tr>
-  {% for p in photos | sort(attribute="sort") %}
-  <tr>
-    <td><img class="thumb" src="/images/thumb/{{ p.file }}" onerror="this.src='/images/web/{{ p.file }}'" alt=""></td>
-    <td class="muted">{{ p.slug }}</td>
-    <form method="post" action="/admin/photos/{{ p.slug }}">
-      <td><input type="text" name="title" value="{{ p.title }}"></td>
-      <td><input type="text" name="caption" value="{{ p.caption }}"></td>
-      <td style="width:70px"><input type="number" name="sort" value="{{ p.sort }}"></td>
-      <td><input type="checkbox" name="active" value="1" {% if p.active %}checked{% endif %}></td>
-      <td><button class="btn" type="submit">Save</button></td>
-    </form>
-  </tr>
-  {% endfor %}
-  {% if not photos %}<tr><td colspan="7" class="muted">No photos yet — process and publish first.</td></tr>{% endif %}
-</table>
+<p class="muted">Titles and captions appear in the public gallery.
+Tick <strong>Live</strong> to show a photo. Edit anything, then hit
+<strong>Save all</strong> once at the top or bottom.</p>
+
+<form method="post" action="/admin/photos" id="photosForm">
+  <div class="photos-toolbar">
+    <button class="btn" type="submit">Save all</button>
+    <button class="btn ghost" type="button" id="liveAll">Live: all gbh_fly</button>
+    <button class="btn ghost" type="button" id="liveNone">Live: none</button>
+    <span class="muted" id="liveCount"></span>
+  </div>
+
+  <table>
+    <tr>
+      <th></th>
+      <th>Slug</th>
+      <th>Title</th>
+      <th>Caption</th>
+      <th>Sort</th>
+      <th>Live</th>
+    </tr>
+    {% for p in photos | sort(attribute="sort") %}
+    <tr>
+      <td><img class="thumb thumb-lg" src="/images/thumb/{{ p.file }}" onerror="this.src='/images/web/{{ p.file }}'" alt=""></td>
+      <td class="muted">{{ p.slug }}</td>
+      <td>
+        <input type="hidden" name="slug" value="{{ p.slug }}">
+        <input type="text" name="title__{{ p.slug }}" value="{{ p.title }}">
+      </td>
+      <td><input type="text" name="caption__{{ p.slug }}" value="{{ p.caption }}"></td>
+      <td style="width:70px"><input type="number" name="sort__{{ p.slug }}" value="{{ p.sort }}"></td>
+      <td>
+        <input type="checkbox" class="live-cb" name="live" value="{{ p.slug }}"
+               data-file="{{ p.file }}" {% if p.active %}checked{% endif %}>
+      </td>
+    </tr>
+    {% endfor %}
+    {% if not photos %}<tr><td colspan="6" class="muted">No photos yet — process and publish first.</td></tr>{% endif %}
+  </table>
+
+  {% if photos %}
+  <div class="photos-toolbar" style="margin-top:1.2rem">
+    <button class="btn" type="submit">Save all</button>
+  </div>
+  {% endif %}
+</form>
+
+<form method="post" action="/admin/photos/renumber"
+      onsubmit="return confirm('Reset Sort so gbh_fly crops are 1…N, then the rest?');"
+      style="margin-top:1rem">
+  <button class="btn ghost" type="submit">Reset sort numbers (gbh_fly = 1…)</button>
+  <span class="muted" style="margin-left:.6rem">Gallery order only — editor numbering is separate.</span>
+</form>
+
+<style>
+.photos-toolbar { display:flex; gap:.8rem; align-items:center; flex-wrap:wrap; margin:1rem 0 1.2rem; position:sticky; top:0; background:var(--cream); padding:.6rem 0; z-index:4; }
+.thumb-lg { width:168px; height:112px; }
+</style>
+<script>
+function refreshLiveCount(){
+  const n = document.querySelectorAll('.live-cb:checked').length;
+  const el = document.getElementById('liveCount');
+  if (el) el.textContent = n + ' live';
+}
+document.getElementById('liveAll')?.addEventListener('click', () => {
+  document.querySelectorAll('.live-cb').forEach(cb => {
+    const f = (cb.dataset.file || '').toLowerCase();
+    cb.checked = f.startsWith('gbh_fly');
+  });
+  refreshLiveCount();
+});
+document.getElementById('liveNone')?.addEventListener('click', () => {
+  document.querySelectorAll('.live-cb').forEach(cb => { cb.checked = false; });
+  refreshLiveCount();
+});
+document.querySelectorAll('.live-cb').forEach(cb => cb.addEventListener('change', refreshLiveCount));
+refreshLiveCount();
+</script>
 {% endblock %}

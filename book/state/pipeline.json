@@ -1,0 +1,280 @@
+{
+  "phase": "draft",
+  "current_chapter": 6,
+  "chapters": {
+    "01": {
+      "drafted": true,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 3602,
+      "scores": {},
+      "fail_reasons": [
+        "Missing required section: ### Self-Evaluation",
+        "Body character count 3602 below minimum 7500"
+      ],
+      "needs_revision": true,
+      "validation_ok": false
+    },
+    "02": {
+      "drafted": true,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 7723,
+      "scores": {},
+      "fail_reasons": [
+        "Missing required section: ### Photograph Recommendation 1",
+        "Missing required section: ### Photograph Recommendation 2",
+        "Missing required section: ### Source Ledger",
+        "Missing required section: ### Character Count",
+        "Missing required section: ### Self-Evaluation",
+        "Could not extract Source Ledger section"
+      ],
+      "needs_revision": true,
+      "validation_ok": false
+    },
+    "03": {
+      "drafted": true,
+      "dual_done": true,
+      "revision_round": 0,
+      "body_chars": 4546,
+      "scores": {},
+      "fail_reasons": [
+        "Missing required prose section: ### Heron Fact",
+        "Missing required prose section: ### Myth or Fact?",
+        "Reader prose 4546 chars below minimum 7500 (photo recommendations and source ledger do NOT count).",
+        "Too few developed paragraphs (2 < 6). Do not submit outline/bullet stubs — write full museum prose.",
+        "Subsections too thin (avg 360 chars < 900). Expand with researched explanation, not photo/meta padding.",
+        "Topic drift: only 2/12 chapter keywords present",
+        "Missing required meta section: ### Photograph Recommendation 1",
+        "Missing required meta section: ### Photograph Recommendation 2",
+        "Missing required meta section: ### Source Ledger",
+        "Missing required meta section: ### Self-Evaluation",
+        "Could not extract Source Ledger section"
+      ],
+      "needs_revision": true,
+      "validation_ok": false
+    },
+    "04": {
+      "drafted": true,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 6977,
+      "scores": {},
+      "fail_reasons": [
+        "Reader prose 6977 chars below minimum 7500 (photo recommendations and source ledger do NOT count).",
+        "Subsections too thin (avg 590 chars < 900). Expand with researched explanation, not photo/meta padding."
+      ],
+      "needs_revision": true,
+      "validation_ok": false
+    },
+    "05": {
+      "drafted": true,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 8350,
+      "scores": {},
+      "fail_reasons": [
+        "Missing required prose section: ### Myth or Fact?",
+        "Subsections too thin (avg 607 chars < 900). Expand with researched explanation, not photo/meta padding."
+      ],
+      "needs_revision": true,
+      "validation_ok": false
+    },
+    "06": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "07": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "08": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "09": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "10": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "11": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "12": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "13": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "14": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "15": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "16": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "17": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "18": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "19": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "20": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "21": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "22": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "23": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    },
+    "24": {
+      "drafted": false,
+      "dual_done": false,
+      "revision_round": 0,
+      "body_chars": 0,
+      "scores": {},
+      "fail_reasons": [],
+      "needs_revision": false,
+      "validation_ok": false
+    }
+  },
+  "voice_bible_ready": false,
+  "managing_recommendation": null,
+  "overall_score": null,
+  "ticks": 6,
+  "last_error": null,
+  "updated_at": "2026-07-22T07:14:16.380523+00:00"
+}

@@ -20,10 +20,11 @@
 {% endif %}
 
 <h2>Raw photos</h2>
-<p class="muted"><a href="/admin/editor">Open the Editor</a> to crop, rotate, and title
-photos first (optional). Then drop JPGs into <code>raw/</code> (loose or in subfolders) and Process.
-Processing creates protected variants in <code>output/</code>: thumbnails, watermarked
-web (1600px + DCT stego + registry), full-res print, and proof files.</p>
+<p class="muted"><a href="/admin/editor">Open the Editor</a> to crop, rotate, and fine-tune
+titles (optional). Titles/descriptions in <code>photo_catalog.json</code> are applied
+automatically when you Process. Processing creates protected variants in
+<code>output/</code>: thumbnails, watermarked web (heron badge + DCT stego + registry),
+full-res print, framed banners (Bernie logo + cursive title + badge), and proof files.</p>
 <table>
   <tr><th>Folder</th><th>Images</th><th>Processed</th><th></th></tr>
   {% for f in folders %}
@@ -45,8 +46,10 @@ web (1600px + DCT stego + registry), full-res print, and proof files.</p>
 </table>
 
 <h2>Publish</h2>
-<p class="muted">Copies protected web images + thumbnails into the public site and adds
-new photos to the gallery manifest. Never touches originals or print files.</p>
+<p class="muted">Copies processed files into <code>web/</code> and adds them to the
+manifest. <strong>gbh_fly_*</strong> (Photoshop crops) go Live by default; raw
+<code>DJI_*</code> stay hidden. Adjust anytime under <a href="/admin/photos">Photos</a>.
+Re-publish never changes Live on/off for existing entries.</p>
 <form method="post" action="/admin/publish">
   <button class="btn" type="submit">Publish processed photos to site</button>
 </form>

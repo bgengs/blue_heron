@@ -25,13 +25,24 @@ function bh_db(): PDO {
         shipping_json TEXT,
         status TEXT DEFAULT 'paid',
         fulfillment TEXT DEFAULT 'new',
-        notes TEXT DEFAULT ''
+        notes TEXT DEFAULT '',
+        prodigi_order_id TEXT DEFAULT '',
+        prodigi_error TEXT DEFAULT ''
     )");
+    // Older DBs created before Prodigi columns existed.
+    $cols = $pdo->query('PRAGMA table_info(orders)')->fetchAll(PDO::FETCH_ASSOC);
+    $names = array_column($cols, 'name');
+    if (!in_array('prodigi_order_id', $names, true)) {
+        $pdo->exec("ALTER TABLE orders ADD COLUMN prodigi_order_id TEXT DEFAULT ''");
+    }
+    if (!in_array('prodigi_error', $names, true)) {
+        $pdo->exec("ALTER TABLE orders ADD COLUMN prodigi_error TEXT DEFAULT ''");
+    }
     return $pdo;
 }
 
-/** Insert an order from a Stripe Checkout Session object (array). */
-function bh_record_order(array $s): void {
+/** Insert an order from a Stripe Checkout Session object (array). Returns row id. */
+function bh_record_order(array $s): int {
     $md = $s['metadata'] ?? [];
     $details = $s['customer_details'] ?? [];
     $shipping = $s['shipping_details']
@@ -55,6 +66,22 @@ function bh_record_order(array $s): void {
         ':qty'   => (int) ($md['qty'] ?? 1),
         ':ship'  => json_encode($shipping),
     ]);
+
+    // Prefer the row we just inserted; fall back to lookup by Stripe session.
+    $id = (int)$db->lastInsertId();
+    if ($id > 0) return $id;
+    $sid = $s['id'] ?? '';
+    if ($sid === '') return 0;
+    $q = $db->prepare('SELECT id FROM orders WHERE stripe_session_id = :sid');
+    $q->execute([':sid' => $sid]);
+    return (int)($q->fetchColumn() ?: 0);
+}
+
+function bh_order(int $id): ?array {
+    $stmt = bh_db()->prepare('SELECT * FROM orders WHERE id = :id');
+    $stmt->execute([':id' => $id]);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $row ?: null;
 }
 
 function bh_orders(int $limit = 200): array {
@@ -69,18 +96,48 @@ function bh_set_fulfillment(int $id, string $fulfillment, string $notes): void {
     $stmt->execute([':f' => $fulfillment, ':n' => $notes, ':id' => $id]);
 }
 
+function bh_set_prodigi_result(int $id, ?string $prodigiId, ?string $error): void {
+    $fulfillment = $prodigiId ? 'placed-with-prodigi' : 'prodigi-error';
+    $notes = $prodigiId
+        ? ('Prodigi ' . $prodigiId)
+        : ('Prodigi failed: ' . ($error ?? 'unknown'));
+    $stmt = bh_db()->prepare(
+        "UPDATE orders SET prodigi_order_id=:pid, prodigi_error=:err,
+         fulfillment=:f, notes=:n WHERE id=:id"
+    );
+    $stmt->execute([
+        ':pid' => $prodigiId ?? '',
+        ':err' => $error ?? '',
+        ':f'   => $fulfillment,
+        ':n'   => $notes,
+        ':id'  => $id,
+    ]);
+}
+
 /** Everything needed to place this order by hand in the Prodigi dashboard. */
 function bh_fulfill_hint(array $o): string {
     $ship = json_decode($o['shipping_json'] ?? '{}', true) ?: [];
     $addr = $ship['address'] ?? [];
+    $sku = null;
+    require_once __DIR__ . '/prodigi.php';
+    $map = bh_prodigi_sku((string)$o['format'], (string)$o['size']);
+    if ($map) $sku = $map['sku'];
+
     $lines = [
-        "Photo: {$o['photo']}  |  {$o['format']} {$o['size']}\"  x{$o['qty']}",
-        "Print file: output/print/{$o['photo']}.jpg  (300 DPI, full res)",
+        "Photo: {$o['photo']}  |  {$o['format']} {$o['size']}  x{$o['qty']}",
+        $sku ? "Prodigi SKU: {$sku}" : 'Prodigi SKU: (not mapped in catalog)',
+        "Print file: images/print/{$o['photo']}.jpg  (or output/print/)",
         "Ship to: " . ($ship['name'] ?? $o['name'] ?? ''),
         "  " . trim(($addr['line1'] ?? '') . ' ' . ($addr['line2'] ?? '')),
         "  " . ($addr['city'] ?? '') . ", " . ($addr['state'] ?? '') . " "
              . ($addr['postal_code'] ?? '') . " " . ($addr['country'] ?? ''),
         "Customer: {$o['email']}",
     ];
+    if (!empty($o['prodigi_order_id'])) {
+        $lines[] = "Prodigi order: {$o['prodigi_order_id']}";
+    }
+    if (!empty($o['prodigi_error'])) {
+        $lines[] = "Prodigi error: {$o['prodigi_error']}";
+    }
     return implode("\n", $lines);
 }

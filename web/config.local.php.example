@@ -12,8 +12,20 @@ return [
     'stripe_publishable'    => '',   // pk_test_...  (not required for Checkout redirect)
     'stripe_webhook_secret' => '',   // whsec_...  (from `stripe listen` or dashboard)
 
-    // Public base URL of the live site (used for Stripe return URLs)
+    // Public base URL of the live site (used for Stripe return URLs + Prodigi asset fetch)
+    // Must be reachable by Prodigi's servers (not localhost) when fulfilling for real.
     'site_url' => 'https://blueheron.gallery',
 
     'contact_email' => 'hello@blueheron.gallery',
+
+    // Prodigi Print API — https://www.prodigi.com/print-api/
+    // Sandbox key from the Prodigi dashboard; set prodigi_sandbox false + live key for production.
+    'prodigi_api_key'         => '',          // from Prodigi dashboard → API
+    'prodigi_sandbox'         => true,        // true = api.sandbox.prodigi.com
+    'prodigi_shipping_method' => 'Budget',    // Budget | Standard | Express | Overnight
+    'asset_signing_secret'    => '',          // random string; falls back to admin_password
+
+    // Dynamic retail from Prodigi wholesale (Admin → Prices → Refresh)
+    'markup_multiplier'       => 2.5,         // retail = ceil(cost × multiplier)
+    'markup_quote_country'    => 'US',        // country used when quoting costs
 ];

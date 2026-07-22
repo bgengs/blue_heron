@@ -1,8 +1,1358 @@
 {
   "version": 1,
-  "generated_at": "2026-07-22T03:20:52Z",
-  "count": 4,
+  "generated_at": "2026-07-22T07:45:29Z",
+  "count": 154,
   "photos": [
+    {
+      "filename": "DJI_20260721221326_0408_D.jpg",
+      "photo_id_hex": "130679c85e402fe7",
+      "phash": "5a40ba30f8fb06e3",
+      "dhash": "15916129b1a01939",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221326_0408_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221338_0410_D.jpg",
+      "photo_id_hex": "fad0b022f15c447c",
+      "phash": "7568611bcc8e99a9",
+      "dhash": "b58692a432584d46",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221338_0410_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221341_0411_D.jpg",
+      "photo_id_hex": "2111e1a3446424fa",
+      "phash": "726e75190e235d8c",
+      "dhash": "4f05494935b1ce2e",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221341_0411_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221351_0412_D.jpg",
+      "photo_id_hex": "c789a1e5b7b9e3c0",
+      "phash": "5963b40fe3388c8e",
+      "dhash": "119e83936371358c",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221351_0412_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221401_0414_D.jpg",
+      "photo_id_hex": "eed44a0e9bcb9942",
+      "phash": "746c33158e9ae9e0",
+      "dhash": "9626a26526b20d59",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221401_0414_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221404_0415_D.jpg",
+      "photo_id_hex": "5a1345ac7c7d38c1",
+      "phash": "694b260b9995d2e9",
+      "dhash": "4d534912530d1626",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221404_0415_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221410_0416_D.jpg",
+      "photo_id_hex": "bcccb5a4a45a34d4",
+      "phash": "69e2e4d9c4ea2d22",
+      "dhash": "8a49534399125905",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221410_0416_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221423_0418_D.jpg",
+      "photo_id_hex": "9c7bef1774cf6b25",
+      "phash": "4774bf9b44e019b0",
+      "dhash": "6a6ecac4c5738951",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221423_0418_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221442_0421_D.jpg",
+      "photo_id_hex": "6051782b045e3f5b",
+      "phash": "7dcbe4c5c38148b1",
+      "dhash": "512d333b12362634",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221442_0421_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221447_0422_D.jpg",
+      "photo_id_hex": "43232bdbad9771d1",
+      "phash": "4dc3a5f0f3c1c8a8",
+      "dhash": "4266735239b36256",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221447_0422_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221450_0423_D.jpg",
+      "photo_id_hex": "bab76113381addb1",
+      "phash": "7dc2a5d2d3c5c980",
+      "dhash": "5067337a1913226a",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221450_0423_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221544_0427_D.jpg",
+      "photo_id_hex": "5e8e4d51cbd6289d",
+      "phash": "60e0e1cfa5f1d09a",
+      "dhash": "8289898ab6109b97",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221544_0427_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221554_0430_D.jpg",
+      "photo_id_hex": "ad66aa993db2fdb7",
+      "phash": "72e7e30d81a393a8",
+      "dhash": "4a29292db51a1999",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221554_0430_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221604_0432_D.jpg",
+      "photo_id_hex": "aa08956628931bbe",
+      "phash": "7ef6e303e98350a0",
+      "dhash": "092d2d0523184999",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221604_0432_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221608_0433_D.jpg",
+      "photo_id_hex": "547c9807416d9c8a",
+      "phash": "76e6e301e183f0a6",
+      "dhash": "0b2dad2414394993",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221608_0433_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221621_0435_D.jpg",
+      "photo_id_hex": "5b6c1b6ce2640cb2",
+      "phash": "7af6f2d680780943",
+      "dhash": "0c2d5b19297c098b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221621_0435_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221628_0437_D.jpg",
+      "photo_id_hex": "6f67d74806516ffb",
+      "phash": "7bf7f3010c007c9c",
+      "dhash": "4a4929297313113d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221628_0437_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221635_0439_D.jpg",
+      "photo_id_hex": "9f2b67e62e8e5e4a",
+      "phash": "7bf3f149006074cb",
+      "dhash": "c8494cad71311135",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221635_0439_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221639_0440_D.jpg",
+      "photo_id_hex": "f7dbcaed85324f0c",
+      "phash": "73f3f149006474cb",
+      "dhash": "c8494cad73319135",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221639_0440_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221708_0441_D.jpg",
+      "photo_id_hex": "52c77d6333ec8bd4",
+      "phash": "59da81e8dccc8ccc",
+      "dhash": "925828211297d35a",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221708_0441_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221713_0442_D.jpg",
+      "photo_id_hex": "2c908d1ef616de94",
+      "phash": "79d081f9dccce460",
+      "dhash": "93584c3414129b99",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221713_0442_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221716_0443_D.jpg",
+      "photo_id_hex": "761e499d51fb8931",
+      "phash": "59d0e9d9d888e46a",
+      "dhash": "93184c3414125319",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221716_0443_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221719_0444_D.jpg",
+      "photo_id_hex": "7c27c0b4f4f01c44",
+      "phash": "58f433f91c1894ea",
+      "dhash": "988e643436115111",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221719_0444_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221732_0447_D.jpg",
+      "photo_id_hex": "cbc3c5612099580d",
+      "phash": "4ed388cdcc85f4e0",
+      "dhash": "70591c54652a2223",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221732_0447_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221741_0449_D.jpg",
+      "photo_id_hex": "a8b3496affa3c9c2",
+      "phash": "5fcbc4c0d1c1fc82",
+      "dhash": "5061251a38265515",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221741_0449_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221744_0450_D.jpg",
+      "photo_id_hex": "d72a1299af1e810d",
+      "phash": "5ad6ceced380d103",
+      "dhash": "692418984c31534b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221744_0450_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221751_0452_D.jpg",
+      "photo_id_hex": "b19792083d57139b",
+      "phash": "4ad6e5c0d3c9d911",
+      "dhash": "682433393933734b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221751_0452_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221754_0453_D.jpg",
+      "photo_id_hex": "488016153a76ae0b",
+      "phash": "4dc6a4dac7c8c84e",
+      "dhash": "d55fb3525991332e",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221754_0453_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221805_0455_D.jpg",
+      "photo_id_hex": "a25099bdca7ab19f",
+      "phash": "69d86346a9a513ce",
+      "dhash": "533550123354465b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221805_0455_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221819_0457_D.jpg",
+      "photo_id_hex": "16f64fcaf7d10ff8",
+      "phash": "6533ea9c9aa0653a",
+      "dhash": "0b09d7d255566667",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221819_0457_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221838_0461_D.jpg",
+      "photo_id_hex": "40454d1473cbdf8e",
+      "phash": "2932ca9bc6b21ab9",
+      "dhash": "4d871f4553da53b3",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221838_0461_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221842_0462_D.jpg",
+      "photo_id_hex": "8134e9547fd4a2e0",
+      "phash": "6c33630dc2f95097",
+      "dhash": "9b323ab234b637a7",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221842_0462_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221845_0463_D.jpg",
+      "photo_id_hex": "262e5f894e26016e",
+      "phash": "2873cb88fb309ca9",
+      "dhash": "1b8b179ab3b69616",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221845_0463_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221848_0464_D.jpg",
+      "photo_id_hex": "0a972806070219ca",
+      "phash": "3c33e08cc1b986af",
+      "dhash": "92172a3a26253727",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221848_0464_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221853_0465_D.jpg",
+      "photo_id_hex": "44eb7f7ec8632036",
+      "phash": "3c33c88cc1b98ead",
+      "dhash": "92172a2a26253727",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221853_0465_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221855_0466_D.jpg",
+      "photo_id_hex": "94c931ab5f6edf7f",
+      "phash": "6c3b614cc2e971ca",
+      "dhash": "132e2a2e253627a6",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221855_0466_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721221857_0467_D.jpg",
+      "photo_id_hex": "4f5897e740633f95",
+      "phash": "6c3b61ccc2e971c2",
+      "dhash": "132e2a2e253627a6",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721221857_0467_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222004_0470_D.jpg",
+      "photo_id_hex": "ba42d37267b466d9",
+      "phash": "3ab3d0aa96b39584",
+      "dhash": "3d3b544933713b31",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222004_0470_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222013_0472_D.jpg",
+      "photo_id_hex": "849446834651116a",
+      "phash": "1a738f1a92cc90be",
+      "dhash": "594b2a141dbb7375",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222013_0472_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222023_0475_D.jpg",
+      "photo_id_hex": "ee65cba31a5e5a40",
+      "phash": "1b76ca5694d93087",
+      "dhash": "bc4d3b165cb87979",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222023_0475_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222028_0476_D.jpg",
+      "photo_id_hex": "c88767d48f9980d6",
+      "phash": "1a76c2d634d93c83",
+      "dhash": "2c4d1b1a5c34d1f9",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222028_0476_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222032_0477_D.jpg",
+      "photo_id_hex": "e83398cf95198f08",
+      "phash": "1b13ca93969e92f0",
+      "dhash": "595b92643869a3a3",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222032_0477_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222036_0478_D.jpg",
+      "photo_id_hex": "0293e2de0bfeb491",
+      "phash": "1a36c2d6b4dc3683",
+      "dhash": "2d8958369c2cd1d1",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222036_0478_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222047_0480_D.jpg",
+      "photo_id_hex": "eade6e22751ef226",
+      "phash": "3b768a93f401b68c",
+      "dhash": "4929261a1a5cbbb1",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222047_0480_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222055_0482_D.jpg",
+      "photo_id_hex": "3218a7d44413f327",
+      "phash": "327e804eb24bdd70",
+      "dhash": "2d9c1c4d2a62f198",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222055_0482_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222146_0489_D.jpg",
+      "photo_id_hex": "dcc6fefc44852f4f",
+      "phash": "4464d8c9e5394fca",
+      "dhash": "a4a4ec8e8ea9b929",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222146_0489_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222153_0491_D.jpg",
+      "photo_id_hex": "8849d0ede61b644e",
+      "phash": "6246eeccb0be1147",
+      "dhash": "a5adcc94c533334b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222153_0491_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222211_0495_D.jpg",
+      "photo_id_hex": "e34dc7d5a22d0367",
+      "phash": "6b63a49c81e0c1df",
+      "dhash": "c54b59d158323662",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222211_0495_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222213_0496_D.jpg",
+      "photo_id_hex": "6a8f6ef2f1c98f47",
+      "phash": "5a46ccf98740c6f4",
+      "dhash": "6aa5ace92d19bb6b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222213_0496_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222223_0497_D.jpg",
+      "photo_id_hex": "614fd1d92cb6b942",
+      "phash": "3b97f44a4362ea24",
+      "dhash": "485e5f5b5b391f3d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222223_0497_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222231_0500_D.jpg",
+      "photo_id_hex": "d3f69d229ab80898",
+      "phash": "3296a5bda2aad0a5",
+      "dhash": "6d4c5d5d19383b0e",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222231_0500_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222234_0501_D.jpg",
+      "photo_id_hex": "91fe903b16477420",
+      "phash": "1392ac8bb296b5b1",
+      "dhash": "dcd9bc589a7a7517",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222234_0501_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222302_0503_D.jpg",
+      "photo_id_hex": "bf38c1f87a836b3c",
+      "phash": "20ac9dbc79e24f90",
+      "dhash": "b7a6878b93a68d9b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222302_0503_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222309_0505_D.jpg",
+      "photo_id_hex": "fbf42f63cae69e04",
+      "phash": "25a694bca8eafc50",
+      "dhash": "266e4e0b13320d94",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222309_0505_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222319_0508_D.jpg",
+      "photo_id_hex": "9876a282f0b0a082",
+      "phash": "31a79ebd256c6882",
+      "dhash": "6c4cdd969a96359d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222319_0508_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222324_0510_D.jpg",
+      "photo_id_hex": "5efe16f9c01f4dbc",
+      "phash": "3392962d4a1ad56d",
+      "dhash": "ad8c4c5d1712374c",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222324_0510_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222332_0513_D.jpg",
+      "photo_id_hex": "1e16aaba74f1f800",
+      "phash": "37b296ac614e9097",
+      "dhash": "4d0c485713336754",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222332_0513_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222407_0518_D.jpg",
+      "photo_id_hex": "19aa050d5d941939",
+      "phash": "28b4a50b52c6bce7",
+      "dhash": "8697162d1973c78f",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222407_0518_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222438_0520_D.jpg",
+      "photo_id_hex": "5a186c3e83fe8d82",
+      "phash": "1dd672f0a03f60d8",
+      "dhash": "2c6c6266f2533bbb",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222438_0520_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222442_0521_D.jpg",
+      "photo_id_hex": "c252e8869f405343",
+      "phash": "0fc6769ee0a2232e",
+      "dhash": "6c6c67f3737b39b9",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222442_0521_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222514_0523_D.jpg",
+      "photo_id_hex": "26c987959a87ecb0",
+      "phash": "18ec3e20c77fc189",
+      "dhash": "32b5b170d491b939",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222514_0523_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222630_0530_D.jpg",
+      "photo_id_hex": "386aa5bd50cead25",
+      "phash": "23a5dac03db5509b",
+      "dhash": "97cfdd5edf8e4d39",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222630_0530_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222642_0533_D.jpg",
+      "photo_id_hex": "831431af92347a55",
+      "phash": "38c8cbe13a28df26",
+      "dhash": "9b9b3fbf3f1e9d59",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222642_0533_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222649_0534_D.jpg",
+      "photo_id_hex": "e43923b333606fbf",
+      "phash": "38bec9cfc8c155a0",
+      "dhash": "7b3e3e9c9d54db9b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222649_0534_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222724_0545_D.jpg",
+      "photo_id_hex": "296a6b0f4167c84f",
+      "phash": "1195d36275e0cd2e",
+      "dhash": "babab296aefb8b5a",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222724_0545_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222730_0547_D.jpg",
+      "photo_id_hex": "a2f61ce4ab4cc51f",
+      "phash": "3898f2ece8dd0c8a",
+      "dhash": "afbab9929f26db8d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222730_0547_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222737_0550_D.jpg",
+      "photo_id_hex": "c0f86ab6226f897b",
+      "phash": "3290f4e9e99b8c92",
+      "dhash": "b6acad5bcfd76d4d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222737_0550_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222748_0553_D.jpg",
+      "photo_id_hex": "f2095cba41c7702d",
+      "phash": "389ec6e4c90e7139",
+      "dhash": "af2d3a3b929ea7db",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222748_0553_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222819_0558_D.jpg",
+      "photo_id_hex": "9738bd03dcd3caec",
+      "phash": "3dcb2691db3298c1",
+      "dhash": "adb7b2725a728627",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222819_0558_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222822_0559_D.jpg",
+      "photo_id_hex": "e7997c0f4a466e49",
+      "phash": "2a9536628bdf5426",
+      "dhash": "4c96767b33312d6d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222822_0559_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222827_0561_D.jpg",
+      "photo_id_hex": "52d62ec2b54b0182",
+      "phash": "4ba5264396e564ba",
+      "dhash": "4ed253727953132d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222827_0561_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222932_0570_D.jpg",
+      "photo_id_hex": "1b5ce5e1cf75cb99",
+      "phash": "7063069ccedadc4a",
+      "dhash": "aece8d19a8b4796d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222932_0570_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222938_0572_D.jpg",
+      "photo_id_hex": "67607516cb5c460a",
+      "phash": "7162069c56f9ce4a",
+      "dhash": "ae9c1b1b28b29b6d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222938_0572_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721222956_0577_D.jpg",
+      "photo_id_hex": "8693900d267cfc47",
+      "phash": "726313ce6778cc0c",
+      "dhash": "48ca971b6a29b9b9",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721222956_0577_D.JPG"
+    },
+    {
+      "filename": "DJI_20260721223006_0580_D.jpg",
+      "photo_id_hex": "d09890b32bbf0537",
+      "phash": "52611f8e467978cc",
+      "dhash": "6cce964de9397928",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "DJI_20260721223006_0580_D.JPG"
+    },
+    {
+      "filename": "gbh_fly_0000_DJI_20260721222730_0547_D.jpg",
+      "photo_id_hex": "545ec604857dc14e",
+      "phash": "20a4ac48e5d37b2f",
+      "dhash": "96b65cccc61959f6",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0000_DJI_20260721222730_0547_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0001_DJI_20260721222724_0545_D.jpg",
+      "photo_id_hex": "d7b018191c8f8350",
+      "phash": "3ab992926e60cb39",
+      "dhash": "b9b99aafb7a98d6d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0001_DJI_20260721222724_0545_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0002_DJI_20260721222649_0534_D.jpg",
+      "photo_id_hex": "e8612eb79d6a4aa4",
+      "phash": "01b4a77857b3c970",
+      "dhash": "d654dfdaa3b3f949",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0002_DJI_20260721222649_0534_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0003_DJI_20260721222642_0533_D.jpg",
+      "photo_id_hex": "d98bf4dad83131e2",
+      "phash": "3e82d9e075da94c8",
+      "dhash": "2def2f6e362d3b3a",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0003_DJI_20260721222642_0533_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0004_DJI_20260721222630_0530_D.jpg",
+      "photo_id_hex": "6bf3986468eb6278",
+      "phash": "3ec2d06bf66c11a4",
+      "dhash": "1d397e2f753a373e",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0004_DJI_20260721222630_0530_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0005_DJI_20260721222514_0523_D.jpg",
+      "photo_id_hex": "a9425ba14ec45493",
+      "phash": "1bf8727572ca5620",
+      "dhash": "1933f1f13b7ad9c9",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0005_DJI_20260721222514_0523_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0006_DJI_20260721222442_0521_D.jpg",
+      "photo_id_hex": "9534ccb1f3c4e8ae",
+      "phash": "1fec027e489f45a8",
+      "dhash": "3135763030687cf8",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0006_DJI_20260721222442_0521_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0007_DJI_20260721222438_0520_D.jpg",
+      "photo_id_hex": "61e1aa154033bacb",
+      "phash": "01ff3e66446b1c92",
+      "dhash": "4e6bf8d2d496c9bc",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0007_DJI_20260721222438_0520_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0008_DJI_20260721222407_0518_D.jpg",
+      "photo_id_hex": "582635de94efe6c5",
+      "phash": "2eade818f819718e",
+      "dhash": "33276f28aca9798d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0008_DJI_20260721222407_0518_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0009_DJI_20260721222332_0513_D.jpg",
+      "photo_id_hex": "a61ec4cc4befc505",
+      "phash": "2207d794bc83fa98",
+      "dhash": "54cecbebb7ade32d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0009_DJI_20260721222332_0513_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0010_DJI_20260721222324_0510_D.jpg",
+      "photo_id_hex": "2fa397ff23ec7934",
+      "phash": "3c9d918bab626323",
+      "dhash": "1a3426237357f7ce",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0010_DJI_20260721222324_0510_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0011_DJI_20260721222319_0508_D.jpg",
+      "photo_id_hex": "bab18ef876925e55",
+      "phash": "3878f1455fc116a9",
+      "dhash": "13959bab33e69233",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0011_DJI_20260721222319_0508_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0012_DJI_20260721222309_0505_D.jpg",
+      "photo_id_hex": "7e838256cdc1405f",
+      "phash": "2eb9b183ba3e508c",
+      "dhash": "1b12363d2bd7679b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0012_DJI_20260721222309_0505_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0013_DJI_20260721222302_0503_D.jpg",
+      "photo_id_hex": "668b8c77b5b93915",
+      "phash": "68af85ad19630f70",
+      "dhash": "63870d0913638e8e",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0013_DJI_20260721222302_0503_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0014_DJI_20260721222234_0501_D.jpg",
+      "photo_id_hex": "5d7530b4a506ed03",
+      "phash": "35a56ada41b00d7d",
+      "dhash": "d74a56de4e3d2d0d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0014_DJI_20260721222234_0501_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0015_DJI_20260721222231_0500_D.jpg",
+      "photo_id_hex": "974b2bc884945f7d",
+      "phash": "2ea256f445ad912b",
+      "dhash": "4ea54b2e2f3e372b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0015_DJI_20260721222231_0500_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0016_DJI_20260721222223_0497_D.jpg",
+      "photo_id_hex": "2610cda8b68d5023",
+      "phash": "32b4a9a9fa964634",
+      "dhash": "2b16b42c9ce87b5b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0016_DJI_20260721222223_0497_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0017_DJI_20260721222213_0496_D.jpg",
+      "photo_id_hex": "913451d357782ef5",
+      "phash": "33795ca6e7780a42",
+      "dhash": "1918b98acef5adec",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0017_DJI_20260721222213_0496_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0018_DJI_20260721222211_0495_D.jpg",
+      "photo_id_hex": "6d34a31e79004a27",
+      "phash": "58700f874f7ce189",
+      "dhash": "d89990b4d878b3f3",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0018_DJI_20260721222211_0495_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0019_DJI_20260721222153_0491_D.jpg",
+      "photo_id_hex": "3a32ce63dda16541",
+      "phash": "6246eeccb0be1147",
+      "dhash": "a5adcc94c533334b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0019_DJI_20260721222153_0491_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0020_DJI_20260721222146_0489_D.jpg",
+      "photo_id_hex": "db86f5b0420b413a",
+      "phash": "6765064ec05bdd8c",
+      "dhash": "64ce5ad3aa3879a8",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0020_DJI_20260721222146_0489_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0021_DJI_20260721222055_0482_D.jpg",
+      "photo_id_hex": "c2cd66eb9e69b8be",
+      "phash": "163dd807bdc274b0",
+      "dhash": "3a29ac2b6e6de9a9",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0021_DJI_20260721222055_0482_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0022_DJI_20260721222047_0480_D.jpg",
+      "photo_id_hex": "aa11b3972d740a60",
+      "phash": "16699bb4a9874969",
+      "dhash": "172caaacaea46c79",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0022_DJI_20260721222047_0480_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0023_DJI_20260721222036_0478_D.jpg",
+      "photo_id_hex": "9f94f8735503764f",
+      "phash": "003fcb9b9919932b",
+      "dhash": "5b64c494d49c93d1",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0023_DJI_20260721222036_0478_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0024_DJI_20260721222032_0477_D.jpg",
+      "photo_id_hex": "f8a28986b688d026",
+      "phash": "1c03d703fa4166fa",
+      "dhash": "d87625b535ea3234",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0024_DJI_20260721222032_0477_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0025_DJI_20260721222028_0476_D.jpg",
+      "photo_id_hex": "38640577be7e9da7",
+      "phash": "011fcb9949946f74",
+      "dhash": "7b5b64d494d49cd3",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0025_DJI_20260721222028_0476_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0026_DJI_20260721222023_0475_D.jpg",
+      "photo_id_hex": "65f87f194bb4bd8b",
+      "phash": "097bf99143856c74",
+      "dhash": "5b5956ccdcd6bcf3",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0026_DJI_20260721222023_0475_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0027_DJI_20260721222013_0472_D.jpg",
+      "photo_id_hex": "9d33e80e8750f650",
+      "phash": "19604b766d4b3cca",
+      "dhash": "09cd3b92ac2ce97a",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0027_DJI_20260721222013_0472_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0028_DJI_20260721222004_0470_D.jpg",
+      "photo_id_hex": "5a105ec84e00cbf1",
+      "phash": "0e3ec7ec384e08b9",
+      "dhash": "266c5971b1a5e1da",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0028_DJI_20260721222004_0470_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0029_DJI_20260721221857_0467_D.jpg",
+      "photo_id_hex": "6ee48ebd23f593b6",
+      "phash": "4ca42683f3274f59",
+      "dhash": "c6a47234b1f1b931",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0029_DJI_20260721221857_0467_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0030_DJI_20260721221855_0466_D.jpg",
+      "photo_id_hex": "967dc23ce362f599",
+      "phash": "48e42683b327dd99",
+      "dhash": "c6a57674b9f1a9b1",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0030_DJI_20260721221855_0466_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0031_DJI_20260721221853_0465_D.jpg",
+      "photo_id_hex": "66625955d76110bb",
+      "phash": "0b26743f89391dc9",
+      "dhash": "646575d9737bb3b3",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0031_DJI_20260721221853_0465_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0032_DJI_20260721221848_0464_D.jpg",
+      "photo_id_hex": "75da2300029e3cbf",
+      "phash": "1b36743e893155e8",
+      "dhash": "366d727b733313b3",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0032_DJI_20260721221848_0464_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0033_DJI_20260721221845_0463_D.jpg",
+      "photo_id_hex": "ed441ab08ebb7979",
+      "phash": "0a36378f382eccc9",
+      "dhash": "ae4db1f1b3737933",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0033_DJI_20260721221845_0463_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0034_DJI_20260721221842_0462_D.jpg",
+      "photo_id_hex": "7da4af2a962711c7",
+      "phash": "0d37763f882876c4",
+      "dhash": "255876f37273b3b3",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0034_DJI_20260721221842_0462_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0035_DJI_20260721221838_0461_D.jpg",
+      "photo_id_hex": "071336514c3118cd",
+      "phash": "6b257d125869c4b3",
+      "dhash": "0a5f425359d94959",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0035_DJI_20260721221838_0461_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0036_DJI_20260721221819_0457_D.jpg",
+      "photo_id_hex": "dc3e7896930023e4",
+      "phash": "6473678997cb5602",
+      "dhash": "d296b0969496d7a6",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0036_DJI_20260721221819_0457_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0037_DJI_20260721221805_0455_D.jpg",
+      "photo_id_hex": "2665b10610854987",
+      "phash": "7b11664aaaa3d585",
+      "dhash": "49125a593b184f63",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0037_DJI_20260721221805_0455_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0038_DJI_20260721221754_0453_D.jpg",
+      "photo_id_hex": "8a481bc41f3b774d",
+      "phash": "4ff02291bcc0f3c6",
+      "dhash": "0e634b222258e365",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0038_DJI_20260721221754_0453_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0039_DJI_20260721221751_0452_D.jpg",
+      "photo_id_hex": "07b6b583854157a4",
+      "phash": "0fc44ea3e5c2c6c3",
+      "dhash": "e3b034785a69d973",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0039_DJI_20260721221751_0452_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0040_DJI_20260721221744_0450_D.jpg",
+      "photo_id_hex": "b67fd0066f9637f0",
+      "phash": "10b5735e362738a6",
+      "dhash": "6c989e7634b9c98d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0040_DJI_20260721221744_0450_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0041_DJI_20260721221741_0449_D.jpg",
+      "photo_id_hex": "f977a7b3cd7beee6",
+      "phash": "1a967d46ab6d5121",
+      "dhash": "b938985dc9e1c313",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0041_DJI_20260721221741_0449_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0042_DJI_20260721221732_0447_D.jpg",
+      "photo_id_hex": "49b5eef4a744c0b6",
+      "phash": "43af9d63c83a1a94",
+      "dhash": "537269cbcaccd4f2",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0042_DJI_20260721221732_0447_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0043_DJI_20260721221719_0444_D.jpg",
+      "photo_id_hex": "14cf9ecef8416869",
+      "phash": "086bb66d6127643d",
+      "dhash": "e3b199f9b2b274b1",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0043_DJI_20260721221719_0444_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0044_DJI_20260721221716_0443_D.jpg",
+      "photo_id_hex": "8875f03dc10a7452",
+      "phash": "59a572766299c18d",
+      "dhash": "95a6f2727634b299",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0044_DJI_20260721221716_0443_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0045_DJI_20260721221713_0442_D.jpg",
+      "photo_id_hex": "72e33961520d874c",
+      "phash": "79d081f9dccce460",
+      "dhash": "93584c3414129b99",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0045_DJI_20260721221713_0442_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0046_DJI_20260721221708_0441_D.jpg",
+      "photo_id_hex": "79bb7428c6bf07b8",
+      "phash": "5a32386c6d929763",
+      "dhash": "0989cdec6b213153",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0046_DJI_20260721221708_0441_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0047_DJI_20260721221639_0440_D.jpg",
+      "photo_id_hex": "82499546e6c6e889",
+      "phash": "1746a67634c2ebb0",
+      "dhash": "c46c9a783a5b9532",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0047_DJI_20260721221639_0440_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0048_DJI_20260721221635_0439_D.jpg",
+      "photo_id_hex": "97a0f8a50fb56b05",
+      "phash": "70d9d8783c88fc2a",
+      "dhash": "919975564d15db26",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0048_DJI_20260721221635_0439_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0049_DJI_20260721221628_0437_D.jpg",
+      "photo_id_hex": "38ddf1d1586e83d6",
+      "phash": "08fc985d95cd7611",
+      "dhash": "319527c2ca6b53e9",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0049_DJI_20260721221628_0437_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0050_DJI_20260721221621_0435_D.jpg",
+      "photo_id_hex": "b66a8a5308293fba",
+      "phash": "1367a6a4beb092a5",
+      "dhash": "4c46d9b82ad8a629",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0050_DJI_20260721221621_0435_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0051_DJI_20260721221608_0433_D.jpg",
+      "photo_id_hex": "1ccf3fe38b2e35d3",
+      "phash": "67e7e30340087fb1",
+      "dhash": "44466ea692689d9d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0051_DJI_20260721221608_0433_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0052_DJI_20260721221604_0432_D.jpg",
+      "photo_id_hex": "4aefc79793701fa0",
+      "phash": "78f9e98cb088467a",
+      "dhash": "93132ba59c6c978f",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0052_DJI_20260721221604_0432_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0053_DJI_20260721221554_0430_D.jpg",
+      "photo_id_hex": "1331f8fe0b84c408",
+      "phash": "78dbe90ff088143a",
+      "dhash": "9359a99617650b95",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0053_DJI_20260721221554_0430_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0054_DJI_20260721221544_0427_D.jpg",
+      "photo_id_hex": "dedcb4056944bc51",
+      "phash": "7ae3c14de0f3d300",
+      "dhash": "0b0929292b3a1509",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0054_DJI_20260721221544_0427_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0055_DJI_20260721221450_0423_D.jpg",
+      "photo_id_hex": "e310a4cc7b1240ab",
+      "phash": "6bc2a5dad3c5c980",
+      "dhash": "556733521913236a",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0055_DJI_20260721221450_0423_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0056_DJI_20260721221447_0422_D.jpg",
+      "photo_id_hex": "ff831513751dd973",
+      "phash": "4cde6b0e308c783d",
+      "dhash": "216130b494f175d3",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0056_DJI_20260721221447_0422_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0057_DJI_20260721221442_0421_D.jpg",
+      "photo_id_hex": "1e85acaee5ab13f8",
+      "phash": "59d04a5fa1b95923",
+      "dhash": "9120989e5a7023cb",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0057_DJI_20260721221442_0421_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0058_DJI_20260721221423_0418_D.jpg",
+      "photo_id_hex": "0ac79b0d1d8637ac",
+      "phash": "716833933726d932",
+      "dhash": "1a96a32218d8cf4a",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0058_DJI_20260721221423_0418_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0059_DJI_20260721221410_0416_D.jpg",
+      "photo_id_hex": "9bf950174878439b",
+      "phash": "53646c192cb34d67",
+      "dhash": "1aa8c88d5c984927",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0059_DJI_20260721221410_0416_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0060_DJI_20260721221404_0415_D.jpg",
+      "photo_id_hex": "8d6f8a0a333a83db",
+      "phash": "53d466591c339a2e",
+      "dhash": "a9c499585098cb65",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0060_DJI_20260721221404_0415_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0061_DJI_20260721221401_0414_D.jpg",
+      "photo_id_hex": "2577df01f306ff30",
+      "phash": "53646a192fb34d31",
+      "dhash": "1aa8c8995818d9cd",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0061_DJI_20260721221401_0414_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0062_DJI_20260721221351_0412_D.jpg",
+      "photo_id_hex": "b66ba052d83c0508",
+      "phash": "5b62a41fa631b19a",
+      "dhash": "99a199c9693a3a97",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0062_DJI_20260721221351_0412_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0063_DJI_20260721221341_0411_D.jpg",
+      "photo_id_hex": "0a45e040661ed5c5",
+      "phash": "50623f1c7273f1c8",
+      "dhash": "04a5888da4303b9a",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0063_DJI_20260721221341_0411_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0064_DJI_20260721221338_0410_D.jpg",
+      "photo_id_hex": "d8bf30d54c21d6a2",
+      "phash": "754c63336c0c929f",
+      "dhash": "a682a6a63a584547",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0064_DJI_20260721221338_0410_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0065_DJI_20260721223006_0580_D.jpg",
+      "photo_id_hex": "496fbc6db1f0974d",
+      "phash": "367b18c6e6101767",
+      "dhash": "3b191e8e446cbcac",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0065_DJI_20260721223006_0580_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0066_DJI_20260721222956_0577_D.jpg",
+      "photo_id_hex": "6d08edc231d29f2a",
+      "phash": "726190c7477bda84",
+      "dhash": "c89e1b1b6938b9b9",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0066_DJI_20260721222956_0577_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0067_DJI_20260721222938_0572_D.jpg",
+      "photo_id_hex": "aa9f4d7b3eb6ca79",
+      "phash": "5a703c86e7f9900b",
+      "dhash": "1ead991869e97928",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0067_DJI_20260721222938_0572_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0068_DJI_20260721222932_0570_D.jpg",
+      "photo_id_hex": "cec982c70bc567d5",
+      "phash": "7063869ccedadc0a",
+      "dhash": "aece8d19a8b4796d",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0068_DJI_20260721222932_0570_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0069_DJI_20260721222827_0561_D.jpg",
+      "photo_id_hex": "52d385db2e8730d9",
+      "phash": "52ad6b159de85219",
+      "dhash": "527831a5fcccb979",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0069_DJI_20260721222827_0561_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0070_DJI_20260721222822_0559_D.jpg",
+      "photo_id_hex": "8206cbb88f96fde0",
+      "phash": "5aad297095ea644b",
+      "dhash": "5b7969ace8cd9979",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0070_DJI_20260721222822_0559_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0071_DJI_20260721222819_0558_D.jpg",
+      "photo_id_hex": "12597cac24d8a660",
+      "phash": "1ae56cd36892f01e",
+      "dhash": "b272f8b9998969a9",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0071_DJI_20260721222819_0558_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0072_DJI_20260721222748_0553_D.jpg",
+      "photo_id_hex": "09e0b169413b030b",
+      "phash": "19919464fb2d9e19",
+      "dhash": "9eda7a5bb966663a",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0072_DJI_20260721222748_0553_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0073_DJI_20260721222737_0550_D.jpg",
+      "photo_id_hex": "f1f16315ff1a60c1",
+      "phash": "3291976ffae90803",
+      "dhash": "585cba3b4d375acd",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0073_DJI_20260721222737_0550_D.jpg"
+    },
+    {
+      "filename": "gbh_fly_0074_Layer 1.jpg",
+      "photo_id_hex": "d7fe54e9a2f6ac32",
+      "phash": "47543d1b03e69ea1",
+      "dhash": "543424c5d9686bcb",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T07:45:29Z",
+      "source_basename": "gbh_fly_0074_Layer 1.jpg"
+    },
     {
       "filename": "happy-to-be-here.jpg",
       "photo_id_hex": "8936c551565f5863",

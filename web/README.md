@@ -59,9 +59,20 @@ web/
 ## Products & pricing
 
 Everything the store sells lives in [`data/catalog.json`](data/catalog.json):
-each format is a label, a blurb, and a `size → price` map. Add canvas sizes,
-a mug, a phone case — it's just JSON, and both the order page and the price
-math read from it. (Prodigi can fulfil all of those; see the top-level README.)
+wall art, home (cushions, blankets, bath mats, shower curtains, totes, towels),
+drinkware, tech (phone cases, **mouse pads**, desk mats), and stationery.
+Each option maps to a Prodigi SKU. Add more by editing this file — the order
+page and price math read straight from it.
+
+**Dynamic markup:** set `markup_multiplier` in `config.local.php` (default
+`2.5`). Open `/admin/prices.php` and hit **Refresh prices from Prodigi** —
+that quotes wholesale for every SKU and sets
+`retail = ceil(cost × multiplier)`. Costs are stored on each `prodigi` entry
+for auditing.
+
+**Etsy:** connect your Etsy shop in the Prodigi dashboard. List the same
+photos/products there; Prodigi fulfils Etsy orders automatically. This site
+keeps Stripe + Prodigi API for blueheron.gallery.
 
 ## Turning Stripe on
 
@@ -75,6 +86,29 @@ math read from it. (Prodigi can fulfil all of those; see the top-level README.)
 
 With no key set, the order page degrades gracefully to an email order — the
 site still works, it just doesn't take card payments yet.
+
+## Prodigi auto-fulfillment
+
+After Stripe marks a checkout complete, the webhook creates a Prodigi Print
+API v4 order (SKU from `data/catalog.json` → `prodigi` map, print file from
+`images/print/` via a signed `/api/print-asset.php` URL).
+
+1. Get an API key from the [Prodigi dashboard](https://dashboard.prodigi.com).
+2. In `config.local.php` set:
+   - `prodigi_api_key`
+   - `prodigi_sandbox` → `true` while testing (`api.sandbox.prodigi.com`)
+   - `site_url` → a URL **Prodigi can reach** (not localhost; use your live
+     host or a tunnel like ngrok when testing sandbox downloads)
+   - `asset_signing_secret` → any long random string
+3. Publish photos from the Python studio so `web/images/print/{file}.jpg`
+   exists (full-res, no web watermark).
+4. Confirm each catalog option’s SKU with
+   `GET /v4.0/products/{sku}` — placeholders in `catalog.json` cover the full
+   product range (wall art, home, drinkware, tech, stationery) but some SKUs
+   must be verified against your Prodigi account’s catalogue before go-live.
+
+If the API key is empty, orders stay at fulfillment `new` for manual Prodigi
+dashboard entry. Failures land as `prodigi-error` with the message on `/admin`.
 
 ## Deploy
 

@@ -16,4 +16,13 @@ return array_merge([
     'site_url'              => getenv('SITE_URL') ?: 'http://localhost:8808',
     'currency'              => 'usd',
     'contact_email'         => 'hello@blueheron.gallery',
+    // Prodigi Print API — auto-create print orders after Stripe payment.
+    'prodigi_api_key'           => getenv('PRODIGI_API_KEY') ?: '',
+    'prodigi_sandbox'           => filter_var(getenv('PRODIGI_SANDBOX') ?: 'true', FILTER_VALIDATE_BOOLEAN),
+    'prodigi_shipping_method'   => getenv('PRODIGI_SHIPPING_METHOD') ?: 'Budget',
+    // Retail = ceil(Prodigi wholesale × markup). Refresh from Admin → Prices.
+    'markup_multiplier'         => (float)(getenv('MARKUP_MULTIPLIER') ?: 2.5),
+    'markup_quote_country'      => getenv('MARKUP_QUOTE_COUNTRY') ?: 'US',
+    // Signs /api/print-asset.php URLs that Prodigi downloads.
+    'asset_signing_secret'      => getenv('BH_ASSET_SECRET') ?: '',
 ], $cfg);

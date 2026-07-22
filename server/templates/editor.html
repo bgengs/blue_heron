@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 {% block title %}Edit {{ name }}{% endblock %}
 {% block content %}
-<h1 style="font-size:1.2rem">Editing <span class="muted">{{ name }}</span></h1>
+<div class="edit-head">
+  <h1 style="font-size:1.2rem; margin:0">Editing <span class="muted">{{ name }}</span></h1>
+  <span class="muted">{{ index }} / {{ total }}</span>
+  <div class="edit-nav">
+    {% if prev_name %}<a class="btn ghost" href="/admin/editor/{{ prev_name }}">← Prev</a>{% endif %}
+    {% if next_name %}<a class="btn ghost" href="/admin/editor/{{ next_name }}">Next →</a>{% endif %}
+  </div>
+</div>
 
 <div class="edit-layout">
   <div class="edit-canvas-wrap">
@@ -18,6 +25,7 @@
       </label>
       <button type="button" class="btn ghost" id="rotateBtn">Rotate 90°</button>
       <button type="button" class="btn ghost" id="resetBtn">Reset crop</button>
+      <button type="button" class="btn ghost" id="clearCropBtn">No crop (full frame)</button>
       <span class="muted" id="cropReadout"></span>
     </div>
     <div class="stage" id="stage">
@@ -26,20 +34,21 @@
         <span class="handle nw"></span><span class="handle ne"></span>
         <span class="handle sw"></span><span class="handle se"></span>
       </div>
-      <div class="shade" id="shade"></div>
     </div>
+    <p class="muted" style="margin-top:.5rem; font-size:.8rem">Crop is optional. Use “No crop” to keep the full frame.</p>
   </div>
 
+  <div class="edit-side">
   <form class="edit-form" method="post" action="/admin/editor/{{ name }}" id="editForm">
-    <label>Title</label>
-    <input type="text" name="title" id="title" value="{{ edit.title or '' }}" placeholder="e.g. The Patient Hour">
+    <label for="title">Title</label>
+    <input type="text" name="title" id="title" value="{{ edit.title or '' }}" placeholder="e.g. The Patient Hour" autocomplete="off">
 
     <button type="button" class="btn ghost" id="suggestBtn" style="margin-top:.5rem">
-      💡 Suggest titles{% if not ai_on %} <span class="muted" style="font-size:.7rem">(curated)</span>{% endif %}
+      Suggest titles{% if not ai_on %} <span class="muted" style="font-size:.7rem">(curated)</span>{% endif %}
     </button>
     <div id="suggestions" class="suggestions"></div>
 
-    <label style="margin-top:1rem">Caption</label>
+    <label style="margin-top:1rem" for="caption">Caption</label>
     <textarea name="caption" id="caption" rows="3" placeholder="A short line shown under the title">{{ edit.caption or '' }}</textarea>
 
     <input type="hidden" name="rotate" id="rotate" value="{{ edit.rotate or 0 }}">
@@ -47,28 +56,52 @@
     <input type="hidden" name="crop_y" id="crop_y" value="{{ edit.crop.y if edit.crop else -1 }}">
     <input type="hidden" name="crop_w" id="crop_w" value="{{ edit.crop.w if edit.crop else -1 }}">
     <input type="hidden" name="crop_h" id="crop_h" value="{{ edit.crop.h if edit.crop else -1 }}">
+    <input type="hidden" name="go_next" id="go_next" value="">
 
-    <button type="submit" class="btn" style="margin-top:1.2rem; width:100%">Save</button>
+    <button type="submit" class="btn" style="margin-top:1.2rem; width:100%" id="saveBtn">Save</button>
+    {% if next_name %}
+    <button type="submit" class="btn" style="margin-top:.6rem; width:100%" id="saveNextBtn">Save &amp; next →</button>
+    {% endif %}
     <a href="/admin/editor" class="btn ghost" style="margin-top:.6rem; width:100%; text-align:center">← Back to all photos</a>
-    <p class="muted" style="margin-top:1rem; font-size:.8rem">Crop is applied when you
-    Process. To publish changes to an already-live photo, re-Process then Publish.</p>
   </form>
+
+  <form method="post" action="/admin/editor/set-archive" style="margin-top:.8rem">
+    <input type="hidden" name="name" value="{{ name }}">
+    {% if archived %}
+    <input type="hidden" name="archived" value="0">
+    <button type="submit" class="btn" style="width:100%">Restore from archive</button>
+    {% else %}
+    <input type="hidden" name="archived" value="1">
+    <button type="submit" class="btn ghost" style="width:100%"
+            onclick="return confirm('Archive this photo? It leaves the editor list (file stays on disk).')">Archive</button>
+    {% endif %}
+  </form>
+  <p class="muted" style="margin-top:1rem; font-size:.8rem">Crop is applied when you
+  Process. To publish changes to an already-live photo, re-Process then Publish.</p>
+  </div>
 </div>
 
 <style>
+.edit-head { display:flex; align-items:center; gap:1rem; flex-wrap:wrap; margin-bottom:1.2rem; }
+.edit-nav { margin-left:auto; display:flex; gap:.5rem; }
 .edit-layout { display:grid; grid-template-columns:1fr 320px; gap:2rem; align-items:start; }
+.edit-side { position:relative; z-index:5; }
 .edit-toolbar { display:flex; gap:.8rem; align-items:center; flex-wrap:wrap; margin-bottom:.8rem; }
 .edit-toolbar label { font-size:.8rem; color:var(--slate); }
 .edit-toolbar select { width:auto; display:inline-block; }
-.stage { position:relative; user-select:none; display:inline-block; line-height:0; background:#000; max-width:100%; }
+/* overflow:hidden clips the crop shade so it cannot cover the title form */
+.stage { position:relative; user-select:none; display:inline-block; line-height:0; background:#000; max-width:100%; overflow:hidden; isolation:isolate; }
 .stage img { max-width:100%; max-height:70vh; display:block; }
 .crop-box { position:absolute; border:1px solid #fff; box-shadow:0 0 0 9999px rgba(20,37,52,.55); cursor:move; z-index:2; }
+.crop-box.is-off { display:none; }
 .crop-box .handle { position:absolute; width:14px; height:14px; background:#fff; border:1px solid var(--navy); border-radius:50%; z-index:3; }
 .handle.nw { top:-7px; left:-7px; cursor:nwse-resize; }
 .handle.ne { top:-7px; right:-7px; cursor:nesw-resize; }
 .handle.sw { bottom:-7px; left:-7px; cursor:nesw-resize; }
 .handle.se { bottom:-7px; right:-7px; cursor:nwse-resize; }
+.edit-form { position:relative; z-index:5; background:var(--cream); }
 .edit-form label { display:block; font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; color:var(--slate); margin-bottom:.35rem; }
+.edit-form input[type=text], .edit-form textarea { position:relative; z-index:6; pointer-events:auto; }
 .suggestions { display:flex; flex-direction:column; gap:.3rem; margin-top:.6rem; }
 .suggestions button { text-align:left; background:var(--cream); border:1px solid var(--line); padding:.4rem .6rem; cursor:pointer; font:inherit; font-size:.9rem; color:var(--navy); }
 .suggestions button:hover { background:#fff; border-color:var(--navy); }
@@ -78,13 +111,23 @@
 
 <script>
 const $ = id => document.getElementById(id);
-const stage = $("stage"), photo = $("photo"), box = $("cropBox"), shade = $("shade");
+const stage = $("stage"), photo = $("photo"), box = $("cropBox");
 let aspect = 1.5;
 let rot = parseInt($("rotate").value) || 0;
+let cropOn = true;
 
 function imgRect() { return { w: photo.clientWidth, h: photo.clientHeight }; }
 
+function clearCropFields() {
+  $("crop_x").value = -1; $("crop_y").value = -1;
+  $("crop_w").value = -1; $("crop_h").value = -1;
+  $("cropReadout").textContent = "full frame (no crop)";
+  box.classList.add("is-off");
+  cropOn = false;
+}
+
 function clampBox() {
+  if (!cropOn) return;
   const { w, h } = imgRect();
   let bw = Math.min(box.offsetWidth, w), bh = Math.min(box.offsetHeight, h);
   let bx = Math.max(0, Math.min(box.offsetLeft, w - bw));
@@ -94,7 +137,9 @@ function clampBox() {
 }
 
 function readout() {
+  if (!cropOn) { $("cropReadout").textContent = "full frame (no crop)"; return; }
   const { w, h } = imgRect();
+  if (!w || !h) return;
   const fx = box.offsetLeft / w, fy = box.offsetTop / h;
   const fw = box.offsetWidth / w, fh = box.offsetHeight / h;
   $("crop_x").value = fx.toFixed(4); $("crop_y").value = fy.toFixed(4);
@@ -103,6 +148,8 @@ function readout() {
 }
 
 function setDefaultBox() {
+  cropOn = true;
+  box.classList.remove("is-off");
   const { w, h } = imgRect();
   let bw = w * 0.9, bh = aspect ? bw / aspect : h * 0.9;
   if (bh > h * 0.9) { bh = h * 0.9; bw = aspect ? bh * aspect : w * 0.9; }
@@ -111,7 +158,7 @@ function setDefaultBox() {
 }
 
 function applyAspectToBox() {
-  if (!aspect) { readout(); return; }
+  if (!cropOn || !aspect) { readout(); return; }
   const { w } = imgRect();
   let bw = box.offsetWidth, bh = bw / aspect;
   const { h } = imgRect();
@@ -121,33 +168,37 @@ function applyAspectToBox() {
   clampBox();
 }
 
-// Restore a saved crop, else default.
 function initBox() {
   const sx = parseFloat($("crop_x").value), sy = parseFloat($("crop_y").value),
         sw = parseFloat($("crop_w").value), sh = parseFloat($("crop_h").value);
   const { w, h } = imgRect();
   if (sw > 0 && sh > 0) {
+    cropOn = true;
+    box.classList.remove("is-off");
     Object.assign(box.style, { left:sx*w+"px", top:sy*h+"px", width:sw*w+"px", height:sh*h+"px" });
     readout();
-  } else setDefaultBox();
+  } else {
+    // No saved crop — start with full frame so title typing isn't blocked by a forced crop.
+    clearCropFields();
+  }
 }
 
-// Drag to move.
 let drag = null;
 box.addEventListener("mousedown", e => {
-  if (e.target.classList.contains("handle")) return;
+  if (!cropOn || e.target.classList.contains("handle")) return;
   drag = { x:e.clientX, y:e.clientY, left:box.offsetLeft, top:box.offsetTop };
   e.preventDefault();
 });
-// Resize from corners.
 let resize = null;
 box.querySelectorAll(".handle").forEach(h => h.addEventListener("mousedown", e => {
+  if (!cropOn) return;
   resize = { corner:[...h.classList].find(c=>c!=="handle"), x:e.clientX, y:e.clientY,
              left:box.offsetLeft, top:box.offsetTop, w:box.offsetWidth, h:box.offsetHeight };
   e.stopPropagation(); e.preventDefault();
 }));
 
 window.addEventListener("mousemove", e => {
+  if (!cropOn) return;
   const { w, h } = imgRect();
   if (drag) {
     box.style.left = Math.max(0, Math.min(drag.left + e.clientX-drag.x, w-box.offsetWidth))+"px";
@@ -169,16 +220,21 @@ window.addEventListener("mouseup", () => { drag = null; resize = null; });
 
 $("aspect").addEventListener("change", e => { aspect = parseFloat(e.target.value); applyAspectToBox(); });
 $("resetBtn").addEventListener("click", setDefaultBox);
+$("clearCropBtn").addEventListener("click", clearCropFields);
 $("rotateBtn").addEventListener("click", () => {
   rot = (rot + 90) % 360; $("rotate").value = rot;
-  photo.style.transition = "transform .2s"; // visual hint; server does the real rotate
-  alert("Rotation set to " + rot + "°. It's applied to the exported print when you Process. (Preview stays upright here.)");
+  alert("Rotation set to " + rot + "°. Applied when you Process.");
 });
+
+const saveNext = $("saveNextBtn");
+if (saveNext) {
+  saveNext.addEventListener("click", () => { $("go_next").value = "1"; });
+}
+$("saveBtn").addEventListener("click", () => { $("go_next").value = ""; });
 
 if (photo.complete) initBox(); else photo.onload = initBox;
 window.addEventListener("resize", clampBox);
 
-// Title suggestions.
 $("suggestBtn").addEventListener("click", async () => {
   const wrap = $("suggestions");
   wrap.innerHTML = '<p class="suggest-note">Thinking…</p>';
@@ -189,7 +245,7 @@ $("suggestBtn").addEventListener("click", async () => {
     j.titles.forEach(t => {
       const b = document.createElement("button");
       b.type = "button"; b.textContent = t;
-      b.onclick = () => { $("title").value = t; };
+      b.onclick = () => { $("title").value = t; $("title").focus(); };
       wrap.appendChild(b);
     });
     const note = document.createElement("p");
@@ -202,5 +258,8 @@ $("suggestBtn").addEventListener("click", async () => {
     wrap.innerHTML = '<p class="suggest-note">Could not fetch suggestions.</p>';
   }
 });
+
+// Focus title on load so you can start typing immediately.
+$("title").focus();
 </script>
 {% endblock %}

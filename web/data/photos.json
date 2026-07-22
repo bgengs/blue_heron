@@ -5,7 +5,7 @@
     "caption": "A bonded pair at the nest",
     "location": "MONTANA",
     "file": "love-birds.jpg",
-    "active": true,
+    "active": false,
     "sort": 0
   },
   {
@@ -14,7 +14,7 @@
     "caption": "Courtship in the crown of a cottonwood",
     "location": "MONTANA",
     "file": "hold-me-closer.jpg",
-    "active": true,
+    "active": false,
     "sort": 1
   },
   {
@@ -23,7 +23,7 @@
     "caption": "Partners above the rookery",
     "location": "MONTANA",
     "file": "together-forever.jpg",
-    "active": true,
+    "active": false,
     "sort": 2
   },
   {
@@ -32,7 +32,7 @@
     "caption": "A young pair settling their nest",
     "location": "MONTANA",
     "file": "young-love.jpg",
-    "active": true,
+    "active": false,
     "sort": 3
   },
   {
@@ -41,7 +41,7 @@
     "caption": "The whole household, home in the branches",
     "location": "MONTANA",
     "file": "family-living.jpg",
-    "active": true,
+    "active": false,
     "sort": 4
   },
   {
@@ -50,7 +50,7 @@
     "caption": "A lone sentinel in the leaves",
     "location": "MONTANA",
     "file": "happy-to-be-here.jpg",
-    "active": true,
+    "active": false,
     "sort": 5
   },
   {
@@ -59,7 +59,7 @@
     "caption": "Side by side above the river bottom",
     "location": "MONTANA",
     "file": "heron-1.jpg",
-    "active": true,
+    "active": false,
     "sort": 6
   },
   {
@@ -68,7 +68,7 @@
     "caption": "Keeping watch over the colony",
     "location": "MONTANA",
     "file": "heron-2.jpg",
-    "active": true,
+    "active": false,
     "sort": 7
   },
   {
@@ -77,7 +77,1357 @@
     "caption": "Nests share the same grove, year after year",
     "location": "MONTANA",
     "file": "herons-3.jpg",
-    "active": true,
+    "active": false,
     "sort": 8
+  },
+  {
+    "slug": "dji-20260721221326-0408-d",
+    "title": "Two at Home in the Old Cottonwood",
+    "caption": "Deep in the green heart of a cottonwood, two great blue herons stand pressed together on their platform of pale sticks, one bowing its head close to the other as if passing along something not meant for the whole tree. A neighbor's nest sits just visible in the upper corner, close enough to overhear. Through the leaves, the canola beyond has already gone gold in the evening light. A quiet, almost domestic scene from the heron rookery on a Montana home place.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221326_0408_D.jpg",
+    "active": true,
+    "sort": 9
+  },
+  {
+    "slug": "dji-20260721221338-0410-d",
+    "title": "Word Travels in the Cottonwood",
+    "caption": "Five herons occupy this one sweep of canopy: a caller mid-cry on the center nest, a neck periscoping up from the left foliage, a watcher half-hidden at center right, and two dark shapes settled on the lower-right nest pretending not to hear. The ripening field shows warm through the branches behind them, and the pale nest platforms float in the leaves like porch lights coming on. Whatever announcement just went out, the whole tree got it. A dense, rewarding frame that gives up a new bird every time you look.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221338_0410_D.jpg",
+    "active": false,
+    "sort": 10
+  },
+  {
+    "slug": "dji-20260721221341-0411-d",
+    "title": "Across the Yard from One Another",
+    "caption": "The two nests of the big cottonwood face each other across an open stretch of gold field, the upper-left pair standing straight-backed and formal, the lower-right pair hunkered low, one bird fussing with its feathers like it's late getting ready. Pale limbs and heavy green leaves divide the frame into rooms, the canola glowing through the middle like a lit doorway. Every rookery has its tidy house and its lived-in one. Evening light does both of them favors.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221341_0411_D.jpg",
+    "active": false,
+    "sort": 11
+  },
+  {
+    "slug": "dji-20260721221351-0412-d",
+    "title": "Two Households in the Big Cottonwood",
+    "caption": "One tree, two addresses: a pair of herons stands with backs turned on the high nest at upper left, while another pair keeps close company on the lower nest at right, one dark and one pale-streaked, heads bent together. Between them the cottonwood trunk rises through a window of golden canola. The upstairs neighbors and the downstairs neighbors appear to be minding their own business, which in a rookery never lasts long. A wide, storytelling frame of colony life at dusk.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221351_0412_D.jpg",
+    "active": false,
+    "sort": 12
+  },
+  {
+    "slug": "dji-20260721221401-0414-d",
+    "title": "Company on Every Branch",
+    "caption": "Three young herons share the evening from separate perches: a big streak-breasted bird looming in the left foreground, the nest-keeper poised over its swirl of white sticks at center, and a slim sentinel tucked into the right-hand leaves. The canola behind them has gone the color of late July, a soft gold curtain hung behind the cottonwood. Nobody is speaking, but everybody is listening. A quiet, full frame from the busiest tree on the place.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221401_0414_D.jpg",
+    "active": false,
+    "sort": 13
+  },
+  {
+    "slug": "dji-20260721221404-0415-d",
+    "title": "Neighbors at Evening Chores",
+    "caption": "In this frame the three residents have all turned their heads to the left, as if the same rumor just moved down the tree row. The center bird stands tall over its bleached nest, flanked by a scruffy juvenile in the left branches and a third keeping watch from the right, with the canola field laying its warm gold behind the dark cottonwood leaves. The low July light softens everything but the gossip. Part of a burst that catches the rookery mid-conversation.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221404_0415_D.jpg",
+    "active": false,
+    "sort": 14
+  },
+  {
+    "slug": "dji-20260721221410-0416-d",
+    "title": "Three Houses Down the Lane",
+    "caption": "Three herons hold three stations across one cottonwood crown, the ripening canola glowing gold through every gap in the leaves. The center bird stands trim on its white nest of twigs, the left neighbor keeps its back turned among the branches, and the right one peers in from the edge of the frame like someone checking who got the bigger place. Evening light picks out the pale bark and the streaked young feathers alike. A study in how close the neighbors live at the top of a Montana rookery.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221410_0416_D.jpg",
+    "active": false,
+    "sort": 15
+  },
+  {
+    "slug": "dji-20260721221423-0418-d",
+    "title": "Shoulder to Shoulder at Sundown",
+    "caption": "Two young herons stand pressed close on the family nest, one turned away in slate-dark reserve, the other showing its streaky buff front in profile, their heads nearly touching in what could be confidence or complaint. The great pale limbs of the cottonwood curve around them like arms, warmed by low evening light, with a wash of field showing through the leaves at upper left. Whatever passed between these two at the top of the tree, it looks like it was worth staying home for. An intimate frame from a rookery that seldom lets anyone this near.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221423_0418_D.jpg",
+    "active": false,
+    "sort": 16
+  },
+  {
+    "slug": "dji-20260721221442-0421-d",
+    "title": "The Tall One Takes the Lookout",
+    "caption": "Taken seconds apart from its companion frame, this one catches the young heron at full stretch, neck drawn straight up like a fencepost, surveying the canola field that glows soft and green-gold behind the cottonwood leaves. The two darker birds at its side stay hunched and unimpressed, facing the other way, while the neighbor on the right branch mirrors the tall pose from a polite distance. Somebody in this tree thinks he's in charge, and this evening he might be right. The pale nest of twigs anchors the composition like a table set for company.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221442_0421_D.jpg",
+    "active": false,
+    "sort": 17
+  },
+  {
+    "slug": "dji-20260721221447-0422-d",
+    "title": "Standing Room at the Supper Table",
+    "caption": "Four great blue herons crowd one bleached-stick nest high in the cottonwoods, the ripening canola rolling out gold behind them in the last of the evening light. The young bird front and center holds the floor, crest ruffled and streaky chest out, while two dark-shouldered siblings keep their backs turned as if they've heard this speech before. Off in the leaves at right, a fourth watches sidelong from the next branch over, the way a neighbor listens across a fence. A full-house portrait of rookery life at canopy height.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221447_0422_D.jpg",
+    "active": false,
+    "sort": 18
+  },
+  {
+    "slug": "dji-20260721221450-0423-d",
+    "title": "Waiting on Supper in the West Tree",
+    "caption": "A tall young heron stands watch on the bleached platform of the nest, head high and aimed up the valley as if supper were running late and someone would be hearing about it. A dark sibling hunches at its side, a third bird waits in the leaves at right, and a fourth keeps to its branch at the frame's left edge, the whole household arranged through the cottonwood's crown. Behind them the ripening canola glows soft gold under a pale, hazy evening sky.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221450_0423_D.jpg",
+    "active": false,
+    "sort": 19
+  },
+  {
+    "slug": "dji-20260721221544-0427-d",
+    "title": "Bookends Under the Big Sky",
+    "caption": "At the heart of a towering cottonwood, two herons stand pressed together facing opposite directions, their raised necks forming a near-perfect mirrored pair against the hazy blue of the lake and mountains behind. The gold of the field shows at the lower left, and the tree's full crown fills the frame around them, making the birds a small, deliberate center in a big country. Whether it is courtship or merely an old alliance, they are plainly a matched set, and the whole rookery knows it.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221544_0427_D.jpg",
+    "active": false,
+    "sort": 20
+  },
+  {
+    "slug": "dji-20260721221554-0430-d",
+    "title": "The Far Shore from the Home Tree",
+    "caption": "Warm evening light falls across the streaked breasts of two herons standing in profile on their branch, while behind them the swept gold of the canola field meets calm lake water and the dark timber of the far shore. Both birds face left with identical intent, the sort of synchronized attention that starts rumors in a rookery. The layered backdrop of field, water, and forest gives this print unusual depth for a portrait taken at canopy height.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221554_0430_D.jpg",
+    "active": false,
+    "sort": 21
+  },
+  {
+    "slug": "dji-20260721221604-0432-d",
+    "title": "Canola to the Water's Edge",
+    "caption": "Two herons perch shoulder to shoulder on a cottonwood limb, gazing left across a canola field that runs rich and gold, its wheel tracks curving down toward the lake and the hazy shoreline beyond. At the far right edge, the farmyard's silo and tanks peek through the leaves, keeping the working ranch honestly in the picture. The pair's matched posture suggests a shared verdict on the evening, though neither is saying what it is.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221604_0432_D.jpg",
+    "active": false,
+    "sort": 22
+  },
+  {
+    "slug": "dji-20260721221608-0433-d",
+    "title": "The View Past the Old Barn",
+    "caption": "From their perch in the cottonwood, two herons look out in tandem over a scene that says Montana without raising its voice: golden field below, still lake water beyond, hazy blue hills on the horizon, and the white roofline of the old ranch building showing at the right. The birds face the same direction with the settled air of longtime residents reviewing the property. A rare frame where the whole home place — birds, canola, water, and barn — sits together in one quiet evening light.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221608_0433_D.jpg",
+    "active": false,
+    "sort": 23
+  },
+  {
+    "slug": "dji-20260721221621-0435-d",
+    "title": "Neighbors Up and Down the Tree",
+    "caption": "A close pair of herons holds the center of the frame, both facing left with necks at full attention, while high in the background a third adult stands against the canola-gold distance, near enough to be seen and far enough to be talked about. The white wisps of the nest show at the lower right corner, and the cottonwood's pale limbs thread the whole scene together. Evening light lies soft on their gray shoulders.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221621_0435_D.jpg",
+    "active": false,
+    "sort": 24
+  },
+  {
+    "slug": "dji-20260721221628-0437-d",
+    "title": "Facing West Before Supper",
+    "caption": "Two herons stand in matched profile on a limb at the left of the frame, both aimed the same direction with the fixed attention of neighbors who have spotted someone coming up the lane. Below and to the right, their pale stick nest sits momentarily empty in the crook of the cottonwood, and the canola glows soft gold through the leaves beyond. The near-mirrored pair gives the print a formal, almost heraldic balance.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221628_0437_D.jpg",
+    "active": false,
+    "sort": 25
+  },
+  {
+    "slug": "dji-20260721221635-0439-d",
+    "title": "Watching the Canola Come Ripe",
+    "caption": "Set to the right of frame, a bright-eyed heron cranes over the canopy with a second bird tucked in low behind it, both looking out across the broad gold sweep of the canola field that fills the left of the picture. The crop is nearly ready and the birds appear to know it, supervising the place like landowners walking the fence line. Evening light warms the field to honey while the cottonwood leaves hold their deep summer green.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221635_0439_D.jpg",
+    "active": false,
+    "sort": 26
+  },
+  {
+    "slug": "dji-20260721221639-0440-d",
+    "title": "The Tall Pair on the Top Rail",
+    "caption": "Two herons stand nearly matched on a high limb, the canola glowing amber through the leaves behind them and a corner of the nest just visible at lower right, as if they'd stepped out of the house for air. The forward bird faces one way and its companion angles the other, necks drawn long and elegant in the level evening light. A clean, upright composition, and a hint that this pair has been sizing up the view together for a while.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221639_0440_D.jpg",
+    "active": false,
+    "sort": 27
+  },
+  {
+    "slug": "dji-20260721221708-0441-d",
+    "title": "Home Before Dark",
+    "caption": "Two young herons settle at their broad silver nest beneath an archway of cottonwood limbs, the front bird upright in soft profile, its downy neck feathers loose in the still air, while its nest mate tucks in close behind. Through the branches the field and far treeline dissolve into hazy evening light. The pale sticks of the nest, built up season over season, anchor the frame like a homestead that has seen a few generations come and go.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221708_0441_D.jpg",
+    "active": false,
+    "sort": 28
+  },
+  {
+    "slug": "dji-20260721221713-0442-d",
+    "title": "Quiet Hour on the Far Nest",
+    "caption": "Seen from a respectful distance, the nest sits like an island in a sea of cottonwood leaves, its resident hunched low and settled in for the evening while a neighbor perches at the upper left corner of the frame, ostensibly minding its own business. Glimpses of the ripening canola burn gold through the canopy on either side. This is the rookery at its most private, the frame a reminder that out here even the gossip observes quiet hours.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221713_0442_D.jpg",
+    "active": false,
+    "sort": 29
+  },
+  {
+    "slug": "dji-20260721221716-0443-d",
+    "title": "Keeping Company in the Canopy",
+    "caption": "Deep in a lattice of pale branches, one heron stands tall at the nest with its head turned in clean profile while a second looks the other way over its shoulder, the two of them covering both approaches like an old married couple who no longer need to discuss it. The hazy gold of the evening field glows softly through the leaves behind them. The dense weave of cottonwood limbs makes a natural frame within the frame, drawing the eye straight to the pair at its center.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221716_0443_D.jpg",
+    "active": false,
+    "sort": 30
+  },
+  {
+    "slug": "dji-20260721221719-0444-d",
+    "title": "Two Brothers on the Porch Rail",
+    "caption": "A pair of juvenile herons stand pressed together at the nest's edge, both yellow eyes trained on the same point off-frame right, as if the neighbors two branches over were doing something worth remembering. The left two-thirds of the frame belongs to the cottonwood itself, its lichen-silvered limbs winding through warm, hazy evening light. It is a portrait of siblings keeping watch together, and keeping score.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221719_0444_D.jpg",
+    "active": false,
+    "sort": 31
+  },
+  {
+    "slug": "dji-20260721221732-0447-d",
+    "title": "A Word Between Neighbors",
+    "caption": "Shot close over the nest rail, two young herons stand shoulder to shoulder facing opposite ways, one fixing the camera with a level stare while the other opens its bill mid-remark, evening light catching the yellow of it. Their ruffled breast feathers and the white-barked cottonwood limbs around them read beautifully at print scale, every stick of the nest sharp in the foreground. Whatever was being said, it was clearly not meant to leave the tree.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221732_0447_D.jpg",
+    "active": false,
+    "sort": 32
+  },
+  {
+    "slug": "dji-20260721221741-0449-d",
+    "title": "Lakeside Quarters, Golden Hour",
+    "caption": "Here the rookery shows its view: beyond the shaggy-crested heron and its hunched nest mate, the field runs down to still lake water and a hazy far shore. A third bird stands rim-lit on a branch at right, neck raised, and a fourth head periscopes up from the foliage between them, nobody willing to miss whatever is passing below. The low sun edges every feather in gold, proof that even the plainest evening chores here come with waterfront scenery.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221741_0449_D.jpg",
+    "active": false,
+    "sort": 33
+  },
+  {
+    "slug": "dji-20260721221744-0450-d",
+    "title": "Full House in the North Cottonwood",
+    "caption": "The nest is crowded this evening: a crested heron stands tall at center while two dusky youngsters press in beside it, both facing away as though they'd heard the lecture before. On a limb at the upper left a neighbor perches within earshot, and another figure waits half-veiled at the right margin of the frame. Behind them the canola glows amber through the branches, warm evening light gilding a tree that has clearly become the busiest address on the place.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221744_0450_D.jpg",
+    "active": false,
+    "sort": 34
+  },
+  {
+    "slug": "dji-20260721221751-0452-d",
+    "title": "The Lookout Above the Canola",
+    "caption": "Framed in a window of cottonwood branches, a heron stands sentry at the nest with its head turned in sharp profile, the drill lines of the ripening canola field running clear to the pale horizon behind it. A darker companion shelters close at its shoulder, and away at the right edge a third bird lingers half-hidden in the leaves, keeping tabs without being seen to. The great sweep of gold gives the print its air; the small politics of the tree give it its story.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221751_0452_D.jpg",
+    "active": false,
+    "sort": 35
+  },
+  {
+    "slug": "dji-20260721221754-0453-d",
+    "title": "Standing Tall at Suppertime",
+    "caption": "One young heron stretches to its full height on the nest rim, neck drawn straight as a fence post, while the canola field rolls away gold and unbroken behind the cottonwood. To its left a darker sibling hunches low in the leaves, and to the right a third bird has turned its back entirely, as if the conversation had gone somewhere it didn't care for. The pale sticks of the nest catch the evening light like weathered barnwood, grounding this quiet study of a household not quite in agreement.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221754_0453_D.jpg",
+    "active": false,
+    "sort": 36
+  },
+  {
+    "slug": "dji-20260721221805-0455-d",
+    "title": "Evening Roll Call in the Old Cottonwood",
+    "caption": "Three great blue herons hold their places in a single frame of dense cottonwood green, the ripening canola showing gold through every gap in the leaves. The one on the sun-bleached stick nest stands dead center and bolt upright, plainly in charge, while the two on the flanking branches keep their necks folded and their opinions to themselves. It is the whole neighborhood at a glance, arranged as neatly as chairs on a porch in the last calm light of a July evening.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221805_0455_D.jpg",
+    "active": false,
+    "sort": 37
+  },
+  {
+    "slug": "dji-20260721221819-0457-d",
+    "title": "The Quiet One in the Deep Green",
+    "caption": "You have to look twice to find the heron here, tucked at the heart of the cottonwood with only its striped throat and lifted bill betraying it above the pale tangle of the nest. Sun-struck leaves close over the scene like a curtain drawn early. Every rookery keeps one bird like this, the neighbor who hears everything, repeats nothing, and is somehow always home.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221819_0457_D.jpg",
+    "active": false,
+    "sort": 38
+  },
+  {
+    "slug": "dji-20260721221838-0461-d",
+    "title": "Out on a Limb Before Dark",
+    "caption": "A single heron steps away from the crowd, stretched in clean profile along a slender cottonwood branch, its long neck and sharp bill pointed into the last of the light while a companion's blurred gray form keeps to the shadows below. The canopy closes around the bird in layers of green and gold. It is the loner's hour, that short spell of a July evening when even a rookery bird wants a branch to itself.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221838_0461_D.jpg",
+    "active": false,
+    "sort": 39
+  },
+  {
+    "slug": "dji-20260721221842-0462-d",
+    "title": "Both Watching the Same Road",
+    "caption": "A moment of rare agreement: both young herons face the same way here, the front bird's tawny neck drawn up tall, the darker one peering over its shoulder from behind, the two framed in a window of sunlit and shadowed cottonwood leaves. The pale branch below anchors the composition like a porch rail at dusk. Somebody is coming in over the canola, and neither bird wants to be the last to see who.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221842_0462_D.jpg",
+    "active": false,
+    "sort": 40
+  },
+  {
+    "slug": "dji-20260721221845-0463-d",
+    "title": "Crest Up in the Evening Breeze",
+    "caption": "The foreground heron lifts its head high with its wispy crest ruffled loose in the evening air, cream-colored neck shining against the dark leaves, while its companion holds a level, black-capped profile just behind. A pale cottonwood limb crosses the frame beneath them like a rail fence. There is a touch of vanity in that raised crest, and a touch of long-suffering patience in the bird behind it.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221845_0463_D.jpg",
+    "active": false,
+    "sort": 41
+  },
+  {
+    "slug": "dji-20260721221848-0464-d",
+    "title": "Not Speaking This Evening",
+    "caption": "Two herons share one branch and face precisely opposite directions: the pale-necked juvenile gazing right into the low sun, the dark-capped bird behind it staring left into the leaves. Around them the cottonwood canopy glows in two tones, deep green above, sunwashed gold below. Whatever passed between these two earlier in the day, the matter is clearly not resolved, and the photograph is better for it.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221848_0464_D.jpg",
+    "active": false,
+    "sort": 42
+  },
+  {
+    "slug": "dji-20260721221853-0465-d",
+    "title": "Two Deep in the Leaves",
+    "caption": "Here the pair draws back into the foliage, one striped head raised above the other, their barred gray necks half swallowed by dappled cottonwood green while a third bird's dark back hides low on the left. Evening light falls in patches, silvering some leaves and leaving others in shade. A quieter, more secretive frame, for the buyer who likes knowing there is always more going on in a tree than the tree lets on.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221853_0465_D.jpg",
+    "active": false,
+    "sort": 43
+  },
+  {
+    "slug": "dji-20260721221855-0466-d",
+    "title": "Close Quarters in the Canopy",
+    "caption": "Two juvenile herons stand so near that their heads stack one above the other, both pale-eyed and alert, necks crossing among sunlit leaves while a third bird shadows the understory at lower left. The cottonwood's white branch cuts a clean diagonal beneath them. It is the portrait of siblings who have shared a nest all summer and are precisely one week past done with it.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221855_0466_D.jpg",
+    "active": false,
+    "sort": 44
+  },
+  {
+    "slug": "dji-20260721221857-0467-d",
+    "title": "A Word Over the Shoulder",
+    "caption": "The closest portrait in the collection: a fledgling heron, still downy about the head, turns its neck fully back across its own wing, amber eye catching the last sun among backlit cottonwood leaves. Below and behind, the gray shoulder of a companion shows through the foliage, just out of the conversation. Every rich feather detail is here, along with the unmistakable posture of a bird about to say something it will claim later it never said.",
+    "location": "MONTANA",
+    "file": "DJI_20260721221857_0467_D.jpg",
+    "active": false,
+    "sort": 45
+  },
+  {
+    "slug": "dji-20260721222004-0470-d",
+    "title": "Looking In on the Neighbors",
+    "caption": "Taken looking gently down into the canopy, this frame shows two herons in matched profile on the left-hand nest, a second stick platform standing empty in the branches above, and a third bird tucked deep in the leaves at right. Harvested canola ground shows dusty gold through the crown's edge. The empty nest is the one everyone in the rookery has an opinion about, and these two appear to be discussing it.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222004_0470_D.jpg",
+    "active": false,
+    "sort": 46
+  },
+  {
+    "slug": "dji-20260721222013-0472-d",
+    "title": "The North Branch Crowd",
+    "caption": "Five herons inhabit this leafy frame if you count carefully: two juveniles standing tall over the nest at center, a dark youngster wedged between them, and two more roosting half seen in the upper branches at right. The cottonwood's white limbs thread through deep green foliage with the pale field glowing behind. It is the crowded end of the tree, the side of town where everybody knows everybody's business by dark.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222013_0472_D.jpg",
+    "active": false,
+    "sort": 47
+  },
+  {
+    "slug": "dji-20260721222023-0475-d",
+    "title": "Company in the Big Cottonwood",
+    "caption": "The rookery's evening arrangement shifts here: the center juvenile fixes the camera with a level stare, a second bill slips into view behind the left-hand bird, and the right-hand heron has pointedly turned its back to the whole affair. Through a gap in the leaves, farm ground and machinery show beyond the ripened canola. Sunlight comes in low and honey-colored, gilding necks and pale branches alike.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222023_0475_D.jpg",
+    "active": false,
+    "sort": 48
+  },
+  {
+    "slug": "dji-20260721222028-0476-d",
+    "title": "Four Neighbors, One Tree",
+    "caption": "This wide frame gathers four birds across the cottonwood's crown: a poised profile at left, a young one facing the lens straight on, a shadowed figure hunched by the empty nest at center, and a fourth perched apart on the white branches at right. Beyond them the canola rolls away to timbered hills under a clear evening sky. It reads like a family reunion where two showed up on time, one sulked, and one kept to the far end of the porch.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222028_0476_D.jpg",
+    "active": false,
+    "sort": 49
+  },
+  {
+    "slug": "dji-20260721222032-0477-d",
+    "title": "Shoulder to Shoulder at Day's End",
+    "caption": "Two young herons stand nearly touching, both faced the same direction with necks drawn tall, their buff-streaked throats lit warm by the setting sun while a third bird buries its head in its feathers in the upper corner, staying out of it. The canola field lies gold and soft behind the cottonwood limbs. Whatever these two are watching, they are watching it together, and the one preening behind them clearly does not care to know.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222032_0477_D.jpg",
+    "active": false,
+    "sort": 50
+  },
+  {
+    "slug": "dji-20260721222036-0478-d",
+    "title": "The Whole Outfit at Sundown",
+    "caption": "Four herons share one cottonwood in this wide view: two juveniles upright in the foreground, a hunched elder brooding at center, and a fourth tending its feathers at the frame's edge, all above canola that runs to a hazy blue line of pines. The low sun picks out each pale neck against the dark leaves. Every small town has an evening like this, where everyone is out on their porches pretending not to watch each other.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222036_0478_D.jpg",
+    "active": false,
+    "sort": 51
+  },
+  {
+    "slug": "dji-20260721222047-0480-d",
+    "title": "Standing Room at the Home Nest",
+    "caption": "A breath later in the same evening, the left-hand juvenile stretches to full height in golden side light while its nestmate curls its streaked neck and studies the ground below. Between them the woven nest sits center stage on white cottonwood limbs, the ripened field glowing through every gap in the leaves. It has the air of two heirs sizing up the family place and quietly disagreeing about who gets the good corner.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222047_0480_D.jpg",
+    "active": false,
+    "sort": 52
+  },
+  {
+    "slug": "dji-20260721222055-0482-d",
+    "title": "Two Up Before Supper",
+    "caption": "Two tall young herons stand at attention over an empty nest bowl, one in clean profile against the leaves, the other facing the camera dead-on with the unblinking candor of youth, while a third bird lurks half hidden in the branches at right. A blue evening sky and a distant timbered ridge show through the cottonwood crown, the canola a warm blur below. Somebody is late coming home with supper, and these two intend to mention it.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222055_0482_D.jpg",
+    "active": false,
+    "sort": 53
+  },
+  {
+    "slug": "dji-20260721222146-0489-d",
+    "title": "Last Light on the Front Porch",
+    "caption": "The closest study of the trio, this frame catches the heron's yellow eye bright in the low sun, its slate feathers warmed to pewter above the shaggy sprawl of the nest. Sunburnt canola glows soft and out of focus through the cottonwood leaves, and the whole crown of the tree leans in as if to listen. This is the bird that knows what happened in the north nest at supper time, and is not yet saying.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222146_0489_D.jpg",
+    "active": false,
+    "sort": 54
+  },
+  {
+    "slug": "dji-20260721222153-0491-d",
+    "title": "The Old Nest Above the Canola",
+    "caption": "Seen a touch wider here, the same heron keeps its hunched, over-the-shoulder pose while the swirled harvest lines of the canola field ripple gold above the nest. The cottonwood's pale limbs cradle the great tangle of sticks like a porch built by three generations who never agreed on a floor plan. Evening light lies quietly across the whole scene, and the bird holds the deed to all of it.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222153_0491_D.jpg",
+    "active": false,
+    "sort": 55
+  },
+  {
+    "slug": "dji-20260721222211-0495-d",
+    "title": "Keeping an Eye on the Barn Lot",
+    "caption": "A lone great blue heron settles low on its bleached-stick nest at canopy height, head swiveled back over one wing as if it has just heard something worth knowing from the far shore of the canola. Behind it, ripening canola runs clear to a red-roofed barn in the corner of the frame, the cottonwood leaves still holding the last soft green of a July evening. It is the picture of a landowner at day's end, unhurried and mildly suspicious, and unwilling to turn in until the neighbors settle down.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222211_0495_D.jpg",
+    "active": false,
+    "sort": 56
+  },
+  {
+    "slug": "dji-20260721222213-0496-d",
+    "title": "Keeper of the Big Nest",
+    "caption": "The closest portrait in the collection: a great blue heron stands atop its great wheel of woven sticks, head in sharp profile, the yellow eye taking the measure of the drone and finding it barely worth the trouble. Every twig of the nest and every slate-blue feather is rendered in the warm evening light, with the field beyond blurred to pale gold. This is the householder of the rookery, the one whose nest the others eye and whose opinions carry down the whole cottonwood row. A commanding centerpiece print from the Montana heronry.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222213_0496_D.jpg",
+    "active": false,
+    "sort": 57
+  },
+  {
+    "slug": "dji-20260721222223-0497-d",
+    "title": "The Pair at the End of the Day",
+    "caption": "Framed by dark cottonwood leaves on either side, two herons share a slender branch above the pale gold of the field beyond, one drawn up to full height, the other rounded and settled. The evening haze turns the whole background rose-gold, so the birds read almost as silhouettes cut from slate. They stand close, in the manner of two who have long since run out of things to argue about. A serene, softly colored frame made for a quiet wall.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222223_0497_D.jpg",
+    "active": false,
+    "sort": 58
+  },
+  {
+    "slug": "dji-20260721222231-0500-d",
+    "title": "One Standing Guard, One Standing Down",
+    "caption": "Tucked into the leafy edge of the cottonwood, one heron stands tall and alert while its companion hunkers low beside it, neck folded away for the night. The field beyond has gone to a warm, hazy gold that fills the background like a wash of watercolor. Rookery custom says somebody keeps watch through the gossip hour, and tonight the tall one drew the duty. A tender, unposed pairing in soft July evening light.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222231_0500_D.jpg",
+    "active": false,
+    "sort": 59
+  },
+  {
+    "slug": "dji-20260721222234-0501-d",
+    "title": "Overlooking the Worked Ground",
+    "caption": "From a branch at the cottonwood's edge, two herons look out over a broad field worked to pale gold, its tractor lines fading into the evening haze. The upright bird faces its hunched companion as if delivering the day's report, and the listener does not appear to be taking notes. The open ground gives the frame a spare, big-country feel, all soft light and long distance. Montana ranch country from canopy height, in the last easy hour of the day.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222234_0501_D.jpg",
+    "active": false,
+    "sort": 60
+  },
+  {
+    "slug": "dji-20260721222302-0503-d",
+    "title": "The Empty Nest Down the Branch",
+    "caption": "Two herons perch mid-tree in the evening light, and in the lower corner of the frame sits a vacant stick nest, unclaimed and, one suspects, much discussed. The ripe canola fills the right side of the photograph in soft harvest gold behind the cottonwood's white limbs. Good nest sites do not stay empty long in a rookery, and both birds are keeping carefully casual about it. A wide, storytelling composition of birds, branches, and grain.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222302_0503_D.jpg",
+    "active": false,
+    "sort": 61
+  },
+  {
+    "slug": "dji-20260721222309-0505-d",
+    "title": "Waiting Out the Last of the Light",
+    "caption": "Two herons hold a slender branch at the cottonwood's edge, the taller standing sentry with neck drawn up while the other settles lower, shoulders hunched, plainly ready for the day to be over. Beyond them the canola takes the last pink-gold light across its whole width. One bird keeps the watch so the other can rest; that is the arrangement, though nobody remembers agreeing to it. A quiet, atmospheric frame from the close of a July evening.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222309_0505_D.jpg",
+    "active": false,
+    "sort": 62
+  },
+  {
+    "slug": "dji-20260721222319-0508-d",
+    "title": "A Word in Passing on the White Limb",
+    "caption": "On a long, bone-white cottonwood branch, two herons have turned to face one another, the right-hand bird looking down its considerable bill at its companion. The canola field glows through the leaves behind them, and the low sun warms every streak on their breasts. It has the air of a doorway conversation, brief, pointed, and not entirely finished. The sweep of the pale limb carries the eye clean across the frame.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222319_0508_D.jpg",
+    "active": false,
+    "sort": 63
+  },
+  {
+    "slug": "dji-20260721222324-0510-d",
+    "title": "Two Heads Turned Toward the Section Line",
+    "caption": "Side by side and one step apart, two streak-breasted herons look off in the same direction, their attention fixed somewhere out past the frame. The whole right side of the photograph is ripened canola, blurred to a warm gold curtain behind the deep green of the cottonwood. Whatever caught their eye, they will compare notes on it later; for now the watch is silent. A calm, balanced composition in evening light, green against gold.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222324_0510_D.jpg",
+    "active": false,
+    "sort": 64
+  },
+  {
+    "slug": "dji-20260721222332-0513-d",
+    "title": "Settling It Between Themselves",
+    "caption": "Two herons face off along a white cottonwood branch, bills nearly meeting, the taller bird pressing some point the lower one seems disinclined to concede. Behind them the canola stands ripe and warm-toned in the evening sun, indifferent to treetop politics. Whether it is a courtship or a quarrel over the better perch, the frame catches the exact moment before one of them gives ground. A fine study of the small negotiations that keep a rookery running.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222332_0513_D.jpg",
+    "active": false,
+    "sort": 65
+  },
+  {
+    "slug": "dji-20260721222407-0518-d",
+    "title": "Back to Back on the Family Branch",
+    "caption": "Two young herons stand back to back on a pale cottonwood limb, streaked chests to the camera, each surveying its own half of the country. The ripening canola glows gold at their shoulders in the evening light. They have the look of siblings who have spent one full season too many in the same nest and have agreed, without discussion, to stop discussing it. A close, characterful portrait from the rookery's younger generation.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222407_0518_D.jpg",
+    "active": false,
+    "sort": 66
+  },
+  {
+    "slug": "dji-20260721222438-0520-d",
+    "title": "Wings Up Over the Home Tree",
+    "caption": "Both wings thrown high and lit from behind, a heron settles into the canopy with its flight feathers glowing like parchment in the low sun. The cottonwood leaves beneath it shine green and gold, and for one beat the bird is all sail and no secrecy. An arrival this grand does not go unnoticed in a rookery, and somewhere in the leaves the neighbors surely took note. A dramatic, luminous frame from the last hour of a July evening.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222438_0520_D.jpg",
+    "active": false,
+    "sort": 67
+  },
+  {
+    "slug": "dji-20260721222442-0521-d",
+    "title": "Threading the Green Canopy",
+    "caption": "Half-hidden in a wall of sunlit cottonwood leaves, a heron works its way through the branches with neck extended and wings loose, picking its footing like someone crossing a neighbor's fence line quietly. The bird nearly dissolves into the green and gold around it, a find-the-heron frame that rewards a long look. It is the rookery at its most secretive, an errand run through the treetops that the rest of the colony was not meant to see.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222442_0521_D.jpg",
+    "active": false,
+    "sort": 68
+  },
+  {
+    "slug": "dji-20260721222514-0523-d",
+    "title": "A Long Stretch Before Supper",
+    "caption": "Alone in the sunlit leaves, a heron reaches its neck skyward and fans one great slate-blue wing down through the branches in a slow evening stretch. The low sun turns the cottonwood foliage to green and gold around it, close enough that you can count the flight feathers. There is no audience here, which may be the only reason the bird allows itself the indulgence. An intimate single-subject study, all texture and late light.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222514_0523_D.jpg",
+    "active": false,
+    "sort": 69
+  },
+  {
+    "slug": "dji-20260721222630-0530-d",
+    "title": "The Lookout on the High Branch",
+    "caption": "One heron has taken the topmost spire of the cottonwood, neck curved into a shepherd's-crook silhouette against the canola, while two others keep to the lower branches like folks who know their place at the table. The field behind sweeps upward in broad golden curves, its tracks drawn like brushstrokes across the field. Whoever holds that high perch holds the news for the whole rookery tonight. A wide, layered composition of tree, birds, and ripening Montana canola.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222630_0530_D.jpg",
+    "active": false,
+    "sort": 70
+  },
+  {
+    "slug": "dji-20260721222642-0533-d",
+    "title": "Company Coming In at the Top of the Tree",
+    "caption": "A third heron flares its wings at the very tip of the cottonwood, arriving late, while the two already settled below crane up to see who it is. Behind them the ripening canola stretches away, its wheel tracks stitching neat lines across the slope in the evening sun. Three birds, one tree, and the unmistakable air of a household deciding whether the newcomer was invited. A lively storytelling frame from the rookery at golden hour.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222642_0533_D.jpg",
+    "active": false,
+    "sort": 71
+  },
+  {
+    "slug": "dji-20260721222649-0534-d",
+    "title": "Words Exchanged Before Dark",
+    "caption": "The heron on the left has its bill parted mid-remark, while its companion turns pointedly away, chin lifted, as if the comment did not deserve an answer. The two stand on slender cottonwood branches with the canola field just showing through the crown above them. Every small-town evening has a conversation like this one, and here it is caught at treetop height in July light. The pale limbs and layered leaves give the print a fine, tapestry-like depth.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222649_0534_D.jpg",
+    "active": false,
+    "sort": 72
+  },
+  {
+    "slug": "dji-20260721222724-0545-d",
+    "title": "Keeping an Eye on the Canola Crop",
+    "caption": "From their high perches in the cottonwood, two herons look out over the neighbor's canola like landowners appraising the year's stand. The left bird has claimed the higher branch, a small point of rank that the lower bird appears to be pretending not to notice. Ripe canola fills the upper corner of the frame in soft evening gold, set against the deep green canopy and bone-white limbs. Big Sky country, seen from canopy height at golden hour.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222724_0545_D.jpg",
+    "active": false,
+    "sort": 73
+  },
+  {
+    "slug": "dji-20260721222730-0547-d",
+    "title": "Both Watching the Same Weather",
+    "caption": "Two herons stand tall on separate white cottonwood limbs, both faced the same direction, both studying something out past the ripening canola that climbs the hill behind them. The evening sun lays warm on the field and picks out the smoke-blue of their folded wings. Whatever is coming up that draw, these two intend to see it first, and neither is saying a word to the other. A composed, painterly frame from the last light of a July day.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222730_0547_D.jpg",
+    "active": false,
+    "sort": 74
+  },
+  {
+    "slug": "dji-20260721222737-0550-d",
+    "title": "Watching the Same Horizon",
+    "caption": "Moments before the closer companion frame, the two herons hold their perches farther apart, the left bird's neck folded into a fine S-curve with its bill catching the orange of the low sun, the right bird stretched alert on a bleached branch. The canola field fills the background in full late-July gold, soft as upholstery behind the dark leaves. Two neighbors, one view, and just enough distance between them to keep the peace. Golden-hour color at its most generous.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222737_0550_D.jpg",
+    "active": false,
+    "sort": 75
+  },
+  {
+    "slug": "dji-20260721222748-0553-d",
+    "title": "Two Old Friends Facing East",
+    "caption": "Two herons stand a branch apart in the cottonwood crown, both turned in matching profile toward the same point beyond the frame, the ripe canola behind them combed into golden rows by the field tracks. The nearer bird carries the pale, streaked neck of a youngster; its companion sits lower on a white limb with the patient set of one who has watched more harvests. Whatever they are looking at, they have agreed not to discuss it yet. A clean, elegant pairing made for a wide wall.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222748_0553_D.jpg",
+    "active": false,
+    "sort": 76
+  },
+  {
+    "slug": "dji-20260721222819-0558-d",
+    "title": "The Late Arrival",
+    "caption": "From straight overhead, one heron pauses mid-branch with wings loosely mantled, caught between perches on its way home, while the nest waits below right with a single bird bent over its rim. In the upper left a third neighbor sits hunched and unmoved, having seen this particular entrance before. The evening sun turns the canopy to lit green velvet and bleaches the nest to a bright spiral at the corner of the frame. A candid moment of comings and goings in the colony's last hour of light.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222819_0558_D.jpg",
+    "active": false,
+    "sort": 77
+  },
+  {
+    "slug": "dji-20260721222822-0559-d",
+    "title": "Wings Over the Home Tree",
+    "caption": "The showpiece of the evening: a heron spreads its full wingspan directly beneath the drone, every flight feather fanned dark against the sunlit cottonwood leaves as it maneuvers toward the nest at right, where a hunkered bird waits in the circle of white twigs. Down in the lower left a third heron tips steeply forward, tail up, as if deciding whether to follow. The top-down view turns the rookery into a stage seen from the rafters. A dramatic, graphic print unlike anything shot from the ground.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222822_0559_D.jpg",
+    "active": false,
+    "sort": 78
+  },
+  {
+    "slug": "dji-20260721222827-0561-d",
+    "title": "Coming In for the Night",
+    "caption": "Seen straight down from above the canopy, a heron steadies itself on a branch with wings half-raised, inches from the nest where its nestmate sits low in the swirl of white sticks. A third bird perches in the sunlit green below, studiously facing the other way. Somebody is arriving late, and somebody in that nest is going to want to know where they've been. The low sun rakes across the cottonwood crown, turning the whole scene into a lit map of the neighborhood.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222827_0561_D.jpg",
+    "active": false,
+    "sort": 79
+  },
+  {
+    "slug": "dji-20260721222932-0570-d",
+    "title": "Alone Above the Canola",
+    "caption": "The widest of the lone-bird frames sets one small heron and its nest against the full sweep of the place: pale cottonwood limbs crossing like beams, dark summer leaves, and the tan field beyond running its harvest lines to the edge of the evening. The bird faces west along the branch, unbothered by the distance in every direction. It is a picture about scale, and about the nerve it takes to homestead eighty feet up. Prints beautifully large.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222932_0570_D.jpg",
+    "active": false,
+    "sort": 80
+  },
+  {
+    "slug": "dji-20260721222938-0572-d",
+    "title": "The Homestead at Day's End",
+    "caption": "A single heron settles into the heart of its nest, body angled and head turned left, while a bleached cottonwood branch cuts a bright diagonal across the foreground like a rail fence. Golden-hour light catches the blue-gray of the folded wings and sets the whole tangle of nest sticks glowing against the dark leaves, with the faded field just visible beyond. The bird has the settled look of someone whose supper is done and whose neighbors, for once, are quiet. A warm, close portrait of home at the top of the tree.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222938_0572_D.jpg",
+    "active": false,
+    "sort": 81
+  },
+  {
+    "slug": "dji-20260721222956-0577-d",
+    "title": "Keeping the Home Quarter",
+    "caption": "Framed wide between two great cottonwood limbs, a single heron rides its nest like a house set on a hill, the striped tan field running its long rows in the upper distance. The evening sun lays a warm hand on the tangle of white twigs and the bird's folded gray wings. Everyone else has stepped out, and this one is plainly the sort who stays behind to keep the porch light on. A composed, spacious print with real Montana bones.",
+    "location": "MONTANA",
+    "file": "DJI_20260721222956_0577_D.jpg",
+    "active": false,
+    "sort": 82
+  },
+  {
+    "slug": "dji-20260721223006-0580-d",
+    "title": "Last Light on the Big Nest",
+    "caption": "A lone heron stands in profile on its broad platform of sun-bleached sticks, the low golden-hour light warming its slate wings and the dark cap above a pale, watchful eye. Behind it the canola field softens into a diagonal weave of green and gold beyond the cottonwood leaves. With the rest of the family elsewhere, this one holds the home place alone, and looks entirely comfortable with the arrangement. The kind of quiet, glowing frame a room settles around.",
+    "location": "MONTANA",
+    "file": "DJI_20260721223006_0580_D.jpg",
+    "active": false,
+    "sort": 83
+  },
+  {
+    "slug": "gbh-fly-0000-dji-20260721222730-0547-d",
+    "title": "Both Watching the Same Weather",
+    "caption": "Two herons stand tall on separate white cottonwood limbs, both faced the same direction, both studying something out past the ripening canola that climbs the hill behind them. The evening sun lays warm on the field and picks out the smoke-blue of their folded wings. Whatever is coming up that draw, these two intend to see it first, and neither is saying a word to the other. A composed, painterly frame from the last light of a July day.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0000_DJI_20260721222730_0547_D.jpg",
+    "active": true,
+    "sort": 84
+  },
+  {
+    "slug": "gbh-fly-0001-dji-20260721222724-0545-d",
+    "title": "Keeping an Eye on the Canola Crop",
+    "caption": "From their high perches in the cottonwood, two herons look out over the neighbor's canola like landowners appraising the year's stand. The left bird has claimed the higher branch, a small point of rank that the lower bird appears to be pretending not to notice. Ripe canola fills the upper corner of the frame in soft evening gold, set against the deep green canopy and bone-white limbs. Big Sky country, seen from canopy height at golden hour.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0001_DJI_20260721222724_0545_D.jpg",
+    "active": true,
+    "sort": 85
+  },
+  {
+    "slug": "gbh-fly-0002-dji-20260721222649-0534-d",
+    "title": "Words Exchanged Before Dark",
+    "caption": "The heron on the left has its bill parted mid-remark, while its companion turns pointedly away, chin lifted, as if the comment did not deserve an answer. The two stand on slender cottonwood branches with the canola field just showing through the crown above them. Every small-town evening has a conversation like this one, and here it is caught at treetop height in July light. The pale limbs and layered leaves give the print a fine, tapestry-like depth.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0002_DJI_20260721222649_0534_D.jpg",
+    "active": true,
+    "sort": 86
+  },
+  {
+    "slug": "gbh-fly-0003-dji-20260721222642-0533-d",
+    "title": "Company Coming In at the Top of the Tree",
+    "caption": "A third heron flares its wings at the very tip of the cottonwood, arriving late, while the two already settled below crane up to see who it is. Behind them the ripening canola stretches away, its wheel tracks stitching neat lines across the slope in the evening sun. Three birds, one tree, and the unmistakable air of a household deciding whether the newcomer was invited. A lively storytelling frame from the rookery at golden hour.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0003_DJI_20260721222642_0533_D.jpg",
+    "active": true,
+    "sort": 87
+  },
+  {
+    "slug": "gbh-fly-0004-dji-20260721222630-0530-d",
+    "title": "The Lookout on the High Branch",
+    "caption": "One heron has taken the topmost spire of the cottonwood, neck curved into a shepherd's-crook silhouette against the canola, while two others keep to the lower branches like folks who know their place at the table. The field behind sweeps upward in broad golden curves, its tracks drawn like brushstrokes across the field. Whoever holds that high perch holds the news for the whole rookery tonight. A wide, layered composition of tree, birds, and ripening Montana canola.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0004_DJI_20260721222630_0530_D.jpg",
+    "active": true,
+    "sort": 88
+  },
+  {
+    "slug": "gbh-fly-0005-dji-20260721222514-0523-d",
+    "title": "A Long Stretch Before Supper",
+    "caption": "Alone in the sunlit leaves, a heron reaches its neck skyward and fans one great slate-blue wing down through the branches in a slow evening stretch. The low sun turns the cottonwood foliage to green and gold around it, close enough that you can count the flight feathers. There is no audience here, which may be the only reason the bird allows itself the indulgence. An intimate single-subject study, all texture and late light.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0005_DJI_20260721222514_0523_D.jpg",
+    "active": true,
+    "sort": 89
+  },
+  {
+    "slug": "gbh-fly-0006-dji-20260721222442-0521-d",
+    "title": "Threading the Green Canopy",
+    "caption": "Half-hidden in a wall of sunlit cottonwood leaves, a heron works its way through the branches with neck extended and wings loose, picking its footing like someone crossing a neighbor's fence line quietly. The bird nearly dissolves into the green and gold around it, a find-the-heron frame that rewards a long look. It is the rookery at its most secretive, an errand run through the treetops that the rest of the colony was not meant to see.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0006_DJI_20260721222442_0521_D.jpg",
+    "active": true,
+    "sort": 90
+  },
+  {
+    "slug": "gbh-fly-0007-dji-20260721222438-0520-d",
+    "title": "Wings Up Over the Home Tree",
+    "caption": "Both wings thrown high and lit from behind, a heron settles into the canopy with its flight feathers glowing like parchment in the low sun. The cottonwood leaves beneath it shine green and gold, and for one beat the bird is all sail and no secrecy. An arrival this grand does not go unnoticed in a rookery, and somewhere in the leaves the neighbors surely took note. A dramatic, luminous frame from the last hour of a July evening.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0007_DJI_20260721222438_0520_D.jpg",
+    "active": true,
+    "sort": 91
+  },
+  {
+    "slug": "gbh-fly-0008-dji-20260721222407-0518-d",
+    "title": "Back to Back on the Family Branch",
+    "caption": "Two young herons stand back to back on a pale cottonwood limb, streaked chests to the camera, each surveying its own half of the country. The ripening canola glows gold at their shoulders in the evening light. They have the look of siblings who have spent one full season too many in the same nest and have agreed, without discussion, to stop discussing it. A close, characterful portrait from the rookery's younger generation.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0008_DJI_20260721222407_0518_D.jpg",
+    "active": true,
+    "sort": 92
+  },
+  {
+    "slug": "gbh-fly-0009-dji-20260721222332-0513-d",
+    "title": "Settling It Between Themselves",
+    "caption": "Two herons face off along a white cottonwood branch, bills nearly meeting, the taller bird pressing some point the lower one seems disinclined to concede. Behind them the canola stands ripe and warm-toned in the evening sun, indifferent to treetop politics. Whether it is a courtship or a quarrel over the better perch, the frame catches the exact moment before one of them gives ground. A fine study of the small negotiations that keep a rookery running.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0009_DJI_20260721222332_0513_D.jpg",
+    "active": true,
+    "sort": 93
+  },
+  {
+    "slug": "gbh-fly-0010-dji-20260721222324-0510-d",
+    "title": "Two Heads Turned Toward the Section Line",
+    "caption": "Side by side and one step apart, two streak-breasted herons look off in the same direction, their attention fixed somewhere out past the frame. The whole right side of the photograph is ripened canola, blurred to a warm gold curtain behind the deep green of the cottonwood. Whatever caught their eye, they will compare notes on it later; for now the watch is silent. A calm, balanced composition in evening light, green against gold.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0010_DJI_20260721222324_0510_D.jpg",
+    "active": true,
+    "sort": 94
+  },
+  {
+    "slug": "gbh-fly-0011-dji-20260721222319-0508-d",
+    "title": "A Word in Passing on the White Limb",
+    "caption": "On a long, bone-white cottonwood branch, two herons have turned to face one another, the right-hand bird looking down its considerable bill at its companion. The canola field glows through the leaves behind them, and the low sun warms every streak on their breasts. It has the air of a doorway conversation, brief, pointed, and not entirely finished. The sweep of the pale limb carries the eye clean across the frame.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0011_DJI_20260721222319_0508_D.jpg",
+    "active": true,
+    "sort": 95
+  },
+  {
+    "slug": "gbh-fly-0012-dji-20260721222309-0505-d",
+    "title": "Waiting Out the Last of the Light",
+    "caption": "Two herons hold a slender branch at the cottonwood's edge, the taller standing sentry with neck drawn up while the other settles lower, shoulders hunched, plainly ready for the day to be over. Beyond them the canola takes the last pink-gold light across its whole width. One bird keeps the watch so the other can rest; that is the arrangement, though nobody remembers agreeing to it. A quiet, atmospheric frame from the close of a July evening.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0012_DJI_20260721222309_0505_D.jpg",
+    "active": true,
+    "sort": 96
+  },
+  {
+    "slug": "gbh-fly-0013-dji-20260721222302-0503-d",
+    "title": "The Empty Nest Down the Branch",
+    "caption": "Two herons perch mid-tree in the evening light, and in the lower corner of the frame sits a vacant stick nest, unclaimed and, one suspects, much discussed. The ripe canola fills the right side of the photograph in soft harvest gold behind the cottonwood's white limbs. Good nest sites do not stay empty long in a rookery, and both birds are keeping carefully casual about it. A wide, storytelling composition of birds, branches, and grain.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0013_DJI_20260721222302_0503_D.jpg",
+    "active": true,
+    "sort": 97
+  },
+  {
+    "slug": "gbh-fly-0014-dji-20260721222234-0501-d",
+    "title": "Overlooking the Worked Ground",
+    "caption": "From a branch at the cottonwood's edge, two herons look out over a broad field worked to pale gold, its tractor lines fading into the evening haze. The upright bird faces its hunched companion as if delivering the day's report, and the listener does not appear to be taking notes. The open ground gives the frame a spare, big-country feel, all soft light and long distance. Montana ranch country from canopy height, in the last easy hour of the day.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0014_DJI_20260721222234_0501_D.jpg",
+    "active": true,
+    "sort": 98
+  },
+  {
+    "slug": "gbh-fly-0015-dji-20260721222231-0500-d",
+    "title": "One Standing Guard, One Standing Down",
+    "caption": "Tucked into the leafy edge of the cottonwood, one heron stands tall and alert while its companion hunkers low beside it, neck folded away for the night. The field beyond has gone to a warm, hazy gold that fills the background like a wash of watercolor. Rookery custom says somebody keeps watch through the gossip hour, and tonight the tall one drew the duty. A tender, unposed pairing in soft July evening light.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0015_DJI_20260721222231_0500_D.jpg",
+    "active": true,
+    "sort": 99
+  },
+  {
+    "slug": "gbh-fly-0016-dji-20260721222223-0497-d",
+    "title": "The Pair at the End of the Day",
+    "caption": "Framed by dark cottonwood leaves on either side, two herons share a slender branch above the pale gold of the field beyond, one drawn up to full height, the other rounded and settled. The evening haze turns the whole background rose-gold, so the birds read almost as silhouettes cut from slate. They stand close, in the manner of two who have long since run out of things to argue about. A serene, softly colored frame made for a quiet wall.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0016_DJI_20260721222223_0497_D.jpg",
+    "active": true,
+    "sort": 100
+  },
+  {
+    "slug": "gbh-fly-0017-dji-20260721222213-0496-d",
+    "title": "Keeper of the Big Nest",
+    "caption": "The closest portrait in the collection: a great blue heron stands atop its great wheel of woven sticks, head in sharp profile, the yellow eye taking the measure of the drone and finding it barely worth the trouble. Every twig of the nest and every slate-blue feather is rendered in the warm evening light, with the field beyond blurred to pale gold. This is the householder of the rookery, the one whose nest the others eye and whose opinions carry down the whole cottonwood row. A commanding centerpiece print from the Montana heronry.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0017_DJI_20260721222213_0496_D.jpg",
+    "active": true,
+    "sort": 101
+  },
+  {
+    "slug": "gbh-fly-0018-dji-20260721222211-0495-d",
+    "title": "Keeping an Eye on the Barn Lot",
+    "caption": "A lone great blue heron settles low on its bleached-stick nest at canopy height, head swiveled back over one wing as if it has just heard something worth knowing from the far shore of the canola. Behind it, ripening canola runs clear to a red-roofed barn in the corner of the frame, the cottonwood leaves still holding the last soft green of a July evening. It is the picture of a landowner at day's end, unhurried and mildly suspicious, and unwilling to turn in until the neighbors settle down.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0018_DJI_20260721222211_0495_D.jpg",
+    "active": true,
+    "sort": 102
+  },
+  {
+    "slug": "gbh-fly-0019-dji-20260721222153-0491-d",
+    "title": "The Old Nest Above the Canola",
+    "caption": "Seen a touch wider here, the same heron keeps its hunched, over-the-shoulder pose while the swirled harvest lines of the canola field ripple gold above the nest. The cottonwood's pale limbs cradle the great tangle of sticks like a porch built by three generations who never agreed on a floor plan. Evening light lies quietly across the whole scene, and the bird holds the deed to all of it.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0019_DJI_20260721222153_0491_D.jpg",
+    "active": true,
+    "sort": 103
+  },
+  {
+    "slug": "gbh-fly-0020-dji-20260721222146-0489-d",
+    "title": "Last Light on the Front Porch",
+    "caption": "The closest study of the trio, this frame catches the heron's yellow eye bright in the low sun, its slate feathers warmed to pewter above the shaggy sprawl of the nest. Sunburnt canola glows soft and out of focus through the cottonwood leaves, and the whole crown of the tree leans in as if to listen. This is the bird that knows what happened in the north nest at supper time, and is not yet saying.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0020_DJI_20260721222146_0489_D.jpg",
+    "active": true,
+    "sort": 104
+  },
+  {
+    "slug": "gbh-fly-0021-dji-20260721222055-0482-d",
+    "title": "Two Up Before Supper",
+    "caption": "Two tall young herons stand at attention over an empty nest bowl, one in clean profile against the leaves, the other facing the camera dead-on with the unblinking candor of youth, while a third bird lurks half hidden in the branches at right. A blue evening sky and a distant timbered ridge show through the cottonwood crown, the canola a warm blur below. Somebody is late coming home with supper, and these two intend to mention it.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0021_DJI_20260721222055_0482_D.jpg",
+    "active": true,
+    "sort": 105
+  },
+  {
+    "slug": "gbh-fly-0022-dji-20260721222047-0480-d",
+    "title": "Standing Room at the Home Nest",
+    "caption": "A breath later in the same evening, the left-hand juvenile stretches to full height in golden side light while its nestmate curls its streaked neck and studies the ground below. Between them the woven nest sits center stage on white cottonwood limbs, the ripened field glowing through every gap in the leaves. It has the air of two heirs sizing up the family place and quietly disagreeing about who gets the good corner.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0022_DJI_20260721222047_0480_D.jpg",
+    "active": true,
+    "sort": 106
+  },
+  {
+    "slug": "gbh-fly-0023-dji-20260721222036-0478-d",
+    "title": "The Whole Outfit at Sundown",
+    "caption": "Four herons share one cottonwood in this wide view: two juveniles upright in the foreground, a hunched elder brooding at center, and a fourth tending its feathers at the frame's edge, all above canola that runs to a hazy blue line of pines. The low sun picks out each pale neck against the dark leaves. Every small town has an evening like this, where everyone is out on their porches pretending not to watch each other.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0023_DJI_20260721222036_0478_D.jpg",
+    "active": true,
+    "sort": 107
+  },
+  {
+    "slug": "gbh-fly-0024-dji-20260721222032-0477-d",
+    "title": "Shoulder to Shoulder at Day's End",
+    "caption": "Two young herons stand nearly touching, both faced the same direction with necks drawn tall, their buff-streaked throats lit warm by the setting sun while a third bird buries its head in its feathers in the upper corner, staying out of it. The canola field lies gold and soft behind the cottonwood limbs. Whatever these two are watching, they are watching it together, and the one preening behind them clearly does not care to know.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0024_DJI_20260721222032_0477_D.jpg",
+    "active": true,
+    "sort": 108
+  },
+  {
+    "slug": "gbh-fly-0025-dji-20260721222028-0476-d",
+    "title": "Four Neighbors, One Tree",
+    "caption": "This wide frame gathers four birds across the cottonwood's crown: a poised profile at left, a young one facing the lens straight on, a shadowed figure hunched by the empty nest at center, and a fourth perched apart on the white branches at right. Beyond them the canola rolls away to timbered hills under a clear evening sky. It reads like a family reunion where two showed up on time, one sulked, and one kept to the far end of the porch.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0025_DJI_20260721222028_0476_D.jpg",
+    "active": true,
+    "sort": 109
+  },
+  {
+    "slug": "gbh-fly-0026-dji-20260721222023-0475-d",
+    "title": "Company in the Big Cottonwood",
+    "caption": "The rookery's evening arrangement shifts here: the center juvenile fixes the camera with a level stare, a second bill slips into view behind the left-hand bird, and the right-hand heron has pointedly turned its back to the whole affair. Through a gap in the leaves, farm ground and machinery show beyond the ripened canola. Sunlight comes in low and honey-colored, gilding necks and pale branches alike.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0026_DJI_20260721222023_0475_D.jpg",
+    "active": true,
+    "sort": 110
+  },
+  {
+    "slug": "gbh-fly-0027-dji-20260721222013-0472-d",
+    "title": "The North Branch Crowd",
+    "caption": "Five herons inhabit this leafy frame if you count carefully: two juveniles standing tall over the nest at center, a dark youngster wedged between them, and two more roosting half seen in the upper branches at right. The cottonwood's white limbs thread through deep green foliage with the pale field glowing behind. It is the crowded end of the tree, the side of town where everybody knows everybody's business by dark.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0027_DJI_20260721222013_0472_D.jpg",
+    "active": true,
+    "sort": 111
+  },
+  {
+    "slug": "gbh-fly-0028-dji-20260721222004-0470-d",
+    "title": "Looking In on the Neighbors",
+    "caption": "Taken looking gently down into the canopy, this frame shows two herons in matched profile on the left-hand nest, a second stick platform standing empty in the branches above, and a third bird tucked deep in the leaves at right. Harvested canola ground shows dusty gold through the crown's edge. The empty nest is the one everyone in the rookery has an opinion about, and these two appear to be discussing it.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0028_DJI_20260721222004_0470_D.jpg",
+    "active": true,
+    "sort": 112
+  },
+  {
+    "slug": "gbh-fly-0029-dji-20260721221857-0467-d",
+    "title": "A Word Over the Shoulder",
+    "caption": "The closest portrait in the collection: a fledgling heron, still downy about the head, turns its neck fully back across its own wing, amber eye catching the last sun among backlit cottonwood leaves. Below and behind, the gray shoulder of a companion shows through the foliage, just out of the conversation. Every rich feather detail is here, along with the unmistakable posture of a bird about to say something it will claim later it never said.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0029_DJI_20260721221857_0467_D.jpg",
+    "active": true,
+    "sort": 113
+  },
+  {
+    "slug": "gbh-fly-0030-dji-20260721221855-0466-d",
+    "title": "Close Quarters in the Canopy",
+    "caption": "Two juvenile herons stand so near that their heads stack one above the other, both pale-eyed and alert, necks crossing among sunlit leaves while a third bird shadows the understory at lower left. The cottonwood's white branch cuts a clean diagonal beneath them. It is the portrait of siblings who have shared a nest all summer and are precisely one week past done with it.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0030_DJI_20260721221855_0466_D.jpg",
+    "active": true,
+    "sort": 114
+  },
+  {
+    "slug": "gbh-fly-0031-dji-20260721221853-0465-d",
+    "title": "Two Deep in the Leaves",
+    "caption": "Here the pair draws back into the foliage, one striped head raised above the other, their barred gray necks half swallowed by dappled cottonwood green while a third bird's dark back hides low on the left. Evening light falls in patches, silvering some leaves and leaving others in shade. A quieter, more secretive frame, for the buyer who likes knowing there is always more going on in a tree than the tree lets on.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0031_DJI_20260721221853_0465_D.jpg",
+    "active": true,
+    "sort": 115
+  },
+  {
+    "slug": "gbh-fly-0032-dji-20260721221848-0464-d",
+    "title": "Not Speaking This Evening",
+    "caption": "Two herons share one branch and face precisely opposite directions: the pale-necked juvenile gazing right into the low sun, the dark-capped bird behind it staring left into the leaves. Around them the cottonwood canopy glows in two tones, deep green above, sunwashed gold below. Whatever passed between these two earlier in the day, the matter is clearly not resolved, and the photograph is better for it.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0032_DJI_20260721221848_0464_D.jpg",
+    "active": true,
+    "sort": 116
+  },
+  {
+    "slug": "gbh-fly-0033-dji-20260721221845-0463-d",
+    "title": "Crest Up in the Evening Breeze",
+    "caption": "The foreground heron lifts its head high with its wispy crest ruffled loose in the evening air, cream-colored neck shining against the dark leaves, while its companion holds a level, black-capped profile just behind. A pale cottonwood limb crosses the frame beneath them like a rail fence. There is a touch of vanity in that raised crest, and a touch of long-suffering patience in the bird behind it.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0033_DJI_20260721221845_0463_D.jpg",
+    "active": true,
+    "sort": 117
+  },
+  {
+    "slug": "gbh-fly-0034-dji-20260721221842-0462-d",
+    "title": "Both Watching the Same Road",
+    "caption": "A moment of rare agreement: both young herons face the same way here, the front bird's tawny neck drawn up tall, the darker one peering over its shoulder from behind, the two framed in a window of sunlit and shadowed cottonwood leaves. The pale branch below anchors the composition like a porch rail at dusk. Somebody is coming in over the canola, and neither bird wants to be the last to see who.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0034_DJI_20260721221842_0462_D.jpg",
+    "active": true,
+    "sort": 118
+  },
+  {
+    "slug": "gbh-fly-0035-dji-20260721221838-0461-d",
+    "title": "Out on a Limb Before Dark",
+    "caption": "A single heron steps away from the crowd, stretched in clean profile along a slender cottonwood branch, its long neck and sharp bill pointed into the last of the light while a companion's blurred gray form keeps to the shadows below. The canopy closes around the bird in layers of green and gold. It is the loner's hour, that short spell of a July evening when even a rookery bird wants a branch to itself.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0035_DJI_20260721221838_0461_D.jpg",
+    "active": true,
+    "sort": 119
+  },
+  {
+    "slug": "gbh-fly-0036-dji-20260721221819-0457-d",
+    "title": "The Quiet One in the Deep Green",
+    "caption": "You have to look twice to find the heron here, tucked at the heart of the cottonwood with only its striped throat and lifted bill betraying it above the pale tangle of the nest. Sun-struck leaves close over the scene like a curtain drawn early. Every rookery keeps one bird like this, the neighbor who hears everything, repeats nothing, and is somehow always home.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0036_DJI_20260721221819_0457_D.jpg",
+    "active": true,
+    "sort": 120
+  },
+  {
+    "slug": "gbh-fly-0037-dji-20260721221805-0455-d",
+    "title": "Evening Roll Call in the Old Cottonwood",
+    "caption": "Three great blue herons hold their places in a single frame of dense cottonwood green, the ripening canola showing gold through every gap in the leaves. The one on the sun-bleached stick nest stands dead center and bolt upright, plainly in charge, while the two on the flanking branches keep their necks folded and their opinions to themselves. It is the whole neighborhood at a glance, arranged as neatly as chairs on a porch in the last calm light of a July evening.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0037_DJI_20260721221805_0455_D.jpg",
+    "active": true,
+    "sort": 121
+  },
+  {
+    "slug": "gbh-fly-0038-dji-20260721221754-0453-d",
+    "title": "Standing Tall at Suppertime",
+    "caption": "One young heron stretches to its full height on the nest rim, neck drawn straight as a fence post, while the canola field rolls away gold and unbroken behind the cottonwood. To its left a darker sibling hunches low in the leaves, and to the right a third bird has turned its back entirely, as if the conversation had gone somewhere it didn't care for. The pale sticks of the nest catch the evening light like weathered barnwood, grounding this quiet study of a household not quite in agreement.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0038_DJI_20260721221754_0453_D.jpg",
+    "active": true,
+    "sort": 122
+  },
+  {
+    "slug": "gbh-fly-0039-dji-20260721221751-0452-d",
+    "title": "The Lookout Above the Canola",
+    "caption": "Framed in a window of cottonwood branches, a heron stands sentry at the nest with its head turned in sharp profile, the drill lines of the ripening canola field running clear to the pale horizon behind it. A darker companion shelters close at its shoulder, and away at the right edge a third bird lingers half-hidden in the leaves, keeping tabs without being seen to. The great sweep of gold gives the print its air; the small politics of the tree give it its story.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0039_DJI_20260721221751_0452_D.jpg",
+    "active": true,
+    "sort": 123
+  },
+  {
+    "slug": "gbh-fly-0040-dji-20260721221744-0450-d",
+    "title": "Full House in the North Cottonwood",
+    "caption": "The nest is crowded this evening: a crested heron stands tall at center while two dusky youngsters press in beside it, both facing away as though they'd heard the lecture before. On a limb at the upper left a neighbor perches within earshot, and another figure waits half-veiled at the right margin of the frame. Behind them the canola glows amber through the branches, warm evening light gilding a tree that has clearly become the busiest address on the place.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0040_DJI_20260721221744_0450_D.jpg",
+    "active": true,
+    "sort": 124
+  },
+  {
+    "slug": "gbh-fly-0041-dji-20260721221741-0449-d",
+    "title": "Lakeside Quarters, Golden Hour",
+    "caption": "Here the rookery shows its view: beyond the shaggy-crested heron and its hunched nest mate, the field runs down to still lake water and a hazy far shore. A third bird stands rim-lit on a branch at right, neck raised, and a fourth head periscopes up from the foliage between them, nobody willing to miss whatever is passing below. The low sun edges every feather in gold, proof that even the plainest evening chores here come with waterfront scenery.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0041_DJI_20260721221741_0449_D.jpg",
+    "active": true,
+    "sort": 125
+  },
+  {
+    "slug": "gbh-fly-0042-dji-20260721221732-0447-d",
+    "title": "A Word Between Neighbors",
+    "caption": "Shot close over the nest rail, two young herons stand shoulder to shoulder facing opposite ways, one fixing the camera with a level stare while the other opens its bill mid-remark, evening light catching the yellow of it. Their ruffled breast feathers and the white-barked cottonwood limbs around them read beautifully at print scale, every stick of the nest sharp in the foreground. Whatever was being said, it was clearly not meant to leave the tree.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0042_DJI_20260721221732_0447_D.jpg",
+    "active": true,
+    "sort": 126
+  },
+  {
+    "slug": "gbh-fly-0043-dji-20260721221719-0444-d",
+    "title": "Two Brothers on the Porch Rail",
+    "caption": "A pair of juvenile herons stand pressed together at the nest's edge, both yellow eyes trained on the same point off-frame right, as if the neighbors two branches over were doing something worth remembering. The left two-thirds of the frame belongs to the cottonwood itself, its lichen-silvered limbs winding through warm, hazy evening light. It is a portrait of siblings keeping watch together, and keeping score.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0043_DJI_20260721221719_0444_D.jpg",
+    "active": true,
+    "sort": 127
+  },
+  {
+    "slug": "gbh-fly-0044-dji-20260721221716-0443-d",
+    "title": "Keeping Company in the Canopy",
+    "caption": "Deep in a lattice of pale branches, one heron stands tall at the nest with its head turned in clean profile while a second looks the other way over its shoulder, the two of them covering both approaches like an old married couple who no longer need to discuss it. The hazy gold of the evening field glows softly through the leaves behind them. The dense weave of cottonwood limbs makes a natural frame within the frame, drawing the eye straight to the pair at its center.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0044_DJI_20260721221716_0443_D.jpg",
+    "active": true,
+    "sort": 128
+  },
+  {
+    "slug": "gbh-fly-0045-dji-20260721221713-0442-d",
+    "title": "Quiet Hour on the Far Nest",
+    "caption": "Seen from a respectful distance, the nest sits like an island in a sea of cottonwood leaves, its resident hunched low and settled in for the evening while a neighbor perches at the upper left corner of the frame, ostensibly minding its own business. Glimpses of the ripening canola burn gold through the canopy on either side. This is the rookery at its most private, the frame a reminder that out here even the gossip observes quiet hours.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0045_DJI_20260721221713_0442_D.jpg",
+    "active": true,
+    "sort": 129
+  },
+  {
+    "slug": "gbh-fly-0046-dji-20260721221708-0441-d",
+    "title": "Home Before Dark",
+    "caption": "Two young herons settle at their broad silver nest beneath an archway of cottonwood limbs, the front bird upright in soft profile, its downy neck feathers loose in the still air, while its nest mate tucks in close behind. Through the branches the field and far treeline dissolve into hazy evening light. The pale sticks of the nest, built up season over season, anchor the frame like a homestead that has seen a few generations come and go.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0046_DJI_20260721221708_0441_D.jpg",
+    "active": true,
+    "sort": 130
+  },
+  {
+    "slug": "gbh-fly-0047-dji-20260721221639-0440-d",
+    "title": "The Tall Pair on the Top Rail",
+    "caption": "Two herons stand nearly matched on a high limb, the canola glowing amber through the leaves behind them and a corner of the nest just visible at lower right, as if they'd stepped out of the house for air. The forward bird faces one way and its companion angles the other, necks drawn long and elegant in the level evening light. A clean, upright composition, and a hint that this pair has been sizing up the view together for a while.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0047_DJI_20260721221639_0440_D.jpg",
+    "active": true,
+    "sort": 131
+  },
+  {
+    "slug": "gbh-fly-0048-dji-20260721221635-0439-d",
+    "title": "Watching the Canola Come Ripe",
+    "caption": "Set to the right of frame, a bright-eyed heron cranes over the canopy with a second bird tucked in low behind it, both looking out across the broad gold sweep of the canola field that fills the left of the picture. The crop is nearly ready and the birds appear to know it, supervising the place like landowners walking the fence line. Evening light warms the field to honey while the cottonwood leaves hold their deep summer green.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0048_DJI_20260721221635_0439_D.jpg",
+    "active": true,
+    "sort": 132
+  },
+  {
+    "slug": "gbh-fly-0049-dji-20260721221628-0437-d",
+    "title": "Facing West Before Supper",
+    "caption": "Two herons stand in matched profile on a limb at the left of the frame, both aimed the same direction with the fixed attention of neighbors who have spotted someone coming up the lane. Below and to the right, their pale stick nest sits momentarily empty in the crook of the cottonwood, and the canola glows soft gold through the leaves beyond. The near-mirrored pair gives the print a formal, almost heraldic balance.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0049_DJI_20260721221628_0437_D.jpg",
+    "active": true,
+    "sort": 133
+  },
+  {
+    "slug": "gbh-fly-0050-dji-20260721221621-0435-d",
+    "title": "Neighbors Up and Down the Tree",
+    "caption": "A close pair of herons holds the center of the frame, both facing left with necks at full attention, while high in the background a third adult stands against the canola-gold distance, near enough to be seen and far enough to be talked about. The white wisps of the nest show at the lower right corner, and the cottonwood's pale limbs thread the whole scene together. Evening light lies soft on their gray shoulders.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0050_DJI_20260721221621_0435_D.jpg",
+    "active": true,
+    "sort": 134
+  },
+  {
+    "slug": "gbh-fly-0051-dji-20260721221608-0433-d",
+    "title": "The View Past the Old Barn",
+    "caption": "From their perch in the cottonwood, two herons look out in tandem over a scene that says Montana without raising its voice: golden field below, still lake water beyond, hazy blue hills on the horizon, and the white roofline of the old ranch building showing at the right. The birds face the same direction with the settled air of longtime residents reviewing the property. A rare frame where the whole home place — birds, canola, water, and barn — sits together in one quiet evening light.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0051_DJI_20260721221608_0433_D.jpg",
+    "active": true,
+    "sort": 135
+  },
+  {
+    "slug": "gbh-fly-0052-dji-20260721221604-0432-d",
+    "title": "Canola to the Water's Edge",
+    "caption": "Two herons perch shoulder to shoulder on a cottonwood limb, gazing left across a canola field that runs rich and gold, its wheel tracks curving down toward the lake and the hazy shoreline beyond. At the far right edge, the farmyard's silo and tanks peek through the leaves, keeping the working ranch honestly in the picture. The pair's matched posture suggests a shared verdict on the evening, though neither is saying what it is.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0052_DJI_20260721221604_0432_D.jpg",
+    "active": true,
+    "sort": 136
+  },
+  {
+    "slug": "gbh-fly-0053-dji-20260721221554-0430-d",
+    "title": "The Far Shore from the Home Tree",
+    "caption": "Warm evening light falls across the streaked breasts of two herons standing in profile on their branch, while behind them the swept gold of the canola field meets calm lake water and the dark timber of the far shore. Both birds face left with identical intent, the sort of synchronized attention that starts rumors in a rookery. The layered backdrop of field, water, and forest gives this print unusual depth for a portrait taken at canopy height.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0053_DJI_20260721221554_0430_D.jpg",
+    "active": true,
+    "sort": 137
+  },
+  {
+    "slug": "gbh-fly-0054-dji-20260721221544-0427-d",
+    "title": "Bookends Under the Big Sky",
+    "caption": "At the heart of a towering cottonwood, two herons stand pressed together facing opposite directions, their raised necks forming a near-perfect mirrored pair against the hazy blue of the lake and mountains behind. The gold of the field shows at the lower left, and the tree's full crown fills the frame around them, making the birds a small, deliberate center in a big country. Whether it is courtship or merely an old alliance, they are plainly a matched set, and the whole rookery knows it.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0054_DJI_20260721221544_0427_D.jpg",
+    "active": true,
+    "sort": 138
+  },
+  {
+    "slug": "gbh-fly-0055-dji-20260721221450-0423-d",
+    "title": "Waiting on Supper in the West Tree",
+    "caption": "A tall young heron stands watch on the bleached platform of the nest, head high and aimed up the valley as if supper were running late and someone would be hearing about it. A dark sibling hunches at its side, a third bird waits in the leaves at right, and a fourth keeps to its branch at the frame's left edge, the whole household arranged through the cottonwood's crown. Behind them the ripening canola glows soft gold under a pale, hazy evening sky.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0055_DJI_20260721221450_0423_D.jpg",
+    "active": true,
+    "sort": 139
+  },
+  {
+    "slug": "gbh-fly-0056-dji-20260721221447-0422-d",
+    "title": "Standing Room at the Supper Table",
+    "caption": "Four great blue herons crowd one bleached-stick nest high in the cottonwoods, the ripening canola rolling out gold behind them in the last of the evening light. The young bird front and center holds the floor, crest ruffled and streaky chest out, while two dark-shouldered siblings keep their backs turned as if they've heard this speech before. Off in the leaves at right, a fourth watches sidelong from the next branch over, the way a neighbor listens across a fence. A full-house portrait of rookery life at canopy height.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0056_DJI_20260721221447_0422_D.jpg",
+    "active": true,
+    "sort": 140
+  },
+  {
+    "slug": "gbh-fly-0057-dji-20260721221442-0421-d",
+    "title": "The Tall One Takes the Lookout",
+    "caption": "Taken seconds apart from its companion frame, this one catches the young heron at full stretch, neck drawn straight up like a fencepost, surveying the canola field that glows soft and green-gold behind the cottonwood leaves. The two darker birds at its side stay hunched and unimpressed, facing the other way, while the neighbor on the right branch mirrors the tall pose from a polite distance. Somebody in this tree thinks he's in charge, and this evening he might be right. The pale nest of twigs anchors the composition like a table set for company.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0057_DJI_20260721221442_0421_D.jpg",
+    "active": true,
+    "sort": 141
+  },
+  {
+    "slug": "gbh-fly-0058-dji-20260721221423-0418-d",
+    "title": "Shoulder to Shoulder at Sundown",
+    "caption": "Two young herons stand pressed close on the family nest, one turned away in slate-dark reserve, the other showing its streaky buff front in profile, their heads nearly touching in what could be confidence or complaint. The great pale limbs of the cottonwood curve around them like arms, warmed by low evening light, with a wash of field showing through the leaves at upper left. Whatever passed between these two at the top of the tree, it looks like it was worth staying home for. An intimate frame from a rookery that seldom lets anyone this near.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0058_DJI_20260721221423_0418_D.jpg",
+    "active": true,
+    "sort": 142
+  },
+  {
+    "slug": "gbh-fly-0059-dji-20260721221410-0416-d",
+    "title": "Three Houses Down the Lane",
+    "caption": "Three herons hold three stations across one cottonwood crown, the ripening canola glowing gold through every gap in the leaves. The center bird stands trim on its white nest of twigs, the left neighbor keeps its back turned among the branches, and the right one peers in from the edge of the frame like someone checking who got the bigger place. Evening light picks out the pale bark and the streaked young feathers alike. A study in how close the neighbors live at the top of a Montana rookery.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0059_DJI_20260721221410_0416_D.jpg",
+    "active": true,
+    "sort": 143
+  },
+  {
+    "slug": "gbh-fly-0060-dji-20260721221404-0415-d",
+    "title": "Neighbors at Evening Chores",
+    "caption": "In this frame the three residents have all turned their heads to the left, as if the same rumor just moved down the tree row. The center bird stands tall over its bleached nest, flanked by a scruffy juvenile in the left branches and a third keeping watch from the right, with the canola field laying its warm gold behind the dark cottonwood leaves. The low July light softens everything but the gossip. Part of a burst that catches the rookery mid-conversation.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0060_DJI_20260721221404_0415_D.jpg",
+    "active": true,
+    "sort": 144
+  },
+  {
+    "slug": "gbh-fly-0061-dji-20260721221401-0414-d",
+    "title": "Company on Every Branch",
+    "caption": "Three young herons share the evening from separate perches: a big streak-breasted bird looming in the left foreground, the nest-keeper poised over its swirl of white sticks at center, and a slim sentinel tucked into the right-hand leaves. The canola behind them has gone the color of late July, a soft gold curtain hung behind the cottonwood. Nobody is speaking, but everybody is listening. A quiet, full frame from the busiest tree on the place.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0061_DJI_20260721221401_0414_D.jpg",
+    "active": true,
+    "sort": 145
+  },
+  {
+    "slug": "gbh-fly-0062-dji-20260721221351-0412-d",
+    "title": "Two Households in the Big Cottonwood",
+    "caption": "One tree, two addresses: a pair of herons stands with backs turned on the high nest at upper left, while another pair keeps close company on the lower nest at right, one dark and one pale-streaked, heads bent together. Between them the cottonwood trunk rises through a window of golden canola. The upstairs neighbors and the downstairs neighbors appear to be minding their own business, which in a rookery never lasts long. A wide, storytelling frame of colony life at dusk.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0062_DJI_20260721221351_0412_D.jpg",
+    "active": true,
+    "sort": 146
+  },
+  {
+    "slug": "gbh-fly-0063-dji-20260721221341-0411-d",
+    "title": "Across the Yard from One Another",
+    "caption": "The two nests of the big cottonwood face each other across an open stretch of gold field, the upper-left pair standing straight-backed and formal, the lower-right pair hunkered low, one bird fussing with its feathers like it's late getting ready. Pale limbs and heavy green leaves divide the frame into rooms, the canola glowing through the middle like a lit doorway. Every rookery has its tidy house and its lived-in one. Evening light does both of them favors.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0063_DJI_20260721221341_0411_D.jpg",
+    "active": true,
+    "sort": 147
+  },
+  {
+    "slug": "gbh-fly-0064-dji-20260721221338-0410-d",
+    "title": "Word Travels in the Cottonwood",
+    "caption": "Five herons occupy this one sweep of canopy: a caller mid-cry on the center nest, a neck periscoping up from the left foliage, a watcher half-hidden at center right, and two dark shapes settled on the lower-right nest pretending not to hear. The ripening field shows warm through the branches behind them, and the pale nest platforms float in the leaves like porch lights coming on. Whatever announcement just went out, the whole tree got it. A dense, rewarding frame that gives up a new bird every time you look.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0064_DJI_20260721221338_0410_D.jpg",
+    "active": true,
+    "sort": 148
+  },
+  {
+    "slug": "gbh-fly-0065-dji-20260721223006-0580-d",
+    "title": "Last Light on the Big Nest",
+    "caption": "A lone heron stands in profile on its broad platform of sun-bleached sticks, the low golden-hour light warming its slate wings and the dark cap above a pale, watchful eye. Behind it the canola field softens into a diagonal weave of green and gold beyond the cottonwood leaves. With the rest of the family elsewhere, this one holds the home place alone, and looks entirely comfortable with the arrangement. The kind of quiet, glowing frame a room settles around.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0065_DJI_20260721223006_0580_D.jpg",
+    "active": true,
+    "sort": 149
+  },
+  {
+    "slug": "gbh-fly-0066-dji-20260721222956-0577-d",
+    "title": "Keeping the Home Quarter",
+    "caption": "Framed wide between two great cottonwood limbs, a single heron rides its nest like a house set on a hill, the striped tan field running its long rows in the upper distance. The evening sun lays a warm hand on the tangle of white twigs and the bird's folded gray wings. Everyone else has stepped out, and this one is plainly the sort who stays behind to keep the porch light on. A composed, spacious print with real Montana bones.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0066_DJI_20260721222956_0577_D.jpg",
+    "active": true,
+    "sort": 150
+  },
+  {
+    "slug": "gbh-fly-0067-dji-20260721222938-0572-d",
+    "title": "The Homestead at Day's End",
+    "caption": "A single heron settles into the heart of its nest, body angled and head turned left, while a bleached cottonwood branch cuts a bright diagonal across the foreground like a rail fence. Golden-hour light catches the blue-gray of the folded wings and sets the whole tangle of nest sticks glowing against the dark leaves, with the faded field just visible beyond. The bird has the settled look of someone whose supper is done and whose neighbors, for once, are quiet. A warm, close portrait of home at the top of the tree.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0067_DJI_20260721222938_0572_D.jpg",
+    "active": true,
+    "sort": 151
+  },
+  {
+    "slug": "gbh-fly-0068-dji-20260721222932-0570-d",
+    "title": "Alone Above the Canola",
+    "caption": "The widest of the lone-bird frames sets one small heron and its nest against the full sweep of the place: pale cottonwood limbs crossing like beams, dark summer leaves, and the tan field beyond running its harvest lines to the edge of the evening. The bird faces west along the branch, unbothered by the distance in every direction. It is a picture about scale, and about the nerve it takes to homestead eighty feet up. Prints beautifully large.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0068_DJI_20260721222932_0570_D.jpg",
+    "active": true,
+    "sort": 152
+  },
+  {
+    "slug": "gbh-fly-0069-dji-20260721222827-0561-d",
+    "title": "Coming In for the Night",
+    "caption": "Seen straight down from above the canopy, a heron steadies itself on a branch with wings half-raised, inches from the nest where its nestmate sits low in the swirl of white sticks. A third bird perches in the sunlit green below, studiously facing the other way. Somebody is arriving late, and somebody in that nest is going to want to know where they've been. The low sun rakes across the cottonwood crown, turning the whole scene into a lit map of the neighborhood.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0069_DJI_20260721222827_0561_D.jpg",
+    "active": true,
+    "sort": 153
+  },
+  {
+    "slug": "gbh-fly-0070-dji-20260721222822-0559-d",
+    "title": "Wings Over the Home Tree",
+    "caption": "The showpiece of the evening: a heron spreads its full wingspan directly beneath the drone, every flight feather fanned dark against the sunlit cottonwood leaves as it maneuvers toward the nest at right, where a hunkered bird waits in the circle of white twigs. Down in the lower left a third heron tips steeply forward, tail up, as if deciding whether to follow. The top-down view turns the rookery into a stage seen from the rafters. A dramatic, graphic print unlike anything shot from the ground.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0070_DJI_20260721222822_0559_D.jpg",
+    "active": true,
+    "sort": 154
+  },
+  {
+    "slug": "gbh-fly-0071-dji-20260721222819-0558-d",
+    "title": "The Late Arrival",
+    "caption": "From straight overhead, one heron pauses mid-branch with wings loosely mantled, caught between perches on its way home, while the nest waits below right with a single bird bent over its rim. In the upper left a third neighbor sits hunched and unmoved, having seen this particular entrance before. The evening sun turns the canopy to lit green velvet and bleaches the nest to a bright spiral at the corner of the frame. A candid moment of comings and goings in the colony's last hour of light.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0071_DJI_20260721222819_0558_D.jpg",
+    "active": true,
+    "sort": 155
+  },
+  {
+    "slug": "gbh-fly-0072-dji-20260721222748-0553-d",
+    "title": "Two Old Friends Facing East",
+    "caption": "Two herons stand a branch apart in the cottonwood crown, both turned in matching profile toward the same point beyond the frame, the ripe canola behind them combed into golden rows by the field tracks. The nearer bird carries the pale, streaked neck of a youngster; its companion sits lower on a white limb with the patient set of one who has watched more harvests. Whatever they are looking at, they have agreed not to discuss it yet. A clean, elegant pairing made for a wide wall.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0072_DJI_20260721222748_0553_D.jpg",
+    "active": true,
+    "sort": 156
+  },
+  {
+    "slug": "gbh-fly-0073-dji-20260721222737-0550-d",
+    "title": "Watching the Same Horizon",
+    "caption": "Moments before the closer companion frame, the two herons hold their perches farther apart, the left bird's neck folded into a fine S-curve with its bill catching the orange of the low sun, the right bird stretched alert on a bleached branch. The canola field fills the background in full late-July gold, soft as upholstery behind the dark leaves. Two neighbors, one view, and just enough distance between them to keep the peace. Golden-hour color at its most generous.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0073_DJI_20260721222737_0550_D.jpg",
+    "active": true,
+    "sort": 157
+  },
+  {
+    "slug": "gbh-fly-0074-layer-1",
+    "title": "Within Sight of the Barn",
+    "caption": "A finished composition from the same July evening: two young herons stand close on their nest at the heart of the cottonwood, one slate-dark and turned away, the other streaked in buff and facing out, while beyond the pale worked field the rooflines of the ranch buildings show at the top of the frame. The light here is soft and even, the great white limbs and heavy leaves wrapping the nest like a frame within the frame. It places the rookery where it truly lives, a hundred yards of air from the home place, close enough that the birds surely keep track of the household as much as the household keeps track of them.",
+    "location": "MONTANA",
+    "file": "gbh_fly_0074_Layer 1.jpg",
+    "active": true,
+    "sort": 158
   }
 ]

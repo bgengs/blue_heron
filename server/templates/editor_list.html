@@ -4,31 +4,71 @@
 <h1>Photo Editor</h1>
 <p class="muted">Crop, rotate, and title your raw photos before processing.
 Edits are non-destructive — your originals in <code>raw/</code> are never
-changed; the crop is applied when you Process. Set a title here and it carries
-straight into the gallery on Publish.</p>
+changed; the crop is applied when you Process. Archive DJI duplicates so the
+counter is just your <code>gbh_fly</code> set (1…N).</p>
+
+<div class="photos-toolbar">
+  {% if not show_archived %}
+  <form method="post" action="/admin/editor/archive-bulk" class="inline"
+        onsubmit="return confirm('Archive all DJI_ originals? They leave the editor (files stay on disk). gbh_fly crops are not touched.');">
+    <input type="hidden" name="action" value="archive_dji">
+    <button class="btn" type="submit">Archive all DJI originals</button>
+  </form>
+  <a class="btn ghost" href="/admin/editor?show_archived=1">Archived ({{ archived_count }})</a>
+  <span class="muted">{{ active_count }} in editor · gbh_fly first</span>
+  {% else %}
+  <a class="btn" href="/admin/editor">← Back to editor</a>
+  <form method="post" action="/admin/editor/archive-bulk" class="inline">
+    <input type="hidden" name="action" value="unarchive_gbh">
+    <button class="btn" type="submit">Restore all gbh_fly</button>
+  </form>
+  <form method="post" action="/admin/editor/archive-bulk" class="inline"
+        onsubmit="return confirm('Restore every archived photo to the editor?');">
+    <input type="hidden" name="action" value="unarchive_all">
+    <button class="btn ghost" type="submit">Unarchive all</button>
+  </form>
+  <span class="muted">Showing archived only</span>
+  {% endif %}
+</div>
 
 <div class="editor-grid">
   {% for it in items %}
-  <a class="editor-tile" href="/admin/editor/{{ it.name }}">
-    <img loading="lazy" src="/admin/raw/{{ it.name }}?max=360" alt="{{ it.name }}">
-    <div class="editor-tile-meta">
-      <span class="et-title">{{ it.title or it.name }}</span>
-      {% if it.has_crop %}<span class="pill ok">edited</span>{% endif %}
-      {% if not it.title %}<span class="pill warn">no title</span>{% endif %}
-    </div>
-  </a>
+  <div class="editor-tile-wrap">
+    <a class="editor-tile" href="/admin/editor/{{ it.name }}">
+      <img loading="lazy" src="/admin/raw/{{ it.name }}?max=720" alt="{{ it.name }}">
+      <div class="editor-tile-meta">
+        <span class="et-num">{{ it.index }}</span>
+        <span class="et-title">{{ it.title or it.name }}</span>
+        {% if it.has_crop %}<span class="pill ok">edited</span>{% endif %}
+        {% if it.archived %}<span class="pill warn">archived</span>{% endif %}
+        {% if not it.title %}<span class="pill warn">no title</span>{% endif %}
+      </div>
+    </a>
+    {% if show_archived %}
+    <form method="post" action="/admin/editor/set-archive" class="tile-restore">
+      <input type="hidden" name="name" value="{{ it.name }}">
+      <input type="hidden" name="archived" value="0">
+      <button class="btn" type="submit">Restore</button>
+    </form>
+    {% endif %}
+  </div>
   {% endfor %}
   {% if not items %}
-  <p class="muted">No raw photos found. Drop JPGs into <code>raw/</code> and refresh.</p>
+  <p class="muted">{% if show_archived %}Nothing archived yet.{% else %}No raw photos found. Drop JPGs into <code>raw/</code> and refresh.{% endif %}</p>
   {% endif %}
 </div>
 
 <style>
-.editor-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1.1rem; margin-top:1.4rem; }
-.editor-tile { display:block; text-decoration:none; background:#fff; border:1px solid var(--line); transition:box-shadow .2s, transform .2s; }
-.editor-tile:hover { transform:translateY(-2px); box-shadow:0 12px 24px -14px rgba(20,37,52,.5); }
+.photos-toolbar { display:flex; gap:.8rem; align-items:center; flex-wrap:wrap; margin:1rem 0 1.2rem; }
+.editor-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:1.25rem; margin-top:1.4rem; }
+.editor-tile-wrap { display:flex; flex-direction:column; background:#fff; border:1px solid var(--line); }
+.editor-tile { display:block; text-decoration:none; transition:box-shadow .2s, transform .2s; }
+.editor-tile-wrap:hover { transform:translateY(-2px); box-shadow:0 12px 24px -14px rgba(20,37,52,.5); }
 .editor-tile img { width:100%; aspect-ratio:3/2; object-fit:cover; display:block; }
-.editor-tile-meta { padding:.6rem .7rem; display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; }
-.et-title { font-family:var(--serif); color:var(--navy); font-size:1.05rem; flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.editor-tile-meta { padding:.7rem .85rem; display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; }
+.et-num { font-size:.75rem; color:var(--slate); min-width:1.6rem; }
+.et-title { font-family:var(--serif); color:var(--navy); font-size:1.1rem; flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.tile-restore { padding:0 .85rem .85rem; }
+.tile-restore .btn { width:100%; }
 </style>
 {% endblock %}

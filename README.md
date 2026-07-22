@@ -48,14 +48,13 @@ re-extracts to the exact photo ID it was stamped with. To prove ownership of a
 suspect image later: `python -m core` tooling from the eagle app, or the
 `registry.json` shipped to `data/`.
 
-## Prints & payment
+### Prints & payment
 
-- Formats/sizes/prices live in `data/catalog.json` — edit freely (prices are
-  placeholder). Sizes are landscape inches; keep them 3:2 to match the frames.
-- The order page (`site/order.html`) prices server-side and opens Stripe
-  Checkout. With no Stripe key set, it degrades gracefully to an email order.
-- Orders land in `/admin → Orders` with a ready-to-paste fulfillment block
-  (photo, format, size, ship-to, and the `output/print/…` file to upload).
+- Formats/sizes/prices + Prodigi SKUs live in `web/data/catalog.json`.
+- Stripe Checkout records the order; with `prodigi_api_key` set in
+  `web/config.local.php`, the webhook creates the Prodigi print order
+  automatically (see `web/README.md`). Without a key, fulfill from `/admin`
+  in the Prodigi dashboard by hand.
 
 ### Title suggestions
 
@@ -67,24 +66,21 @@ key is missing or the call fails.
 
 ### Products & Prodigi's range
 
-`data/catalog.json` currently lists the five core wall-art formats for on-site
-checkout. Prodigi actually offers far more — canvas, framed, metal, acrylic,
-wooden, and photo-tile wall art; phone/tablet cases and tech accessories;
-drinkware; cushions, blankets, and home decor; bathroom (shower curtains, mats,
-towels); placemats; notebooks; greeting cards and postcards. Add any of them by
-extending `catalog.json` (each format is just a label + size→price map). Keep
-on-site checkout to your hero products and let Etsy carry the long tail — see
-below.
+`web/data/catalog.json` already lists wall art (paper, framed, canvas, metal,
+acrylic, wood, tiles), home (cushions, blankets, placemats, shower curtains),
+drinkware, tech cases, and stationery — each option mapped to a Prodigi SKU
+under the format’s `prodigi` key. Verify SKUs against your Prodigi account
+before going live. Keep on-site checkout to what you want to sell; Etsy can
+still carry the long tail via Prodigi’s Etsy channel.
 
 ### Selling on Etsy too
 
 Prodigi has a native Etsy integration: connect your Etsy shop in the Prodigi
 dashboard (Sales channels → Connect your store) and paid Etsy orders route to
 Prodigi automatically for print + ship. So you can run **two** storefronts off
-the same photos: this site (Stripe checkout, you place Prodigi orders by hand
-from the Orders page) and Etsy (fully automated through Prodigi). The protected
-web images in `site/images/web/` are also what you'd upload as Etsy listing
-photos.
+the same photos: this site (Stripe → Prodigi API auto-fulfill) and Etsy
+(Prodigi’s native channel). The protected web images in `web/images/web/` are
+also what you'd upload as Etsy listing photos.
 
 ### Turning Stripe on
 

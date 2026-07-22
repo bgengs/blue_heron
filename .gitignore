@@ -1,15 +1,27 @@
 # --- secrets (never commit) ---
 .env
+book/.env
 web/config.local.php
+
+# --- book pipeline runtime ---
+book/logs/
+book/state/DONE
+book/.venv/
 
 # --- large / generated assets (regenerable, don't belong in git) ---
 source_photos/
 resized/
 output/
 
-# ingest folder — raw originals never go in git (can be tens of GB, incl. .psb/.psd)
+# Full-res camera originals + Photoshop exports (Process reads these locally)
 raw/*
 !raw/.gitkeep
+
+# Published gallery derivatives (written by studio Publish; deploy separately)
+web/images/web/*
+web/images/thumb/*
+!web/images/web/.gitkeep
+!web/images/thumb/.gitkeep
 
 # large binary source types anywhere (Photoshop, JPEG XL)
 *.psb

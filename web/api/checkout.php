@@ -38,8 +38,8 @@ try {
                 'currency' => $catalog['currency'] ?? 'usd',
                 'unit_amount' => $unit,
                 'product_data' => [
-                    'name' => $photo['title'] . ' — ' . $fmt_def['label'] . ', ' . $size . '"',
-                    'description' => 'Great blue heron fine art print — blueheron.gallery',
+                    'name' => $photo['title'] . ' — ' . $fmt_def['label'] . ', ' . $size,
+                    'description' => 'Great blue heron — blueheron.gallery',
                 ],
             ],
         ]],

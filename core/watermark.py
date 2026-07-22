@@ -3,6 +3,7 @@
 import hashlib
 import struct
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Optional
 
 import numpy as np
@@ -57,6 +58,9 @@ def pick_asset_color(
 def load_watermark(watermark_path: str) -> Image.Image:
     """Load watermark PNG as RGBA image.
 
+    Near-black backgrounds (e.g. heron_badge.png on a black square) are
+    punched to transparent so the seal composites cleanly on photos.
+
     Args:
         watermark_path: Path to watermark PNG file (must have alpha channel).
 
@@ -70,7 +74,18 @@ def load_watermark(watermark_path: str) -> Image.Image:
     wm = Image.open(watermark_path)
     if wm.mode != "RGBA":
         wm = wm.convert("RGBA")
+    name = Path(watermark_path).name.lower()
+    if "badge" in name or "verified" in name or "heron" in name:
+        wm = _punch_near_black(wm)
     return wm
+
+
+def _punch_near_black(im: Image.Image, threshold: int = 28) -> Image.Image:
+    """Make near-black pixels transparent."""
+    arr = np.array(im)
+    near = (arr[:, :, 0] < threshold) & (arr[:, :, 1] < threshold) & (arr[:, :, 2] < threshold) & (arr[:, :, 3] > 0)
+    arr[near, 3] = 0
+    return Image.fromarray(arr, "RGBA")
 
 
 def resize_watermark(watermark: Image.Image, target_width: int) -> Image.Image:

@@ -1,0 +1,2 @@
+# Deny direct HTTP access — Prodigi fetches via /api/print-asset.php (signed).
+Require all denied

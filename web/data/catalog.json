@@ -1,108 +1,243 @@
 {
   "currency": "usd",
-  "_note": "Retail prices in dollars — all placeholders, edit freely. Each format has a category (for grouping), a unit label (what the options mean), a blurb, and an options→price map. All are Prodigi-fulfillable. Add/remove products by editing this file only; the store and pricing read straight from here.",
+  "_note": "Retail prices in dollars. Prefer refreshing from Prodigi (Admin → Prices) which writes wholesale cost into each prodigi entry and sets retail = cost × markup. Same catalog fuels the site and is the product list to mirror on Etsy via Prodigi’s Etsy channel.",
   "categories": [
-    { "key": "wall-art",   "label": "Wall Art",       "blurb": "Paper, framed, canvas, metal, acrylic, wood & tiles" },
-    { "key": "home",       "label": "Home & Living",  "blurb": "Cushions, blankets, placemats & shower curtains" },
-    { "key": "drinkware",  "label": "Drinkware",      "blurb": "Ceramic & travel mugs" },
-    { "key": "tech",       "label": "Tech & Cases",   "blurb": "Phone, tablet & laptop cases" },
-    { "key": "stationery", "label": "Stationery",     "blurb": "Greeting cards, postcards & notebooks" }
+    { "key": "wall-art",    "label": "Wall Art",       "blurb": "Paper, framed, canvas, metal, acrylic, wood & tiles" },
+    { "key": "home",        "label": "Home & Living",  "blurb": "Cushions, blankets, mats, shower curtains & totes" },
+    { "key": "drinkware",   "label": "Drinkware",      "blurb": "Ceramic & travel mugs" },
+    { "key": "tech",        "label": "Tech & Desk",    "blurb": "Phone cases, mouse pads, desk mats & sleeves" },
+    { "key": "stationery",  "label": "Stationery",     "blurb": "Greeting cards, postcards & notebooks" }
   ],
   "formats": {
     "paper": {
       "label": "Fine Art Paper", "category": "wall-art", "unit": "Size (inches)",
       "blurb": "Museum-grade fine art paper — ships rolled or flat",
-      "sizes": { "12x8": 45, "18x12": 75, "24x16": 110, "36x24": 185 }
+      "sizes": { "12x8": 45, "18x12": 75, "24x16": 110, "36x24": 185 },
+      "prodigi": {
+        "12x8":  { "sku": "GLOBAL-FAP-12X8" },
+        "18x12": { "sku": "GLOBAL-FAP-18X12" },
+        "24x16": { "sku": "GLOBAL-FAP-24X16" },
+        "36x24": { "sku": "GLOBAL-FAP-36X24" }
+      }
     },
     "framed": {
       "label": "Framed Print", "category": "wall-art", "unit": "Size (inches)",
       "blurb": "Classic frame with glaze & mount options",
-      "sizes": { "12x8": 130, "18x12": 190, "24x16": 270, "36x24": 395 }
+      "sizes": { "12x8": 130, "18x12": 190, "24x16": 270, "36x24": 395 },
+      "prodigi": {
+        "12x8":  { "sku": "GLOBAL-CFPM-12X8",  "attributes": { "color": "black" } },
+        "18x12": { "sku": "GLOBAL-CFPM-18X12", "attributes": { "color": "black" } },
+        "24x16": { "sku": "GLOBAL-CFPM-24X16", "attributes": { "color": "black" } },
+        "36x24": { "sku": "GLOBAL-CFPM-36X24", "attributes": { "color": "black" } }
+      }
     },
     "canvas": {
       "label": "Canvas", "category": "wall-art", "unit": "Size (inches)",
       "blurb": "Stretched gallery-wrap canvas",
-      "sizes": { "16x12": 95, "24x16": 150, "36x24": 245 }
+      "sizes": { "16x12": 95, "24x16": 150, "36x24": 245 },
+      "prodigi": {
+        "16x12": { "sku": "GLOBAL-CAN-16X12" },
+        "24x16": { "sku": "GLOBAL-CAN-24X16" },
+        "36x24": { "sku": "GLOBAL-CAN-36X24" }
+      }
     },
     "metal": {
       "label": "Metal Print", "category": "wall-art", "unit": "Size (inches)",
       "blurb": "ChromaLuxe aluminium with float mount",
-      "sizes": { "16x12": 120, "24x16": 185, "36x24": 310 }
+      "sizes": { "16x12": 120, "24x16": 185, "36x24": 310 },
+      "prodigi": {
+        "16x12": { "sku": "GLOBAL-MET-16X12" },
+        "24x16": { "sku": "GLOBAL-MET-24X16" },
+        "36x24": { "sku": "GLOBAL-MET-36X24" }
+      }
     },
     "acrylic": {
       "label": "Acrylic Print", "category": "wall-art", "unit": "Size (inches)",
       "blurb": "Fine art mounted on thick high-gloss acrylic",
-      "sizes": { "16x12": 140, "24x16": 210, "36x24": 340 }
+      "sizes": { "16x12": 140, "24x16": 210, "36x24": 340 },
+      "prodigi": {
+        "16x12": { "sku": "GLOBAL-MOU-ACRY-16X12" },
+        "24x16": { "sku": "GLOBAL-MOU-ACRY-24X16" },
+        "36x24": { "sku": "GLOBAL-MOU-ACRY-36X24" }
+      }
     },
     "wood": {
       "label": "Wooden Print", "category": "wall-art", "unit": "Size (inches)",
       "blurb": "Maple wood panel — natural or white ink",
-      "sizes": { "12x8": 85, "18x12": 130, "24x16": 185 }
+      "sizes": { "12x8": 85, "18x12": 130, "24x16": 185 },
+      "prodigi": {
+        "12x8":  { "sku": "GLOBAL-WOD-12X8" },
+        "18x12": { "sku": "GLOBAL-WOD-18X12" },
+        "24x16": { "sku": "GLOBAL-WOD-24X16" }
+      }
     },
     "tile": {
       "label": "Photo Tile", "category": "wall-art", "unit": "Size (inches)",
       "blurb": "Peel-and-stick square tile, no frame needed",
-      "sizes": { "8x8": 35, "12x12": 55 }
+      "sizes": { "8x8": 35, "12x12": 55 },
+      "prodigi": {
+        "8x8":   { "sku": "GLOBAL-TILE-8X8" },
+        "12x12": { "sku": "GLOBAL-TILE-12X12" }
+      }
     },
     "cushion": {
       "label": "Cushion / Pillow", "category": "home", "unit": "Size (inches)",
       "blurb": "Soft cushion cover with insert",
-      "sizes": { "16x16": 45, "18x18": 52, "24x24": 68 }
+      "sizes": { "16x16": 45, "18x18": 52, "24x24": 68 },
+      "prodigi": {
+        "16x16": { "sku": "GLOBAL-CUSH-16X16-SUE" },
+        "18x18": { "sku": "GLOBAL-CUSH-18X18-SUE" },
+        "24x24": { "sku": "GLOBAL-CUSH-24X24-SUE" }
+      }
     },
     "blanket": {
       "label": "Fleece Blanket", "category": "home", "unit": "Size",
       "blurb": "Cozy printed fleece throw",
-      "sizes": { "50 × 60 in": 75, "60 × 80 in": 95, "80 × 90 in": 120 }
+      "sizes": { "50 × 60 in": 75, "60 × 80 in": 95 },
+      "prodigi": {
+        "50 × 60 in": { "sku": "GLOBAL-BLKT-50X60" },
+        "60 × 80 in": { "sku": "GLOBAL-BLKT-60X80" }
+      }
     },
     "placemat": {
       "label": "Placemats", "category": "home", "unit": "Set",
       "blurb": "Quilted placemats for the table",
-      "sizes": { "Set of 4": 60 }
+      "sizes": { "Set of 4": 60 },
+      "prodigi": {
+        "Set of 4": { "sku": "GLOBAL-PLACEMAT-SET4" }
+      }
     },
     "shower": {
       "label": "Shower Curtain", "category": "home", "unit": "Size",
       "blurb": "Printed polyester shower curtain",
-      "sizes": { "71 × 74 in": 85 }
+      "sizes": { "71 × 74 in": 85 },
+      "prodigi": {
+        "71 × 74 in": { "sku": "GLOBAL-SHOWER-NOLINER-71X74" }
+      }
+    },
+    "bath-mat": {
+      "label": "Bath Mat", "category": "home", "unit": "Size (inches)",
+      "blurb": "Soft microfibre bath mat with non-slip base",
+      "sizes": { "24x17": 42, "34x21": 58 },
+      "prodigi": {
+        "24x17": { "sku": "GLOBAL-MAT-BATH-24X17" },
+        "34x21": { "sku": "GLOBAL-MAT-BATH-34X21" }
+      }
+    },
+    "towel": {
+      "label": "Beach / Bath Towel", "category": "home", "unit": "Size",
+      "blurb": "Plush printed towel — microfibre face, cotton reverse",
+      "sizes": { "70 × 140 cm": 55, "80 × 160 cm": 68 },
+      "prodigi": {
+        "70 × 140 cm": { "sku": "H-TOW-PTM" },
+        "80 × 160 cm": { "sku": "H-TOW-PTL" }
+      }
+    },
+    "tote": {
+      "label": "Woven Tote Bag", "category": "home", "unit": "Size",
+      "blurb": "Double-sided woven tote with contrast straps",
+      "sizes": { "17 × 18 in": 48 },
+      "prodigi": {
+        "17 × 18 in": { "sku": "GLOBAL-TOTE-17X18" }
+      }
     },
     "mug": {
       "label": "Ceramic Mug", "category": "drinkware", "unit": "Volume",
       "blurb": "Dishwasher-safe ceramic mug",
-      "sizes": { "11 oz": 22, "15 oz": 26 }
+      "sizes": { "11 oz": 22, "15 oz": 26 },
+      "prodigi": {
+        "11 oz": { "sku": "GLOBAL-MUG-W" },
+        "15 oz": { "sku": "GLOBAL-MUG-15-W" }
+      }
     },
     "travel-mug": {
       "label": "Travel Mug", "category": "drinkware", "unit": "Volume",
       "blurb": "Insulated stainless travel mug",
-      "sizes": { "15 oz": 34 }
+      "sizes": { "16 oz": 34 },
+      "prodigi": {
+        "16 oz": { "sku": "H-MUG-METAL-16OZ-B" }
+      }
     },
     "phone": {
       "label": "Phone Case", "category": "tech", "unit": "Device",
-      "blurb": "Tough or slim case, many models",
-      "sizes": { "iPhone 15 / 16": 35, "iPhone 15 / 16 Pro": 38, "Samsung Galaxy S24": 35 }
+      "blurb": "Tough case — gloss finish",
+      "sizes": {
+        "iPhone 15": 35,
+        "iPhone 15 Pro": 38,
+        "iPhone 16": 35,
+        "iPhone 16 Pro": 38,
+        "Samsung Galaxy S24": 35
+      },
+      "prodigi": {
+        "iPhone 15":          { "sku": "GLOBAL-TECH-IP15-TCB-CS-G" },
+        "iPhone 15 Pro":      { "sku": "GLOBAL-TECH-IP15PR-TCB-CS-G" },
+        "iPhone 16":          { "sku": "GLOBAL-TECH-IP16-TCB-CS-G" },
+        "iPhone 16 Pro":      { "sku": "GLOBAL-TECH-IP16PR-TCB-CS-G" },
+        "Samsung Galaxy S24": { "sku": "GLOBAL-TECH-SGS24-TCB-CS-G" }
+      }
     },
     "tablet": {
       "label": "Tablet Case", "category": "tech", "unit": "Device",
       "blurb": "Folio case with your photo",
-      "sizes": { "iPad 10.9 in": 48, "iPad Pro 11 in": 54 }
+      "sizes": { "iPad 10.9 in": 48, "iPad Pro 11 in": 54 },
+      "prodigi": {
+        "iPad 10.9 in":  { "sku": "GLOBAL-TECH-IPAD109-FOLIO" },
+        "iPad Pro 11 in": { "sku": "GLOBAL-TECH-IPADP11-FOLIO" }
+      }
     },
     "laptop": {
       "label": "Laptop Sleeve", "category": "tech", "unit": "Size",
       "blurb": "Padded zip sleeve",
-      "sizes": { "13-inch": 42, "15-inch": 46 }
+      "sizes": { "13-inch": 42, "15-inch": 46 },
+      "prodigi": {
+        "13-inch": { "sku": "GLOBAL-TECH-LAPTOP-13" },
+        "15-inch": { "sku": "GLOBAL-TECH-LAPTOP-15" }
+      }
+    },
+    "mousepad": {
+      "label": "Mouse Pad", "category": "tech", "unit": "Size",
+      "blurb": "Neoprene mouse mat — anti-slip base, optical & laser ready",
+      "sizes": { "9.5 × 8 in": 28 },
+      "prodigi": {
+        "9.5 × 8 in": { "sku": "H-MOUSEMAT" }
+      }
+    },
+    "desk-mat": {
+      "label": "Desk / Gaming Mat", "category": "tech", "unit": "Size",
+      "blurb": "Extended desk mat for keyboard + mouse",
+      "sizes": { "Small": 38, "Medium": 48, "Large": 58 },
+      "prodigi": {
+        "Small":  { "sku": "DESK-MAT-SML" },
+        "Medium": { "sku": "DESK-MAT-MED" },
+        "Large":  { "sku": "GLOBAL-GAMINGMAT" }
+      }
     },
     "cards": {
       "label": "Greeting Cards", "category": "stationery", "unit": "Pack",
       "blurb": "Blank inside, with envelopes",
-      "sizes": { "Pack of 5": 25, "Pack of 10": 42 }
+      "sizes": { "Pack of 5": 25, "Pack of 10": 42 },
+      "prodigi": {
+        "Pack of 5":  { "sku": "GLOBAL-CARD-A6-PACK5" },
+        "Pack of 10": { "sku": "GLOBAL-CARD-A6-PACK10" }
+      }
     },
     "postcards": {
       "label": "Postcards", "category": "stationery", "unit": "Pack",
       "blurb": "Glossy A6 postcards",
-      "sizes": { "Pack of 10": 18, "Pack of 20": 30 }
+      "sizes": { "Pack of 10": 18, "Pack of 20": 30 },
+      "prodigi": {
+        "Pack of 10": { "sku": "GLOBAL-PCARD-A6-PACK10" },
+        "Pack of 20": { "sku": "GLOBAL-PCARD-A6-PACK20" }
+      }
     },
     "notebook": {
       "label": "Notebook", "category": "stationery", "unit": "Style",
       "blurb": "A5 softcover notebook",
-      "sizes": { "A5 Ruled": 20, "A5 Dotted": 20 }
+      "sizes": { "A5 Ruled": 20, "A5 Dotted": 20 },
+      "prodigi": {
+        "A5 Ruled":  { "sku": "GLOBAL-NB-A5-RULED" },
+        "A5 Dotted": { "sku": "GLOBAL-NB-A5-DOTTED" }
+      }
     }
   }
 }

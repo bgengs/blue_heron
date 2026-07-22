@@ -28,11 +28,16 @@ def load_edits() -> dict:
 
 
 def get_edit(filename: str) -> dict:
-    return load_edits().get(filename, {})
+    """Return edits for a file, filling empty title/caption from photo_catalog.json."""
+    from . import photo_catalog
+
+    edit = load_edits().get(filename, {})
+    return photo_catalog.apply_to_edit(filename, edit, overwrite=False)
 
 
 def save_edit(filename: str, *, title: str = "", caption: str = "",
-              crop: Optional[dict] = None, rotate: int = 0) -> dict:
+              crop: Optional[dict] = None, rotate: int = 0,
+              archived: Optional[bool] = None) -> dict:
     with _lock:
         edits = load_edits()
         entry = edits.get(filename, {})
@@ -44,12 +49,56 @@ def save_edit(filename: str, *, title: str = "", caption: str = "",
             entry["crop"] = {k: max(0.0, min(1.0, float(crop[k]))) for k in ("x", "y", "w", "h")}
         else:
             entry.pop("crop", None)
+        if archived is not None:
+            entry["archived"] = bool(archived)
         edits[filename] = entry
         settings.EDITS_JSON.parent.mkdir(parents=True, exist_ok=True)
         settings.EDITS_JSON.write_text(
             json.dumps(edits, indent=2, ensure_ascii=False), encoding="utf-8"
         )
         return entry
+
+
+def set_archived(filename: str, archived: bool) -> dict:
+    """Toggle archive without touching title/crop."""
+    with _lock:
+        edits = load_edits()
+        entry = edits.get(filename, {})
+        if archived:
+            entry["archived"] = True
+        else:
+            entry.pop("archived", None)
+        edits[filename] = entry
+        settings.EDITS_JSON.parent.mkdir(parents=True, exist_ok=True)
+        settings.EDITS_JSON.write_text(
+            json.dumps(edits, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+        return entry
+
+
+def bulk_set_archived(filenames: list[str], archived: bool) -> int:
+    if not filenames:
+        return 0
+    with _lock:
+        edits = load_edits()
+        n = 0
+        for name in filenames:
+            entry = edits.get(name, {})
+            was = bool(entry.get("archived"))
+            if was == bool(archived):
+                continue
+            if archived:
+                entry["archived"] = True
+            else:
+                entry.pop("archived", None)
+            edits[name] = entry
+            n += 1
+        if n:
+            settings.EDITS_JSON.parent.mkdir(parents=True, exist_ok=True)
+            settings.EDITS_JSON.write_text(
+                json.dumps(edits, indent=2, ensure_ascii=False), encoding="utf-8"
+            )
+        return n
 
 
 def slug_for(filename: str) -> str:

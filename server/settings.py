@@ -22,6 +22,8 @@ PHOTOS_JSON = WEB_DATA / "photos.json"     # written by studio, read by PHP
 CATALOG_JSON = WEB_DATA / "catalog.json"   # authored; PHP owns pricing
 SITE_WEB_IMAGES = WEB_ROOT / "images" / "web"
 SITE_THUMB_IMAGES = WEB_ROOT / "images" / "thumb"
+SITE_PRINT_IMAGES = WEB_ROOT / "images" / "print"  # full-res for Prodigi asset URLs
+SITE_FRAMED_IMAGES = WEB_ROOT / "images" / "framed"  # brand banner for site/share
 
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "")
 SECRET_KEY = os.getenv("SECRET_KEY", "")
