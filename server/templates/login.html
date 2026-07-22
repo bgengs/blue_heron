@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — blueheron.gallery</title>
+<style>
+body { font-family:"Segoe UI",system-ui,sans-serif; background:#f4f1e9; display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; }
+.box { background:#fff; border:1px solid rgba(29,51,72,.18); padding:2.4rem 2.6rem; width:min(92vw,380px); text-align:center; }
+h1 { color:#1d3348; font-size:1.1rem; letter-spacing:.18em; margin:0 0 1.6rem; }
+input { width:100%; padding:.65rem .8rem; font:inherit; border:1px solid rgba(29,51,72,.3); box-sizing:border-box; }
+button { margin-top:1rem; width:100%; padding:.7rem; background:#1d3348; color:#f4f1e9; border:none; letter-spacing:.14em; font-size:.8rem; cursor:pointer; }
+.err { color:#a33; font-size:.85rem; margin-top:.8rem; }
+.warn { color:#b3701f; font-size:.85rem; margin-top:.8rem; text-align:left; }
+</style>
+</head>
+<body>
+  <form class="box" method="post" action="/admin/login">
+    <h1>BLUEHERON.GALLERY</h1>
+    <input type="password" name="password" placeholder="Admin password" autofocus required>
+    <button type="submit">LOG IN</button>
+    {% if error %}<p class="err">{{ error }}</p>{% endif %}
+    {% if warning %}<p class="warn">{{ warning }}</p>{% endif %}
+  </form>
+</body>
+</html>

@@ -1,0 +1,206 @@
+{% extends "base.html" %}
+{% block title %}Edit {{ name }}{% endblock %}
+{% block content %}
+<h1 style="font-size:1.2rem">Editing <span class="muted">{{ name }}</span></h1>
+
+<div class="edit-layout">
+  <div class="edit-canvas-wrap">
+    <div class="edit-toolbar">
+      <label>Aspect
+        <select id="aspect">
+          <option value="0">Free</option>
+          <option value="1.5" selected>3:2 (print)</option>
+          <option value="0.6667">2:3 (portrait)</option>
+          <option value="1">1:1 (square)</option>
+          <option value="0.8">4:5</option>
+          <option value="1.7778">16:9</option>
+        </select>
+      </label>
+      <button type="button" class="btn ghost" id="rotateBtn">Rotate 90°</button>
+      <button type="button" class="btn ghost" id="resetBtn">Reset crop</button>
+      <span class="muted" id="cropReadout"></span>
+    </div>
+    <div class="stage" id="stage">
+      <img id="photo" src="/admin/raw/{{ name }}?max=1400" alt="{{ name }}" draggable="false">
+      <div class="crop-box" id="cropBox">
+        <span class="handle nw"></span><span class="handle ne"></span>
+        <span class="handle sw"></span><span class="handle se"></span>
+      </div>
+      <div class="shade" id="shade"></div>
+    </div>
+  </div>
+
+  <form class="edit-form" method="post" action="/admin/editor/{{ name }}" id="editForm">
+    <label>Title</label>
+    <input type="text" name="title" id="title" value="{{ edit.title or '' }}" placeholder="e.g. The Patient Hour">
+
+    <button type="button" class="btn ghost" id="suggestBtn" style="margin-top:.5rem">
+      💡 Suggest titles{% if not ai_on %} <span class="muted" style="font-size:.7rem">(curated)</span>{% endif %}
+    </button>
+    <div id="suggestions" class="suggestions"></div>
+
+    <label style="margin-top:1rem">Caption</label>
+    <textarea name="caption" id="caption" rows="3" placeholder="A short line shown under the title">{{ edit.caption or '' }}</textarea>
+
+    <input type="hidden" name="rotate" id="rotate" value="{{ edit.rotate or 0 }}">
+    <input type="hidden" name="crop_x" id="crop_x" value="{{ edit.crop.x if edit.crop else -1 }}">
+    <input type="hidden" name="crop_y" id="crop_y" value="{{ edit.crop.y if edit.crop else -1 }}">
+    <input type="hidden" name="crop_w" id="crop_w" value="{{ edit.crop.w if edit.crop else -1 }}">
+    <input type="hidden" name="crop_h" id="crop_h" value="{{ edit.crop.h if edit.crop else -1 }}">
+
+    <button type="submit" class="btn" style="margin-top:1.2rem; width:100%">Save</button>
+    <a href="/admin/editor" class="btn ghost" style="margin-top:.6rem; width:100%; text-align:center">← Back to all photos</a>
+    <p class="muted" style="margin-top:1rem; font-size:.8rem">Crop is applied when you
+    Process. To publish changes to an already-live photo, re-Process then Publish.</p>
+  </form>
+</div>
+
+<style>
+.edit-layout { display:grid; grid-template-columns:1fr 320px; gap:2rem; align-items:start; }
+.edit-toolbar { display:flex; gap:.8rem; align-items:center; flex-wrap:wrap; margin-bottom:.8rem; }
+.edit-toolbar label { font-size:.8rem; color:var(--slate); }
+.edit-toolbar select { width:auto; display:inline-block; }
+.stage { position:relative; user-select:none; display:inline-block; line-height:0; background:#000; max-width:100%; }
+.stage img { max-width:100%; max-height:70vh; display:block; }
+.crop-box { position:absolute; border:1px solid #fff; box-shadow:0 0 0 9999px rgba(20,37,52,.55); cursor:move; z-index:2; }
+.crop-box .handle { position:absolute; width:14px; height:14px; background:#fff; border:1px solid var(--navy); border-radius:50%; z-index:3; }
+.handle.nw { top:-7px; left:-7px; cursor:nwse-resize; }
+.handle.ne { top:-7px; right:-7px; cursor:nesw-resize; }
+.handle.sw { bottom:-7px; left:-7px; cursor:nesw-resize; }
+.handle.se { bottom:-7px; right:-7px; cursor:nwse-resize; }
+.edit-form label { display:block; font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; color:var(--slate); margin-bottom:.35rem; }
+.suggestions { display:flex; flex-direction:column; gap:.3rem; margin-top:.6rem; }
+.suggestions button { text-align:left; background:var(--cream); border:1px solid var(--line); padding:.4rem .6rem; cursor:pointer; font:inherit; font-size:.9rem; color:var(--navy); }
+.suggestions button:hover { background:#fff; border-color:var(--navy); }
+.suggest-note { font-size:.75rem; color:var(--slate); margin-top:.3rem; }
+@media (max-width:820px){ .edit-layout{ grid-template-columns:1fr; } }
+</style>
+
+<script>
+const $ = id => document.getElementById(id);
+const stage = $("stage"), photo = $("photo"), box = $("cropBox"), shade = $("shade");
+let aspect = 1.5;
+let rot = parseInt($("rotate").value) || 0;
+
+function imgRect() { return { w: photo.clientWidth, h: photo.clientHeight }; }
+
+function clampBox() {
+  const { w, h } = imgRect();
+  let bw = Math.min(box.offsetWidth, w), bh = Math.min(box.offsetHeight, h);
+  let bx = Math.max(0, Math.min(box.offsetLeft, w - bw));
+  let by = Math.max(0, Math.min(box.offsetTop, h - bh));
+  Object.assign(box.style, { left: bx+"px", top: by+"px", width: bw+"px", height: bh+"px" });
+  readout();
+}
+
+function readout() {
+  const { w, h } = imgRect();
+  const fx = box.offsetLeft / w, fy = box.offsetTop / h;
+  const fw = box.offsetWidth / w, fh = box.offsetHeight / h;
+  $("crop_x").value = fx.toFixed(4); $("crop_y").value = fy.toFixed(4);
+  $("crop_w").value = fw.toFixed(4); $("crop_h").value = fh.toFixed(4);
+  $("cropReadout").textContent = `${Math.round(fw*100)}% × ${Math.round(fh*100)}% of frame`;
+}
+
+function setDefaultBox() {
+  const { w, h } = imgRect();
+  let bw = w * 0.9, bh = aspect ? bw / aspect : h * 0.9;
+  if (bh > h * 0.9) { bh = h * 0.9; bw = aspect ? bh * aspect : w * 0.9; }
+  Object.assign(box.style, { left:(w-bw)/2+"px", top:(h-bh)/2+"px", width:bw+"px", height:bh+"px" });
+  readout();
+}
+
+function applyAspectToBox() {
+  if (!aspect) { readout(); return; }
+  const { w } = imgRect();
+  let bw = box.offsetWidth, bh = bw / aspect;
+  const { h } = imgRect();
+  if (box.offsetTop + bh > h) bh = h - box.offsetTop;
+  bw = aspect ? bh * aspect : bw;
+  Object.assign(box.style, { width:bw+"px", height:bh+"px" });
+  clampBox();
+}
+
+// Restore a saved crop, else default.
+function initBox() {
+  const sx = parseFloat($("crop_x").value), sy = parseFloat($("crop_y").value),
+        sw = parseFloat($("crop_w").value), sh = parseFloat($("crop_h").value);
+  const { w, h } = imgRect();
+  if (sw > 0 && sh > 0) {
+    Object.assign(box.style, { left:sx*w+"px", top:sy*h+"px", width:sw*w+"px", height:sh*h+"px" });
+    readout();
+  } else setDefaultBox();
+}
+
+// Drag to move.
+let drag = null;
+box.addEventListener("mousedown", e => {
+  if (e.target.classList.contains("handle")) return;
+  drag = { x:e.clientX, y:e.clientY, left:box.offsetLeft, top:box.offsetTop };
+  e.preventDefault();
+});
+// Resize from corners.
+let resize = null;
+box.querySelectorAll(".handle").forEach(h => h.addEventListener("mousedown", e => {
+  resize = { corner:[...h.classList].find(c=>c!=="handle"), x:e.clientX, y:e.clientY,
+             left:box.offsetLeft, top:box.offsetTop, w:box.offsetWidth, h:box.offsetHeight };
+  e.stopPropagation(); e.preventDefault();
+}));
+
+window.addEventListener("mousemove", e => {
+  const { w, h } = imgRect();
+  if (drag) {
+    box.style.left = Math.max(0, Math.min(drag.left + e.clientX-drag.x, w-box.offsetWidth))+"px";
+    box.style.top  = Math.max(0, Math.min(drag.top  + e.clientY-drag.y, h-box.offsetHeight))+"px";
+    readout();
+  } else if (resize) {
+    let nw = resize.w, nh = resize.h, nl = resize.left, nt = resize.top;
+    const dx = e.clientX-resize.x, dy = e.clientY-resize.y;
+    const right = resize.corner.includes("e"), bottom = resize.corner.includes("s");
+    if (right) nw = resize.w + dx; else { nw = resize.w - dx; nl = resize.left + dx; }
+    if (bottom) nh = resize.h + dy; else { nh = resize.h - dy; nt = resize.top + dy; }
+    if (aspect) { nh = nw / aspect; if (!bottom) nt = resize.top + (resize.h - nh); }
+    nw = Math.max(30, nw); nh = Math.max(30, nh);
+    Object.assign(box.style, { width:nw+"px", height:nh+"px", left:nl+"px", top:nt+"px" });
+    clampBox();
+  }
+});
+window.addEventListener("mouseup", () => { drag = null; resize = null; });
+
+$("aspect").addEventListener("change", e => { aspect = parseFloat(e.target.value); applyAspectToBox(); });
+$("resetBtn").addEventListener("click", setDefaultBox);
+$("rotateBtn").addEventListener("click", () => {
+  rot = (rot + 90) % 360; $("rotate").value = rot;
+  photo.style.transition = "transform .2s"; // visual hint; server does the real rotate
+  alert("Rotation set to " + rot + "°. It's applied to the exported print when you Process. (Preview stays upright here.)");
+});
+
+if (photo.complete) initBox(); else photo.onload = initBox;
+window.addEventListener("resize", clampBox);
+
+// Title suggestions.
+$("suggestBtn").addEventListener("click", async () => {
+  const wrap = $("suggestions");
+  wrap.innerHTML = '<p class="suggest-note">Thinking…</p>';
+  try {
+    const r = await fetch("/admin/api/suggest-titles/{{ name }}", { method:"POST" });
+    const j = await r.json();
+    wrap.innerHTML = "";
+    j.titles.forEach(t => {
+      const b = document.createElement("button");
+      b.type = "button"; b.textContent = t;
+      b.onclick = () => { $("title").value = t; };
+      wrap.appendChild(b);
+    });
+    const note = document.createElement("p");
+    note.className = "suggest-note";
+    note.textContent = j.note ? j.note
+      : (j.source === "ai" ? "AI ideas based on this photo — click one to use it."
+                           : "Curated ideas — click one, then tweak to taste.");
+    wrap.appendChild(note);
+  } catch (e) {
+    wrap.innerHTML = '<p class="suggest-note">Could not fetch suggestions.</p>';
+  }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,7 @@
+# Deny access to secrets and vendor internals
+<FilesMatch "^(config\.local\.php|composer\.(json|lock))$">
+  Require all denied
+</FilesMatch>
+RedirectMatch 403 ^/vendor/.*$
+# Pretty errors off in prod is configured in php; keep index as directory default
+DirectoryIndex index.php

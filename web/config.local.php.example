@@ -1,0 +1,19 @@
+<?php
+/**
+ * Copy this file to config.local.php and fill in your values.
+ * config.local.php is git-ignored — keep your secrets here.
+ */
+return [
+    // Admin area password (for /admin — order fulfillment)
+    'admin_password' => 'change-me-to-something-strong',
+
+    // Stripe — test keys start sk_test_/pk_test_, live keys sk_live_/pk_live_
+    'stripe_secret'         => '',   // sk_test_...
+    'stripe_publishable'    => '',   // pk_test_...  (not required for Checkout redirect)
+    'stripe_webhook_secret' => '',   // whsec_...  (from `stripe listen` or dashboard)
+
+    // Public base URL of the live site (used for Stripe return URLs)
+    'site_url' => 'https://blueheron.gallery',
+
+    'contact_email' => 'hello@blueheron.gallery',
+];

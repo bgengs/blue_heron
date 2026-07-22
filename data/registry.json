@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "generated_at": "2026-07-22T03:20:52Z",
+  "count": 4,
+  "photos": [
+    {
+      "filename": "happy-to-be-here.jpg",
+      "photo_id_hex": "8936c551565f5863",
+      "phash": "2b83db9342ac34ce",
+      "dhash": "59dbf3b7ad7e723b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T03:20:52Z",
+      "source_basename": "happy-to-be-here.jpg"
+    },
+    {
+      "filename": "heron-1.jpg",
+      "photo_id_hex": "9b056678ae527952",
+      "phash": "7806f4568dc9461f",
+      "dhash": "a60cadb3340c1392",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T03:03:19Z",
+      "source_basename": "heron-1.jpg"
+    },
+    {
+      "filename": "heron-2.jpg",
+      "photo_id_hex": "80b2336d4860bfb1",
+      "phash": "7b06e858391e872b",
+      "dhash": "17266f3e5b100b1b",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T03:03:19Z",
+      "source_basename": "heron-2.jpg"
+    },
+    {
+      "filename": "love-birds.jpg",
+      "photo_id_hex": "eb315cbb802e85ab",
+      "phash": "3860aa761d3f74c4",
+      "dhash": "2c999333342c3b33",
+      "chosen_color": "white",
+      "processed_at": "2026-07-22T03:20:52Z",
+      "source_basename": "love-birds.jpg"
+    }
+  ]
+}

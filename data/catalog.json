@@ -1,0 +1,31 @@
+{
+  "currency": "usd",
+  "_note": "Prices are placeholder retail in dollars - edit freely. Sizes are inches, landscape. Keep sizes at 3:2 to match the drone frames.",
+  "formats": {
+    "paper": {
+      "label": "Fine Art Paper",
+      "blurb": "Museum-grade fine art paper — ships rolled or flat",
+      "sizes": { "12x8": 95, "18x12": 145, "24x16": 195, "36x24": 285 }
+    },
+    "framed": {
+      "label": "Framed Print",
+      "blurb": "Classic frame with glaze & mount options",
+      "sizes": { "12x8": 245, "18x12": 325, "24x16": 425, "36x24": 595 }
+    },
+    "canvas": {
+      "label": "Canvas",
+      "blurb": "Stretched gallery-wrap canvas",
+      "sizes": { "18x12": 225, "24x16": 295, "36x24": 425 }
+    },
+    "metal": {
+      "label": "Metal Print",
+      "blurb": "ChromaLuxe aluminium with float mount",
+      "sizes": { "18x12": 275, "24x16": 350, "36x24": 495 }
+    },
+    "wood": {
+      "label": "Wooden Print",
+      "blurb": "Maple wood panel — natural or white ink",
+      "sizes": { "12x8": 175, "18x12": 245, "24x16": 325 }
+    }
+  }
+}

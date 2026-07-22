@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "love-birds",
+    "title": "The Love Birds",
+    "caption": "A bonded pair at the nest",
+    "location": "MONTANA",
+    "file": "love-birds.jpg",
+    "active": true,
+    "sort": 0
+  },
+  {
+    "slug": "hold-me-closer",
+    "title": "Hold Me Closer",
+    "caption": "Courtship in the crown of a cottonwood",
+    "location": "MONTANA",
+    "file": "hold-me-closer.jpg",
+    "active": true,
+    "sort": 1
+  },
+  {
+    "slug": "together-forever",
+    "title": "Together Forever",
+    "caption": "Partners above the rookery",
+    "location": "MONTANA",
+    "file": "together-forever.jpg",
+    "active": true,
+    "sort": 2
+  },
+  {
+    "slug": "young-love",
+    "title": "Young Love",
+    "caption": "A young pair settling their nest",
+    "location": "MONTANA",
+    "file": "young-love.jpg",
+    "active": true,
+    "sort": 3
+  },
+  {
+    "slug": "family-living",
+    "title": "Family Living",
+    "caption": "The whole household, home in the branches",
+    "location": "MONTANA",
+    "file": "family-living.jpg",
+    "active": true,
+    "sort": 4
+  },
+  {
+    "slug": "happy-to-be-here",
+    "title": "Happy to Be Here",
+    "caption": "A lone sentinel in the leaves",
+    "location": "MONTANA",
+    "file": "happy-to-be-here.jpg",
+    "active": true,
+    "sort": 5
+  },
+  {
+    "slug": "heron-1",
+    "title": "The Pair",
+    "caption": "Side by side above the river bottom",
+    "location": "MONTANA",
+    "file": "heron-1.jpg",
+    "active": true,
+    "sort": 6
+  },
+  {
+    "slug": "heron-2",
+    "title": "Standing Watch",
+    "caption": "Keeping watch over the colony",
+    "location": "MONTANA",
+    "file": "heron-2.jpg",
+    "active": true,
+    "sort": 7
+  },
+  {
+    "slug": "herons-3",
+    "title": "The Neighborhood",
+    "caption": "Nests share the same grove, year after year",
+    "location": "MONTANA",
+    "file": "herons-3.jpg",
+    "active": true,
+    "sort": 8
+  }
+]

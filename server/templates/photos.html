@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Photos{% endblock %}
+{% block content %}
+<h1>Photos</h1>
+<p class="muted">Titles and captions appear in the public gallery. Untick “live” to hide
+a photo without deleting anything. Lower sort numbers appear first.</p>
+<table>
+  <tr><th></th><th>Slug</th><th>Title</th><th>Caption</th><th>Sort</th><th>Live</th><th></th></tr>
+  {% for p in photos | sort(attribute="sort") %}
+  <tr>
+    <td><img class="thumb" src="/images/thumb/{{ p.file }}" onerror="this.src='/images/web/{{ p.file }}'" alt=""></td>
+    <td class="muted">{{ p.slug }}</td>
+    <form method="post" action="/admin/photos/{{ p.slug }}">
+      <td><input type="text" name="title" value="{{ p.title }}"></td>
+      <td><input type="text" name="caption" value="{{ p.caption }}"></td>
+      <td style="width:70px"><input type="number" name="sort" value="{{ p.sort }}"></td>
+      <td><input type="checkbox" name="active" value="1" {% if p.active %}checked{% endif %}></td>
+      <td><button class="btn" type="submit">Save</button></td>
+    </form>
+  </tr>
+  {% endfor %}
+  {% if not photos %}<tr><td colspan="7" class="muted">No photos yet — process and publish first.</td></tr>{% endif %}
+</table>
+{% endblock %}

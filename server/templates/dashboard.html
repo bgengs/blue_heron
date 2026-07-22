@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h1>Dashboard</h1>
+
+<div class="grid">
+  <div class="card"><div class="stat">{{ photo_count }}</div><div class="muted">photos in manifest ({{ active_count }} live)</div></div>
+  <div class="card"><div class="stat">{{ new_orders }}</div><div class="muted">orders awaiting fulfillment</div></div>
+  <div class="card">
+    <div class="stat">{% if stripe_ok %}✓{% else %}—{% endif %}</div>
+    <div class="muted">Stripe {% if stripe_ok %}configured{% else %}not configured (set STRIPE_SECRET_KEY in .env){% endif %}</div>
+  </div>
+</div>
+
+{% if job and job.status == 'running' %}
+<div class="card">
+  <strong>Job running:</strong> {{ job.label }} — {{ job.completed }}/{{ job.total }}
+  <a class="btn ghost" href="/admin/job/{{ job.id }}">watch</a>
+</div>
+{% endif %}
+
+<h2>Raw photos</h2>
+<p class="muted"><a href="/admin/editor">Open the Editor</a> to crop, rotate, and title
+photos first (optional). Then drop JPGs into <code>raw/</code> (loose or in subfolders) and Process.
+Processing creates protected variants in <code>output/</code>: thumbnails, watermarked
+web (1600px + DCT stego + registry), full-res print, and proof files.</p>
+<table>
+  <tr><th>Folder</th><th>Images</th><th>Processed</th><th></th></tr>
+  {% for f in folders %}
+  <tr>
+    <td>{{ f.label }}</td>
+    <td>{{ f.image_count }}</td>
+    <td>{% if f.processed_count == f.image_count %}<span class="pill ok">all {{ f.processed_count }}</span>
+        {% elif f.processed_count %}<span class="pill warn">{{ f.processed_count }}/{{ f.image_count }}</span>
+        {% else %}<span class="pill">none</span>{% endif %}</td>
+    <td>
+      <form class="inline" method="post" action="/admin/process">
+        <input type="hidden" name="folder" value="{{ f.name }}">
+        <button class="btn" type="submit">Process</button>
+      </form>
+    </td>
+  </tr>
+  {% endfor %}
+  {% if not folders %}<tr><td colspan="4" class="muted">No images found in raw/ yet.</td></tr>{% endif %}
+</table>
+
+<h2>Publish</h2>
+<p class="muted">Copies protected web images + thumbnails into the public site and adds
+new photos to the gallery manifest. Never touches originals or print files.</p>
+<form method="post" action="/admin/publish">
+  <button class="btn" type="submit">Publish processed photos to site</button>
+</form>
+{% endblock %}

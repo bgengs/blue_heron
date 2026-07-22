@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Orders{% endblock %}
+{% block content %}
+<h1>Orders</h1>
+<p class="muted">Payments arrive via Stripe. Fulfillment is manual for now: open the
+<a href="https://dashboard.prodigi.com" target="_blank">Prodigi dashboard</a>, create the
+order using the details below (the print-ready file is in <code>output/print/</code>),
+then mark it fulfilled here.</p>
+<table>
+  <tr><th>#</th><th>When</th><th>Item</th><th>Amount</th><th>Fulfillment details</th><th>Status</th></tr>
+  {% for o in orders %}
+  <tr>
+    <td>{{ o.id }}</td>
+    <td class="muted">{{ o.created[:10] }}</td>
+    <td>{{ o.photo }}<br><span class="muted">{{ o.format }} {{ o.size }}" ×{{ o.qty }}</span></td>
+    <td>{{ o.amount }}</td>
+    <td><pre style="max-height:130px">{{ o.hint }}</pre></td>
+    <td>
+      <form method="post" action="/admin/orders/{{ o.id }}">
+        <select name="fulfillment">
+          {% for s in ["new", "placed-with-prodigi", "shipped", "complete", "refunded"] %}
+          <option value="{{ s }}" {% if o.fulfillment == s %}selected{% endif %}>{{ s }}</option>
+          {% endfor %}
+        </select>
+        <input type="text" name="notes" value="{{ o.notes }}" placeholder="notes / Prodigi order id">
+        <button class="btn" type="submit" style="margin-top:.4rem">Save</button>
+      </form>
+    </td>
+  </tr>
+  {% endfor %}
+  {% if not orders %}<tr><td colspan="6" class="muted">No orders yet.</td></tr>{% endif %}
+</table>
+{% endblock %}

@@ -1,0 +1,11 @@
+.order-wrap { max-width: 980px; margin: 0 auto; padding: 7.5rem 1.5rem 5rem; display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; }
+.order-preview img { width: 100%; box-shadow: 0 24px 48px -24px rgba(20,37,52,.5); }
+.order-preview figcaption { margin-top: .8rem; font-family: var(--serif); font-size: 1.3rem; color: var(--navy); font-weight: 600; }
+.order-form label { display: block; font-size: .7rem; letter-spacing: .22em; text-transform: uppercase; color: var(--slate); margin: 1.3rem 0 .4rem; }
+.order-form select, .order-form input { width: 100%; padding: .7rem .8rem; font: inherit; font-size: .95rem; border: 1px solid var(--line); background: #fff; }
+.order-total { margin-top: 1.6rem; display: flex; justify-content: space-between; align-items: baseline; border-top: 1px solid var(--line); padding-top: 1.2rem; }
+.order-total .amt { font-family: var(--serif); font-size: 2rem; color: var(--navy); font-weight: 600; }
+.order-form .btn { width: 100%; margin-top: 1.4rem; text-align: center; border: none; cursor: pointer; font-family: var(--sans); }
+.order-msg { margin-top: 1rem; font-size: .88rem; color: var(--slate); }
+.order-msg a { color: var(--navy); }
+@media (max-width: 800px) { .order-wrap { grid-template-columns: 1fr; padding-top: 6rem; } }

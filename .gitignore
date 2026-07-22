@@ -1,0 +1,32 @@
+# --- secrets (never commit) ---
+.env
+web/config.local.php
+
+# --- large / generated assets (regenerable, don't belong in git) ---
+source_photos/
+resized/
+output/
+raw/*.jpg
+raw/*.jpeg
+raw/*.JPG
+raw/*.JPEG
+
+# --- legacy static site (superseded by PHP web/) ---
+/site/
+
+# --- databases / studio state ---
+data/orders.db
+web/storage/orders.db
+
+# --- dependencies ---
+web/vendor/
+node_modules/
+.venv/
+
+# --- python ---
+__pycache__/
+*.pyc
+
+# --- local editor/tooling ---
+.claude/settings.local.json
+*.mp4

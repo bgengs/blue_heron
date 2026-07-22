@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Admin{% endblock %} — blueheron.gallery</title>
+<style>
+:root { --cream:#f4f1e9; --navy:#1d3348; --navy-deep:#142534; --slate:#5c6f80; --line:rgba(29,51,72,.18); }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Segoe UI",system-ui,sans-serif; background:var(--cream); color:#26333e; line-height:1.55; }
+.top { background:var(--navy); color:var(--cream); display:flex; gap:1.5rem; align-items:center; padding:.8rem 1.4rem; flex-wrap:wrap; }
+.top .brand { font-weight:600; letter-spacing:.14em; text-decoration:none; color:var(--cream); }
+.top a { color:rgba(244,241,233,.85); text-decoration:none; font-size:.85rem; letter-spacing:.06em; }
+.top a:hover { color:#fff; }
+.top .right { margin-left:auto; }
+main { max-width:1100px; margin:0 auto; padding:2rem 1.4rem; }
+h1 { font-size:1.5rem; color:var(--navy); margin-bottom:1.2rem; font-weight:600; }
+h2 { font-size:1.05rem; color:var(--navy); margin:1.6rem 0 .6rem; }
+table { width:100%; border-collapse:collapse; background:#fff; }
+th,td { text-align:left; padding:.55rem .7rem; border-bottom:1px solid var(--line); font-size:.88rem; vertical-align:top; }
+th { background:var(--navy); color:var(--cream); font-weight:500; font-size:.78rem; letter-spacing:.08em; }
+.btn { display:inline-block; background:var(--navy); color:var(--cream); border:none; padding:.5rem 1.1rem; font-size:.8rem; letter-spacing:.1em; cursor:pointer; text-decoration:none; }
+.btn:hover { background:var(--navy-deep); }
+.btn.ghost { background:transparent; color:var(--navy); border:1px solid var(--navy); }
+input[type=text], input[type=password], input[type=number], textarea, select { padding:.45rem .6rem; border:1px solid var(--line); background:#fff; font:inherit; font-size:.88rem; width:100%; }
+.card { background:#fff; border:1px solid var(--line); padding:1.2rem 1.4rem; margin-bottom:1.2rem; }
+.pill { display:inline-block; font-size:.72rem; padding:.1rem .55rem; border-radius:999px; background:var(--slate); color:#fff; }
+.pill.ok { background:#2e7d4f; } .pill.warn { background:#b3701f; } .pill.err { background:#a33; }
+.muted { color:var(--slate); font-size:.82rem; }
+.stat { font-size:1.6rem; font-weight:600; color:var(--navy); }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
+pre { background:var(--navy-deep); color:#dfe8ee; padding:1rem; font-size:.78rem; overflow-x:auto; max-height:320px; }
+.thumb { width:84px; height:56px; object-fit:cover; }
+form.inline { display:inline; }
+</style>
+</head>
+<body>
+<nav class="top">
+  <a class="brand" href="/admin">BLUEHERON.GALLERY — ADMIN</a>
+  <a href="/admin">Dashboard</a>
+  <a href="/admin/editor">Editor</a>
+  <a href="/admin/photos">Photos</a>
+  <a href="/admin/orders">Orders</a>
+  <a href="/" target="_blank">View Site ↗</a>
+  <a class="right" href="/admin/logout">Log out</a>
+</nav>
+<main>{% block content %}{% endblock %}</main>
+</body>
+</html>

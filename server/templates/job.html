@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Job{% endblock %}
+{% block content %}
+<h1>{{ job.label }}</h1>
+<div class="card">
+  <p><span id="status" class="pill">{{ job.status }}</span>
+     <span id="step" class="muted">{{ job.current_step }}</span></p>
+  <p style="margin-top:.6rem"><progress id="bar" max="100" value="{{ (job.progress * 100) | round }}" style="width:100%"></progress>
+     <span id="count">{{ job.completed }}/{{ job.total }}</span></p>
+</div>
+<pre id="log"></pre>
+<p><a class="btn ghost" href="/admin">← Back to dashboard</a></p>
+<script>
+const id = {{ job.id | tojson }};
+async function tick() {
+  const r = await fetch(`/admin/job/${id}/json`);
+  if (!r.ok) return;
+  const j = await r.json();
+  document.getElementById("status").textContent = j.status;
+  document.getElementById("status").className = "pill " + (j.status === "done" ? "ok" : j.status === "error" ? "err" : "");
+  document.getElementById("step").textContent = j.current_step || "";
+  document.getElementById("bar").value = Math.round(j.progress * 100);
+  document.getElementById("count").textContent = `${j.completed}/${j.total}`;
+  document.getElementById("log").textContent = (j.log || []).join("\n");
+  if (j.status === "running" || j.status === "queued") setTimeout(tick, 1000);
+}
+tick();
+</script>
+{% endblock %}
