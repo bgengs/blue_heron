@@ -99,22 +99,23 @@ include __DIR__ . '/partials/nav.php';
 </section>
 
 <section class="prints" id="prints">
-  <p class="section-kicker">FINE ART PRINTS</p>
+  <p class="section-kicker">PRINTS &amp; PRODUCTS</p>
   <h2 class="section-title">Bring the Rookery Home</h2>
-  <p class="section-sub">Pick a photograph, then choose how it is made.
-  Museum-quality production, printed to order.</p>
+  <p class="section-sub">Pick a photograph, then choose how it is made —
+  from museum-grade wall art to everyday keepsakes.</p>
   <div class="formats-grid">
-    <?php foreach (bh_catalog()['formats'] as $f): ?>
-    <div class="format">
-      <h3><?= e($f['label']) ?></h3>
-      <p><?= e($f['blurb'] ?? '') ?></p>
-    </div>
+    <?php foreach (bh_categories_with_formats() as $group): ?>
+    <a class="format" href="order.php">
+      <h3><?= e($group['label']) ?></h3>
+      <p><?= e($group['blurb'] ?? '') ?></p>
+      <span class="format-count"><?= count($group['formats']) ?> product<?= count($group['formats']) === 1 ? '' : 's' ?></span>
+    </a>
     <?php endforeach; ?>
   </div>
   <div class="prints-cta">
-    <a class="btn btn-solid" href="order.php">Order a Print</a>
-    <p class="prints-note">Pick your photograph, format, and size — secure checkout
-    by Stripe. Bespoke sizes available on request.</p>
+    <a class="btn btn-solid" href="order.php">Shop All Products</a>
+    <p class="prints-note">Wall art, home goods, drinkware, tech cases, and
+    stationery — all made to order, with secure Stripe checkout.</p>
   </div>
 </section>
 

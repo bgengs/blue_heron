@@ -1,31 +1,108 @@
 {
   "currency": "usd",
-  "_note": "Prices are placeholder retail in dollars - edit freely. Sizes are inches, landscape. Keep sizes at 3:2 to match the drone frames.",
+  "_note": "Retail prices in dollars — all placeholders, edit freely. Each format has a category (for grouping), a unit label (what the options mean), a blurb, and an options→price map. All are Prodigi-fulfillable. Add/remove products by editing this file only; the store and pricing read straight from here.",
+  "categories": [
+    { "key": "wall-art",   "label": "Wall Art",       "blurb": "Paper, framed, canvas, metal, acrylic, wood & tiles" },
+    { "key": "home",       "label": "Home & Living",  "blurb": "Cushions, blankets, placemats & shower curtains" },
+    { "key": "drinkware",  "label": "Drinkware",      "blurb": "Ceramic & travel mugs" },
+    { "key": "tech",       "label": "Tech & Cases",   "blurb": "Phone, tablet & laptop cases" },
+    { "key": "stationery", "label": "Stationery",     "blurb": "Greeting cards, postcards & notebooks" }
+  ],
   "formats": {
     "paper": {
-      "label": "Fine Art Paper",
+      "label": "Fine Art Paper", "category": "wall-art", "unit": "Size (inches)",
       "blurb": "Museum-grade fine art paper — ships rolled or flat",
-      "sizes": { "12x8": 95, "18x12": 145, "24x16": 195, "36x24": 285 }
+      "sizes": { "12x8": 45, "18x12": 75, "24x16": 110, "36x24": 185 }
     },
     "framed": {
-      "label": "Framed Print",
+      "label": "Framed Print", "category": "wall-art", "unit": "Size (inches)",
       "blurb": "Classic frame with glaze & mount options",
-      "sizes": { "12x8": 245, "18x12": 325, "24x16": 425, "36x24": 595 }
+      "sizes": { "12x8": 130, "18x12": 190, "24x16": 270, "36x24": 395 }
     },
     "canvas": {
-      "label": "Canvas",
+      "label": "Canvas", "category": "wall-art", "unit": "Size (inches)",
       "blurb": "Stretched gallery-wrap canvas",
-      "sizes": { "18x12": 225, "24x16": 295, "36x24": 425 }
+      "sizes": { "16x12": 95, "24x16": 150, "36x24": 245 }
     },
     "metal": {
-      "label": "Metal Print",
+      "label": "Metal Print", "category": "wall-art", "unit": "Size (inches)",
       "blurb": "ChromaLuxe aluminium with float mount",
-      "sizes": { "18x12": 275, "24x16": 350, "36x24": 495 }
+      "sizes": { "16x12": 120, "24x16": 185, "36x24": 310 }
+    },
+    "acrylic": {
+      "label": "Acrylic Print", "category": "wall-art", "unit": "Size (inches)",
+      "blurb": "Fine art mounted on thick high-gloss acrylic",
+      "sizes": { "16x12": 140, "24x16": 210, "36x24": 340 }
     },
     "wood": {
-      "label": "Wooden Print",
+      "label": "Wooden Print", "category": "wall-art", "unit": "Size (inches)",
       "blurb": "Maple wood panel — natural or white ink",
-      "sizes": { "12x8": 175, "18x12": 245, "24x16": 325 }
+      "sizes": { "12x8": 85, "18x12": 130, "24x16": 185 }
+    },
+    "tile": {
+      "label": "Photo Tile", "category": "wall-art", "unit": "Size (inches)",
+      "blurb": "Peel-and-stick square tile, no frame needed",
+      "sizes": { "8x8": 35, "12x12": 55 }
+    },
+    "cushion": {
+      "label": "Cushion / Pillow", "category": "home", "unit": "Size (inches)",
+      "blurb": "Soft cushion cover with insert",
+      "sizes": { "16x16": 45, "18x18": 52, "24x24": 68 }
+    },
+    "blanket": {
+      "label": "Fleece Blanket", "category": "home", "unit": "Size",
+      "blurb": "Cozy printed fleece throw",
+      "sizes": { "50 × 60 in": 75, "60 × 80 in": 95, "80 × 90 in": 120 }
+    },
+    "placemat": {
+      "label": "Placemats", "category": "home", "unit": "Set",
+      "blurb": "Quilted placemats for the table",
+      "sizes": { "Set of 4": 60 }
+    },
+    "shower": {
+      "label": "Shower Curtain", "category": "home", "unit": "Size",
+      "blurb": "Printed polyester shower curtain",
+      "sizes": { "71 × 74 in": 85 }
+    },
+    "mug": {
+      "label": "Ceramic Mug", "category": "drinkware", "unit": "Volume",
+      "blurb": "Dishwasher-safe ceramic mug",
+      "sizes": { "11 oz": 22, "15 oz": 26 }
+    },
+    "travel-mug": {
+      "label": "Travel Mug", "category": "drinkware", "unit": "Volume",
+      "blurb": "Insulated stainless travel mug",
+      "sizes": { "15 oz": 34 }
+    },
+    "phone": {
+      "label": "Phone Case", "category": "tech", "unit": "Device",
+      "blurb": "Tough or slim case, many models",
+      "sizes": { "iPhone 15 / 16": 35, "iPhone 15 / 16 Pro": 38, "Samsung Galaxy S24": 35 }
+    },
+    "tablet": {
+      "label": "Tablet Case", "category": "tech", "unit": "Device",
+      "blurb": "Folio case with your photo",
+      "sizes": { "iPad 10.9 in": 48, "iPad Pro 11 in": 54 }
+    },
+    "laptop": {
+      "label": "Laptop Sleeve", "category": "tech", "unit": "Size",
+      "blurb": "Padded zip sleeve",
+      "sizes": { "13-inch": 42, "15-inch": 46 }
+    },
+    "cards": {
+      "label": "Greeting Cards", "category": "stationery", "unit": "Pack",
+      "blurb": "Blank inside, with envelopes",
+      "sizes": { "Pack of 5": 25, "Pack of 10": 42 }
+    },
+    "postcards": {
+      "label": "Postcards", "category": "stationery", "unit": "Pack",
+      "blurb": "Glossy A6 postcards",
+      "sizes": { "Pack of 10": 18, "Pack of 20": 30 }
+    },
+    "notebook": {
+      "label": "Notebook", "category": "stationery", "unit": "Style",
+      "blurb": "A5 softcover notebook",
+      "sizes": { "A5 Ruled": 20, "A5 Dotted": 20 }
     }
   }
 }

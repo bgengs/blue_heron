@@ -175,14 +175,19 @@ section { padding: 5.5rem 1.5rem; }
 .format {
   border: 1px solid rgba(244, 241, 233, .25);
   padding: 1.8rem 1.4rem; text-align: center;
-  transition: border-color .3s, background .3s;
+  transition: border-color .3s, background .3s, transform .3s;
+  display: block; text-decoration: none; color: inherit;
 }
-.format:hover { border-color: rgba(244,241,233,.7); background: rgba(244,241,233,.05); }
+.format:hover { border-color: rgba(244,241,233,.7); background: rgba(244,241,233,.05); transform: translateY(-3px); }
 .format h3 {
   font-family: var(--serif); font-weight: 600; font-size: 1.3rem;
-  margin-bottom: .5rem;
+  margin-bottom: .5rem; color: var(--cream);
 }
 .format p { font-size: .82rem; color: rgba(244, 241, 233, .7); }
+.format-count {
+  display: inline-block; margin-top: .8rem; font-size: .68rem;
+  letter-spacing: .18em; text-transform: uppercase; color: rgba(244,241,233,.5);
+}
 .prints-cta { text-align: center; margin-top: 3rem; }
 .prints-cta .btn-solid { background: var(--cream); color: var(--navy); border-color: var(--cream); }
 .prints-cta .btn-solid:hover { background: #fff; }

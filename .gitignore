@@ -6,10 +6,15 @@ web/config.local.php
 source_photos/
 resized/
 output/
-raw/*.jpg
-raw/*.jpeg
-raw/*.JPG
-raw/*.JPEG
+
+# ingest folder — raw originals never go in git (can be tens of GB, incl. .psb/.psd)
+raw/*
+!raw/.gitkeep
+
+# large binary source types anywhere (Photoshop, JPEG XL)
+*.psb
+*.psd
+*.jxl
 
 # --- legacy static site (superseded by PHP web/) ---
 /site/

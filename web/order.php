@@ -30,14 +30,18 @@ include __DIR__ . '/partials/nav.php';
       <?php endforeach; ?>
     </select>
 
-    <label for="format">Format</label>
+    <label for="format">Product</label>
     <select id="format" name="format">
-      <?php foreach ($catalog['formats'] as $key => $f): ?>
-        <option value="<?= e($key) ?>"><?= e($f['label']) ?></option>
+      <?php foreach (bh_categories_with_formats() as $group): ?>
+        <optgroup label="<?= e($group['label']) ?>">
+          <?php foreach ($group['formats'] as $key => $f): ?>
+            <option value="<?= e($key) ?>"><?= e($f['label']) ?></option>
+          <?php endforeach; ?>
+        </optgroup>
       <?php endforeach; ?>
     </select>
 
-    <label for="size">Size (inches)</label>
+    <label for="size" id="sizeLabel">Size</label>
     <select id="size" name="size"></select>
 
     <label for="qty">Quantity</label>
@@ -63,10 +67,15 @@ var $ = function(id){ return document.getElementById(id); };
 function money(d){ return '$' + d.toLocaleString('en-US'); }
 function qty(){ return Math.max(1, Math.min(10, parseInt($('qty').value)||1)); }
 
+function optLabel(s){
+  // Turn "24x16" into "24 × 16"; leave "11 oz", "iPhone 15", "Set of 4" as-is.
+  return /^\d+x\d+$/.test(s) ? s.replace('x', ' × ') : s;
+}
 function refreshSizes(){
   var f = CATALOG.formats[$('format').value];
+  $('sizeLabel').textContent = f.unit || 'Option';
   $('size').innerHTML = Object.keys(f.sizes).map(function(s){
-    return '<option value="'+s+'">'+s.replace('x',' × ')+' — '+money(f.sizes[s])+'</option>';
+    return '<option value="'+s+'">'+optLabel(s)+' — '+money(f.sizes[s])+'</option>';
   }).join('');
   refreshTotal();
 }

@@ -36,6 +36,25 @@ function bh_catalog(): array {
     return bh_load_json('catalog.json', ['currency' => 'usd', 'formats' => []]);
 }
 
+/** Category list, each with the formats that belong to it. Formats with an
+ *  unknown/missing category fall into a trailing "More" group. */
+function bh_categories_with_formats(): array {
+    $catalog = bh_catalog();
+    $cats = $catalog['categories'] ?? [];
+    $groups = [];
+    foreach ($cats as $c) {
+        $groups[$c['key']] = $c + ['formats' => []];
+    }
+    foreach ($catalog['formats'] as $key => $f) {
+        $cat = $f['category'] ?? 'more';
+        if (!isset($groups[$cat])) {
+            $groups[$cat] = ['key' => $cat, 'label' => 'More', 'blurb' => '', 'formats' => []];
+        }
+        $groups[$cat]['formats'][$key] = $f;
+    }
+    return array_values(array_filter($groups, fn($g) => !empty($g['formats'])));
+}
+
 /** Price in cents for a format+size, or null if not offered. */
 function bh_price_cents(string $fmt, string $size): ?int {
     $catalog = bh_catalog();
